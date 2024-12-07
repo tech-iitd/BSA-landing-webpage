@@ -1,0 +1,63 @@
+.updates-element{
+    position: relative;
+    padding-top: 100px;
+    background-image: url('../../assets/updates_bkg_img.svg');
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: 0.4fr 0.6fr;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.updates-element .updates-element-first-container{
+
+    display: grid;
+    height: 100%;
+    grid-template-rows: 1fr 2fr 1fr;
+    padding: 10% 15%;
+}
+
+
+
+.updates-element .updates-element-first-container h1{
+    background: linear-gradient(90deg, #FDD81F, #F03027);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    color: transparent; 
+}
+
+.updates-element .updates-element-first-container ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.updates-element .updates-element-first-container ul li img{
+    margin: 10px;
+    width: 60px;
+}
+.updates-element .updates-element-second-container {
+    height: 100%;
+}
+
+.updates-element .updates-element-second-container img{
+    bottom: 0;
+    position: absolute;
+    right: 8%;
+    width: 19%;
+    z-index: 2;
+}
+
+#updates-element-rantangle{
+    position: absolute;
+    right: 8%;
+    width: 25%;
+    height: 55%;
+    z-index: 1;
+}
+

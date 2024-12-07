@@ -1,0 +1,14 @@
+.sports-all h1{
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+    margin: 5% 0;
+}
+
+.sports-all >div{
+    display: flex;
+    margin: 0 15%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}

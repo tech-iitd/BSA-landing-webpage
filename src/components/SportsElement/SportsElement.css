@@ -1,0 +1,64 @@
+.sports-element{
+    position: relative;
+    padding-top: 100px;
+    background-image: url('../../assets/sports_bkg_img.svg');
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: 0.55fr 0.45fr;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.sports-element .sports-element-first-container{
+    display: grid;
+    height: 100%;
+    grid-template-rows: 1fr 4fr 1fr;
+    padding: 7% 10%;
+}
+
+
+
+.sports-element .sports-element-first-container h1{
+    background: linear-gradient(90deg, #FDD81F, #F03027);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    color: transparent; 
+}
+
+.sports-element .sports-element-first-container ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 0;
+}
+
+
+
+.sports-element .sports-element-first-container ul li img{
+    margin-right: 40px;
+    margin-left: 0%;
+    width: 85px;
+}
+.sports-element .sports-element-second-container {
+    height: 100%;
+}
+
+.sports-element .sports-element-second-container img{
+    bottom: 0;
+    position: absolute;
+    right: 8%;
+    width: 23%;
+    z-index: 2;
+}
+
+#sports-element-rantangle{
+    position: absolute;
+    right: 8%;
+    width: 25%;
+    height: 85%;
+    z-index: 1;
+}
+

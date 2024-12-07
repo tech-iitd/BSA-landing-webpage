@@ -1,0 +1,38 @@
+/* Member.css */
+.member {
+    position: relative;
+    width: 300px; 
+    height: 300px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  
+  .frame {
+    width: 60%;
+    height: 60%;
+    object-fit: cover;
+    transition:transform 600ms;
+  }
+  
+  .frame:hover{
+
+    transform: rotate(-180deg);
+  }
+
+  .member-details {
+    position: absolute;
+    bottom: 0px; 
+    width: 90%; 
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .member-details p {
+    font-size: 25px;
+    margin: 5px 0;
+    font-size: 14px; /* Adjust for text clarity */
+  }
+  

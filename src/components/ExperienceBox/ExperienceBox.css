@@ -1,0 +1,35 @@
+.experience-box {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 380px;
+    max-width: 380px;
+
+}
+
+.experience-box .user-details{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+
+.experience-box-social{
+    display: flex;
+    gap: 1rem;
+}
+
+.experience-box-social img{
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgb(223, 223, 223);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.experience-box-social img:hover{
+    cursor: pointer;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+    scale: 1.1;
+    transition: 250ms;
+}

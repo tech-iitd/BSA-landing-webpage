@@ -1,0 +1,15 @@
+.team-members{
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin: auto 10%;
+    
+}
+
+.our-team{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* align-items: center; */
+}

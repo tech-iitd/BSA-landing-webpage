@@ -1,0 +1,49 @@
+.about-element{
+    padding-top: 100px;
+    background-image: url('../../assets/about_bkg_img.svg');
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: 0.4fr 0.6fr;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+.about-element .about-element-first-container{
+
+    display: grid;
+    height: 100%;
+    grid-template-rows: 1fr 2fr 1fr;
+    padding: 10% 15%;
+}
+
+
+
+.about-element .about-element-first-container h1{
+    background: linear-gradient(90deg, #FDD81F, #F03027);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    color: transparent; 
+}
+.about-element .about-element-second-container {
+        height: 100%;
+}
+
+.about-element .about-element-second-container img{
+    position: absolute;
+    right: 8%;
+    width: 25%;
+    z-index: 2;
+}
+
+#about-element-rantangle{
+    position: absolute;
+    right: 8%;
+    width: 25%;
+    height: 85%;
+    z-index: 1;
+}
+

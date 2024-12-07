@@ -1,0 +1,77 @@
+.experiences-element{
+    position: relative;
+    padding-top: 100px;
+    background-image: url('../../assets/experiences_bkg_img.svg');
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: 0.65fr 0.35fr;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.experiences-element .experiences-element-first-container{
+    width: 100%;
+    display: grid;
+    height: 100%;
+    grid-template-rows: 0.2fr 0.6fr 0.2fr;
+    padding: 5% 10%;
+}
+
+
+
+.experiences-element .experiences-element-first-container h1{
+    background: linear-gradient(90deg, #FDD81F, #F03027);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    color: transparent; 
+}
+
+.experiences-element .experiences-element-second-container {
+    height: 100%;
+}
+
+.experiences-element .experiences-element-second-container img{
+    bottom: 0;
+    position: absolute;
+    right: 8%;
+    width: 23.2%;
+    z-index: 2;
+
+}
+
+#experiences-element-rantangle{
+    position: absolute;
+    right: 8%;
+    width: 25%;
+    height: 74%;
+    z-index: 1;
+}
+
+.experiences-element-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.horizontal-scroll img{
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    padding: 5px;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+
+
+.experiences-element .experiences-element-first-container .all-experiences-box{
+    max-width: 800px;
+    height: fit-content;
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    margin-top: 20px;
+}
