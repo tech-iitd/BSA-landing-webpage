@@ -9,7 +9,7 @@ const Member = () => {
       <div className='member-details'>
         <h2>Name</h2>
         <p>post</p>
-        <p>webmail</p>
+        <p style={{ color: '#17A1FA' }}>webmail</p>
       </div>
     </div>
   );

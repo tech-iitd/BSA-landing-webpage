@@ -8,7 +8,7 @@ const AboutElement = () => {
     <div className='about-element'>
         <div className='about-element-first-container'>
           <h1>ABOUT US</h1>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid dicta blanditiis quasi inventore quod rem quibusdam non ratione. Aliquam, fugit autem. Dignissimos commodi corporis fugiat adipisci quasi tempora delectus consectetur.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis et dignissimos dolorem nam suscipit hic. Neque quasi, nihil omnis, nulla perspiciatis porro labore, placeat impedit laborum quod numquam a quas. Ea odit magnam explicabo reiciendis illum veniam asperiores in vel, deserunt minima, optio ipsam possimus officia nam molestiae, quisquam sequi?</p>
           <Link to={'/about'}>
             KNOW MORE
           </Link>

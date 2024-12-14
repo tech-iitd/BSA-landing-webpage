@@ -13,17 +13,26 @@
 }
 
 .updates-element .updates-element-first-container{
-
     display: grid;
-    height: 100%;
-    grid-template-rows: 1fr 4fr 1fr;
-    padding: 10% 15%;
+    height: 95vh;
+    grid-template-rows: 2fr 6fr 2fr;
+    padding: 5% 9%;
 }
 
 
-
 .updates-element .updates-element-first-container h1{
-    background: linear-gradient(90deg, #FDD81F, #F03027);
+    font-size: 300%;
+    background: linear-gradient(64deg, #FDD81F 1%, #F03027 99%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    color: transparent; 
+}
+
+.updates-element .updates-element-first-container >a{
+    display: flex;
+    align-items: center;
+    font-size: 150%;
+    background: linear-gradient(64deg, #FDD81F 1%, #F03027 99%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
     color: transparent; 
@@ -49,7 +58,7 @@
     bottom: 0;
     position: absolute;
     right: 8%;
-    width: 19%;
+    width: 21%;
     z-index: 2;
 }
 
@@ -57,7 +66,7 @@
     position: absolute;
     right: 8%;
     width: 25%;
-    height: 55%;
+    height: 100%;
     z-index: 1;
 }
 

@@ -15,15 +15,25 @@
 .experiences-element .experiences-element-first-container{
     width: 100%;
     display: grid;
-    height: 100%;
-    grid-template-rows: 0.2fr 0.6fr 0.2fr;
-    padding: 5% 10%;
+    height: 95vh;
+    grid-template-rows: 2fr 6fr 2fr;
+    padding: 5% 8%;
 }
 
 
-
 .experiences-element .experiences-element-first-container h1{
-    background: linear-gradient(90deg, #FDD81F, #F03027);
+    font-size: 300%;
+    background: linear-gradient(64deg, #DDDDD9, #deded900);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    color: transparent; 
+}
+
+.experiences-element .experiences-element-first-container >a{
+    display: flex;
+    align-items: center;
+    font-size: 150%;
+    background: linear-gradient(64deg, #DDDDD9, #deded900);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
     color: transparent; 
@@ -37,7 +47,7 @@
     bottom: 0;
     position: absolute;
     right: 8%;
-    width: 23.2%;
+    width: 26%;
     z-index: 2;
 
 }
@@ -46,7 +56,7 @@
     position: absolute;
     right: 8%;
     width: 25%;
-    height: 74%;
+    height: 100%;
     z-index: 1;
 }
 
@@ -63,6 +73,12 @@
     padding: 5px;
     margin: 0 5px;
     border-radius: 5px;
+    cursor: pointer;
+}
+
+.horizontal-scroll img:hover{
+    background-color: #ffb81e;
+    scale: (1.1);
 }
 
 

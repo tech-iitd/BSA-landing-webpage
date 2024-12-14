@@ -38,6 +38,7 @@
     border: 0;
     outline: none;
   }
+
   
   .react-calendar button:enabled:hover {
     cursor: pointer;
@@ -134,7 +135,7 @@
   
   .react-calendar__tile:enabled:hover,
   .react-calendar__tile:enabled:focus {
-    background-color: #e6e6e6;
+    background-color: #ffffff1e;
   }
   
   .react-calendar__tile--now {
@@ -143,7 +144,7 @@
   
   .react-calendar__tile--now:enabled:hover,
   .react-calendar__tile--now:enabled:focus {
-    background: #ffffa9;
+    background: none;
   }
   
   .react-calendar__tile--hasActive {
@@ -156,7 +157,7 @@
   }
   
   .react-calendar__tile--active {
-    background: #EA5A26;
+    background: none;
     color: white;
   }
   
