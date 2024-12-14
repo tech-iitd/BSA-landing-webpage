@@ -25,6 +25,7 @@ const SportsElement = () => {
           <li><img src={sports.hockey.img} alt={sports.hockey.name} /></li>
           <li><img src={sports.squash.img} alt={sports.squash.name} /></li>
           <li><img src={sports.aquatics.img} alt={sports.aquatics.name} /></li>
+          <li><img src={sports.weightlifting.img} alt={sports.weightlifting.name} /></li>
         </ul>
         <Link to={'/sports'} className="know-more-link">
           KNOW MORE

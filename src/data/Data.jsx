@@ -11,6 +11,7 @@ import athletics from '../assets/athletics.svg';
 import hockey from '../assets/hockey.svg';
 import squash from '../assets/squash.svg';
 import aquatics from '../assets/aquatics.svg';
+import weightlifting from '../assets/weightlifting.svg';
 
 export const dataContext = createContext();
 
@@ -28,6 +29,7 @@ const Data = ({ children }) => {
     hockey: { img: hockey, name: 'Hockey' },
     squash: { img: squash, name: 'Squash' },
     aquatics: { img: aquatics, name: 'Aquatics' },
+    weightlifting: { img: weightlifting, name: 'Weightlifting' },
   };
 
   const userReviews = [

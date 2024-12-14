@@ -23,6 +23,7 @@ const Sports = () => {
           <SportsBox img={sports.hockey.img} name={sports.hockey.name}/>
           <SportsBox img={sports.squash.img} name={sports.squash.name}/>
           <SportsBox img={sports.aquatics.img} name={sports.aquatics.name}/>
+          <SportsBox img={sports.weightlifting.img} name={sports.weightlifting.name}/>
         </div>
       </div>
     </div>
