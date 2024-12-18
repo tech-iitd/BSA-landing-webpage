@@ -1,8 +1,8 @@
-.sports-all h1{
+.sports-all h1, .our-history h1{
     font-size: 50px;
     color: #fff;
     text-align: center;
-    margin: 5% 0;
+    margin: 2% 0;
 }
 
 .sports-all >div{

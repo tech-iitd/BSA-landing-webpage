@@ -9,19 +9,19 @@
   }
 
   
-  .frame {
+  .member .frame {
     width: 60%;
     height: 60%;
     object-fit: cover;
     transition:transform 600ms;
   }
   
-  .frame:hover{
+  .member .frame:hover{
 
     transform: rotate(-180deg);
   }
 
-  .member-details {
+  .member .member-details {
     position: absolute;
     bottom: 0px; 
     width: 90%; 
@@ -30,7 +30,7 @@
     text-align: center;
   }
   
-  .member-details p {
+  .member .member-details p {
     font-size: 25px;
     margin: 5px 0;
     font-size: 14px; /* Adjust for text clarity */

@@ -5,6 +5,7 @@ import about_ractangle from '../../assets/about_ractangle.svg';
 import { Link } from 'react-router-dom';
 import AboutElement from '../../components/AboutElement/AboutElement';
 import Member from '../../components/Member/Member';
+import PhotoGallery from '../../components/PhoteGallery/PhotoGallery';
 const About = () => {
   return (
     <div>
@@ -20,8 +21,15 @@ const About = () => {
           <Member/>
           <Member/>
           <Member/>
+          <Member/>
+          <Member/>
         </div>
-        
+      </div>
+      <div className='our-history'>
+        <h1>
+          OUR HISTORY
+        </h1>
+        <PhotoGallery/>
       </div>
     </div>
   );

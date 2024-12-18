@@ -96,7 +96,7 @@
   
   /* Apply green color to the current month's days */
   .react-calendar__month-view__days__day:not(.react-calendar__month-view__days__day--neighboringMonth) {
-    color: #B3B3B3; /* Sets the color to green for current month days */
+    color: white; /* Sets the color to green for current month days */
   }
   
   .react-calendar__month-view__days__day--weekend:not(.react-calendar__month-view__days__day--neighboringMonth) {
@@ -139,7 +139,7 @@
   }
   
   .react-calendar__tile--now {
-    background: #f03127c0;
+    background: #F03027;
   }
   
   .react-calendar__tile--now:enabled:hover,
@@ -173,3 +173,59 @@
     background-color: #e6e6e6;
   }
   
+.react-calendar {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* .react-calendar-with-events {
+  position: relative;
+} */
+
+.event-indicator {
+  /* position: absolute; */
+  background-color: rgba(255, 255, 255, 0.607);
+  width: 100%;
+  height: 2px;
+  padding: 3px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.hover-event-popup {
+  position: absolute;
+  top: 50%;
+  left: 62%;
+  transform: translateX(-50%);
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  z-index: 1;
+  max-width: 250px;
+  overflow: hidden;
+}
+
+.hover-event-popup h4 {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.hover-event-popup .event-item {
+  margin: 8px 0;
+}
+
+.hover-event-popup .event-item h5 {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.hover-event-popup .event-item p {
+  margin: 4px 0 0;
+  font-size: 12px;
+  color: #777;
+}

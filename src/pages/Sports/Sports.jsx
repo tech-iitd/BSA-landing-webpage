@@ -3,6 +3,7 @@ import './Sports.css';
 import SportsElement from '../../components/SportsElement/SportsElement';
 import SportsBox from '../../components/SportsBox/SportsBox';
 import { dataContext } from '../../data/Data';
+import PhotoGallery from '../../components/PhoteGallery/PhotoGallery';
 const Sports = () => {
   const { sports } = useContext(dataContext);
   return (
@@ -25,6 +26,12 @@ const Sports = () => {
           <SportsBox img={sports.aquatics.img} name={sports.aquatics.name}/>
           <SportsBox img={sports.weightlifting.img} name={sports.weightlifting.name}/>
         </div>
+      </div>
+      <div className='our-history'>
+        <h1>
+          OUR HISTORY
+        </h1>
+        <PhotoGallery/>
       </div>
     </div>
   );
