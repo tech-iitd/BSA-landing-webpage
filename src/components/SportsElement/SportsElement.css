@@ -72,3 +72,53 @@
     z-index: 1;
 }
 
+/* Mobile styles */
+@media (max-width: 768px) {
+    .sports-element {
+        background-image: url('../../assets/sports_mbl_bkg.svg');
+        grid-template-columns: 0.75fr 0.25fr;
+    }
+
+    .sports-element .sports-element-first-container{
+        display: flex;
+        flex-direction: column;
+        padding: 0 5%
+    }
+
+    .sports-element .sports-element-first-container p{
+        font-size: 12px;
+    }
+
+    .sports-element .sports-element-first-container h1 {
+        font-size: 150%;
+        text-align: center;
+    }
+
+    .sports-element .sports-element-first-container ul li img{
+        margin: 5% ;
+        margin-right: 20px;
+        margin-left: 0%;
+        width: 55px;
+    }
+
+    .sports-element .sports-element-first-container > a {
+        font-size: 80%;
+        justify-content: center;
+    }
+
+    .sports-element .sports-element-second-container img {
+        bottom: 20%;
+        right: -15%;
+        width: 60%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    #sports-element-rantangle {
+        bottom: 0;
+        top: auto;
+        right: -30%;
+        width: 55%;
+        height: auto;
+    }
+}

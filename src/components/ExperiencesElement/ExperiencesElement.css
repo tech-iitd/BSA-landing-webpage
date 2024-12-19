@@ -90,3 +90,68 @@
     scrollbar-width: none;
     margin-top: 20px;
 }
+
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .experiences-element {
+        background-image: url('../../assets/experiences_mbl_bkg.svg');
+        grid-template-columns: 0.6fr 0.4fr;
+    }
+
+    .experiences-element .experiences-element-first-container{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        padding: 0%
+    }
+
+    .experiences-element .experiences-element-first-container p{
+        font-size: 12px;
+    }
+
+    .experiences-element .experiences-element-first-container h1 {
+        font-size: 150%;
+        text-align: center;
+    }
+
+    .experiences-element .experiences-element-first-container > a {
+        font-size: 80%;
+        justify-content: center;
+    }
+
+    .experiences-element .experiences-element-second-container img {
+        bottom: 20%;
+        right: -25%;
+        width: 55%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    #experiences-element-rantangle {
+        bottom: 0;
+        top: auto;
+        right: -30%;
+        width: 55%;
+        height: auto;
+    }
+
+    
+    .horizontal-scroll img{
+        width: 25px;
+        height: 25px;
+        padding: 3px;
+        margin: 0 2px;
+        border-radius: 5px;
+    }
+
+        
+    .experiences-element .experiences-element-first-container .all-experiences-box{
+        max-width: 300px;
+        height: 300px;
+        font-size: 12px;
+        display: flex;
+        gap: 10px;
+        margin-top: 10px;
+    }
+}

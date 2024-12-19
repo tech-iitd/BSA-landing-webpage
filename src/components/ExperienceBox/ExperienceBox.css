@@ -33,3 +33,39 @@
     scale: 1.1;
     transition: 250ms;
 }
+
+.experience-box .description{
+    max-height: 500px;
+    overflow: scroll;
+}
+
+
+@media (max-width: 768px) {
+    .experience-box {
+        padding: 15px;
+        min-width: 220px;
+        max-width: 220px;
+        margin: 0 auto; /* Center the box */
+    }
+
+    .experience-box .user-details {
+        flex-direction: column; /* Stack user details vertically */
+        align-items: flex-start;
+        gap: 10px; /* Add spacing between stacked elements */
+    }
+
+    .experience-box-social {
+        gap: 0.5rem; /* Reduce gap between social icons for smaller screens */
+    }
+
+    .experience-box-social img {
+        width: 25px;
+        height: 25px; /* Reduce size of icons */
+        padding: 6px;
+    }
+
+    .experience-box .description{
+        max-height: 200px;
+        overflow: scroll;
+    }
+}

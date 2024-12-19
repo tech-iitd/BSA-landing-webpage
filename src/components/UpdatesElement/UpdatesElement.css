@@ -69,3 +69,47 @@
     z-index: 1;
 }
 
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .updates-element {
+        background-image: url('../../assets/updates_mbl_bkg.svg');
+        grid-template-columns: 0.75fr 0.25fr;
+    }
+
+    .updates-element .updates-element-first-container{
+        display: flex;
+        flex-direction: column;
+        padding: 0%
+    }
+
+    .updates-element .updates-element-first-container p{
+        font-size: 12px;
+    }
+
+    .updates-element .updates-element-first-container h1 {
+        font-size: 150%;
+        text-align: center;
+    }
+
+    .updates-element .updates-element-first-container > a {
+        font-size: 80%;
+        justify-content: center;
+    }
+
+    .updates-element .updates-element-second-container img {
+        bottom: 20%;
+        right: -25%;
+        width: 55%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    #updates-element-rantangle {
+        bottom: 0;
+        top: auto;
+        right: -30%;
+        width: 55%;
+        height: auto;
+    }
+}

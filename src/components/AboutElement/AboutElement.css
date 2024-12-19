@@ -1,6 +1,6 @@
-.about-element{
+.about-element {
     background-image: url('../../assets/about_bkg_img.svg');
-    background-position:center;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     display: grid;
@@ -11,16 +11,14 @@
     position: relative;
 }
 
-.about-element .about-element-first-container{
+.about-element .about-element-first-container {
     display: grid;
     height: 95vh;
     grid-template-rows: 1fr 2fr 1fr;
     padding: 7% 14%;
 }
 
-
-
-.about-element .about-element-first-container h1{
+.about-element .about-element-first-container h1 {
     font-size: 300%;
     background: linear-gradient(64deg, #FDD81F 1%, #F03027 99%);
     -webkit-background-clip: text;
@@ -28,8 +26,7 @@
     color: transparent; 
 }
 
-
-.about-element .about-element-first-container >a{
+.about-element .about-element-first-container > a {
     display: flex;
     align-items: center;
     font-size: 150%;
@@ -39,19 +36,18 @@
     color: transparent; 
 }
 
-
 .about-element .about-element-second-container {
     height: 100%;
 }
 
-.about-element .about-element-second-container img{
+.about-element .about-element-second-container img {
     position: absolute;
     right: 11%;
     width: 24.5%;
     z-index: 2;
 }
 
-#about-element-rantangle{
+#about-element-rantangle {
     position: absolute;
     top: 0%;
     right: 8%;
@@ -60,3 +56,46 @@
     z-index: 1;
 }
 
+/* Mobile styles */
+@media (max-width: 768px) {
+    .about-element {
+        background-image: url('../../assets/about_mbl_bkg.svg');
+        grid-template-columns: 0.7fr 0.3fr;
+    }
+
+    .about-element .about-element-first-container{
+        display: flex;
+        flex-direction: column;
+        padding: 0 5%
+    }
+
+    .about-element .about-element-first-container p{
+        font-size: 12px;
+    }
+
+    .about-element .about-element-first-container h1 {
+        font-size: 150%;
+        text-align: center;
+    }
+
+    .about-element .about-element-first-container > a {
+        font-size: 80%;
+        justify-content: center;
+    }
+
+    .about-element .about-element-second-container img {
+        bottom: 20%;
+        right: -10%;
+        width: 60%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    #about-element-rantangle {
+        bottom: 0;
+        top: auto;
+        right: -30%;
+        width: 55%;
+        height: auto;
+    }
+}
