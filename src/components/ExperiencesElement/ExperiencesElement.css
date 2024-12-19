@@ -1,6 +1,5 @@
 .experiences-element{
     position: relative;
-    padding-top: 100px;
     background-image: url('../../assets/experiences_bkg_img.svg');
     background-position:center;
     background-size: cover;
@@ -8,7 +7,7 @@
     display: grid;
     grid-template-columns: 0.65fr 0.35fr;
     justify-content: center;
-    height: 100vh;
+    height: 90vh;
     align-items: center;
 }
 
@@ -44,10 +43,10 @@
 }
 
 .experiences-element .experiences-element-second-container img{
-    bottom: 0;
+    bottom: 1;
     position: absolute;
-    right: 8%;
-    width: 26%;
+    right: 9.5%;
+    width: 23.5%;
     z-index: 2;
 
 }

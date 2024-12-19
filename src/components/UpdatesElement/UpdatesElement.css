@@ -1,6 +1,5 @@
 .updates-element{
     position: relative;
-    padding-top: 100px;
     background-image: url('../../assets/updates_bkg_img.svg');
     background-position:center;
     background-size: cover;
@@ -9,7 +8,7 @@
     grid-template-columns: 0.6fr 0.4fr;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 90vh;
 }
 
 .updates-element .updates-element-first-container{
@@ -55,10 +54,10 @@
 }
 
 .updates-element .updates-element-second-container img{
-    bottom: 0;
+    bottom: 1;
     position: absolute;
-    right: 8%;
-    width: 21%;
+    right: 9%;
+    width: 19.5%;
     z-index: 2;
 }
 

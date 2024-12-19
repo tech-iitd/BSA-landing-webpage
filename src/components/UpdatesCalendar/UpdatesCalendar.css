@@ -58,7 +58,7 @@
   }
   
   .react-calendar__navigation button:disabled {
-    background-color: #f0f0f0;
+    background-color: #000000;
   }
   
   .react-calendar__navigation button:enabled:hover,
@@ -111,6 +111,7 @@
   .react-calendar__decade-view .react-calendar__tile,
   .react-calendar__century-view .react-calendar__tile {
     padding: 2em 0.5em;
+    color: white;
   }
   
   .react-calendar__tile {
@@ -144,16 +145,16 @@
   
   .react-calendar__tile--now:enabled:hover,
   .react-calendar__tile--now:enabled:focus {
-    background: none;
+    background: #f03127d4;
   }
   
   .react-calendar__tile--hasActive {
-    background: #76baff;
+    background: #F8B61F;
   }
   
   .react-calendar__tile--hasActive:enabled:hover,
   .react-calendar__tile--hasActive:enabled:focus {
-    background: #a9d4ff;
+    background: #f8b71fde;
   }
   
   .react-calendar__tile--active {
@@ -189,7 +190,7 @@
   width: 100%;
   height: 2px;
   padding: 3px;
-  border-radius: 50px;
+  border-radius: 3px;
   cursor: pointer;
 }
 

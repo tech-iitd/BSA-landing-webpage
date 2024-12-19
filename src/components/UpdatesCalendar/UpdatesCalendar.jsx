@@ -8,7 +8,7 @@ const UpdatesCalendar = () => {
   const events = [
     { date: '2024-12-15', title: 'Team Meeting', description: 'Discuss project updates' },
     { date: '2024-12-21', title: 'Conference', description: 'Attend the annual conference' },
-    { date: '2024-12-02', title: 'Christmas Party', description: 'Holiday celebration with friends' },
+    { date: '2024-12-02', title: 'Christmas Party', description: 'Holiday celebration with friends' },  
   ];
 
   const getEventsForDate = (date) => {
@@ -19,6 +19,7 @@ const UpdatesCalendar = () => {
 
   const handleMouseEnter = (date) => {
     setHoveredDate(date);
+    
   };
 
   const handleMouseLeave = () => {

@@ -1,6 +1,5 @@
 .sports-element{
     position: relative;
-    padding-top: 100px;
     background-image: url('../../assets/sports_bkg_img.svg');
     background-position:center;
     background-size: cover;
@@ -8,7 +7,7 @@
     display: grid;
     grid-template-columns: 0.55fr 0.45fr;
     justify-content: center;
-    height: 100vh;
+    height: 90vh;
     align-items: center;
 }
 
@@ -58,10 +57,10 @@
 }
 
 .sports-element .sports-element-second-container img{
-    bottom: 0;
+    bottom: 2;
     position: absolute;
     right: 6%;
-    width: 25%;
+    width: 23%;
     z-index: 2;
 }
 

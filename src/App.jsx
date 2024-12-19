@@ -15,6 +15,7 @@ const App = () => {
     <Data>
       <div className='app'>
         <Header />
+        <div className='pages'>
           <Routes>  
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
@@ -23,6 +24,8 @@ const App = () => {
             <Route path="/experiences" element={<Experiences />} />
             {/* <Route path="/profile" element={<Profile />} /> */}
           </Routes>   
+        </div>
+          
         <Footer/>
       </div>
     </Data>
