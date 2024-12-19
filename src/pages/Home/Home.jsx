@@ -10,10 +10,18 @@ import ExperiencesElement from '../../components/ExperiencesElement/ExperiencesE
 const Home = () => {
   return (
     <div>
-      <AboutElement/>
-      <SportsElement/>
-      <UpdatesElement/>
-      <ExperiencesElement/>
+      <section id='about' className='section'>
+        <AboutElement/>
+      </section>
+      <section id='sports' className='section'>
+        <SportsElement/>  
+      </section>
+      <section id='updates' className='section'>
+        <UpdatesElement/>   
+      </section>
+      <section id='experiences' className='section'>
+        <ExperiencesElement/>
+      </section>
     </div>
     
   );
