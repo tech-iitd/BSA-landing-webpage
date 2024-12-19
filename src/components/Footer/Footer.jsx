@@ -126,10 +126,18 @@ const Footer = () => {
 
       {/* Social Icons Section */}
       <div className="footer-social-icons">
-        <img src={instagram_footer} alt="" />
-        <img src={facebook_footer} alt="" />
-        <img src={linkedin_footer} alt="" />
-        <img src={youtube_footer} alt="" />
+        <a href="https://www.instagram.com/bsa.iitd/?hl=en" target="_blank">
+          <img src={instagram_footer} alt="" />
+        </a>
+        <a href="https://www.facebook.com/iitd.bsa/" target="_blank">
+          <img src={facebook_footer} alt="" />
+        </a>
+        <a href="https://in.linkedin.com/company/bsaiitd" target="_blank">
+          <img src={linkedin_footer} alt="" />
+        </a>
+        <a href="https://www.youtube.com/@bsaiitd2741" target="_blank">
+          <img src={youtube_footer} alt="" /> 
+        </a>
       </div>
 
       <hr className="footer-divider" />
@@ -138,11 +146,11 @@ const Footer = () => {
       <div className="footer-bottom">
         <div className="footer-bottom-left">
           <p>Designed and developed by </p>
-          <img src={tech_team_logo} alt="" />
+          <img style={{width: "20px"}} src={tech_team_logo} alt="" />
           <p>WebD Team, BSA</p> </div>
         <div className="footer-bottom-center">
-          <svg /* Add SVG Paths */></svg>
-          <span>Board for Sports Activities, IIT Delhi, 2024</span>
+          <span>&copy;</span>
+          <span> Board for Sports Activities, IIT Delhi, 2024</span>
         </div>
       </div>
     </footer>

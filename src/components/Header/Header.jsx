@@ -41,8 +41,10 @@ const Header = () => {
   return (
     <div className="header">
       <div className="header-first-container">
-        <img src={bsa_logo} alt="Logo" />
-        <img src={bsa_text_logo} alt="Text Logo" />
+        <Link to={'/'}>
+            <img src={bsa_logo} alt="Logo" />
+            <img src={bsa_text_logo} alt="Text Logo" />
+        </Link>
       </div>
       <div className="header-second-container">
         <ul>
