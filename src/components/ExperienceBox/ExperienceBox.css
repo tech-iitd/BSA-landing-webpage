@@ -35,8 +35,19 @@
 }
 
 .experience-box .description{
-    max-height: 500px;
-    overflow: scroll;
+    min-height: 200px;
+    max-height: 200px;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+}
+
+.experience-box .description::-webkit-scrollbar{
+    width: 1px;
+}
+
+
+.experience-box .description::-webkit-scrollbar-thumb{
+    background-color: green;
 }
 
 
@@ -65,7 +76,7 @@
     }
 
     .experience-box .description{
-        max-height: 200px;
-        overflow: scroll;
+        max-height: 150px;
+        overflow-y: scroll;
     }
 }

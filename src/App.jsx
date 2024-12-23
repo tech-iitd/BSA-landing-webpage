@@ -8,13 +8,23 @@ import Home from './pages/Home/Home';
 import Sports from './pages/Sports/Sports';
 import Experiences from './pages/Experiences/Experiences';
 import Updates from './pages/Updates/Updates';
+import Profile from './pages/Profile/Profile';
 import Data from './data/Data';
+import Login from './pages/Login/Login';
 const App = () => {
+
+  const [isAuth, setIsAuth] = useState(true);
+  useEffect(()=>{
+    // const token = localStorage.getItem('token');
+    // if(token){
+      setIsAuth(!isAuth);
+    // }
+  },[]);
 
   return (
     <Data>
       <div className='app'>
-        <Header />
+        <Header isAuth={isAuth}/>
         <div className='pages'>
           <Routes>  
             <Route path="/" element={<Home />} />
@@ -22,7 +32,13 @@ const App = () => {
             <Route path="/sports" element={<Sports />} />
             <Route path="/updates" element={<Updates />} />
             <Route path="/experiences" element={<Experiences />} />
-            {/* <Route path="/profile" element={<Profile />} /> */}
+            {
+              isAuth ? (
+                <Route path="/profile" element={<Profile />} />
+              ) : (
+                <Route path="/login" element={<Login setIsAuth={setIsAuth} />} />
+              )
+            }
           </Routes>   
         </div>
           

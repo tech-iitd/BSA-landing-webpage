@@ -5,7 +5,7 @@ import bsa_logo from '../../assets/bsa_logo.svg';
 import bsa_text_logo from '../../assets/bsa_text_logo.svg';
 import profile_icon from '../../assets/profile_icon.svg';
 
-const Header = () => {
+const Header = ({isAuth}) => {
   const location = useLocation(); 
   const [activeSection, setActiveSection] = useState("");
 
@@ -42,8 +42,8 @@ const Header = () => {
     <div className="header">
       <div className="header-first-container">
         <Link to={'/'}>
-            <img src={bsa_logo} alt="Logo" />
-            <img src={bsa_text_logo} alt="Text Logo" />
+            <img style={{width:"80px"}} src={bsa_logo} alt="Logo" />
+            <img style={{width:"60%"}} src={bsa_text_logo} alt="Text Logo" />
         </Link>
       </div>
       <div className="header-second-container">
@@ -73,9 +73,23 @@ const Header = () => {
               Contact
             </Link>
           </li>
-          <Link to="/profile">
-            <img src={profile_icon} alt="Profile Icon" />
-          </Link>
+          {
+            isAuth && (
+              <Link to="/profile">
+                <img src={profile_icon} alt="Profile Icon" />
+              </Link>
+            )
+          }
+          <li>
+            {
+              !isAuth && (
+                <Link to="/login" className="login-button">
+                   Login
+                </Link>
+              )
+            }
+          </li>
+          
         </ul>
       </div>
     </div>

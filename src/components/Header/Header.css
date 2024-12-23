@@ -8,9 +8,9 @@
     align-items: center;
     justify-content: space-between;
     width: 100vw; 
-    height: 100px;
+    height: 80px;
     position: fixed;
-    padding: 0 5%;
+    padding: 0 6%;
     z-index: 1000;
 }
 
@@ -27,6 +27,7 @@
 .header .header-first-container {
     display: flex;
 }
+
 
 .header .header-second-container ul {
     display: flex;

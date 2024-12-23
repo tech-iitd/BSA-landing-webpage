@@ -1,0 +1,121 @@
+/* Login.css */
+
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("../../assets/login_bkg.svg") no-repeat center center ;
+    background-size: cover;
+}
+
+.login {
+    background-color: rgba(38, 38, 38, 1);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 1rem;
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+button {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login-button {
+    background-color: #ea5a26;
+    border-radius: 5px;
+    color: #fff;
+    margin-bottom: 1rem;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover {
+    background-color: #d72a21f3;
+    border-color: #F03027;
+}
+
+.alternative-login {
+    margin-top: 1rem;
+}
+
+.google-button,
+.microsoft-button {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: border-color 0.3s, color 0.3s;
+}
+
+.google-button {
+    background-color: #2D2D2D;
+    color: white;
+    border-color: white;
+}
+
+.google-button:hover {
+    /* border-color: #F03027; */
+    border-color: #FDD81F;
+}
+
+.microsoft-button {
+    background-color: #2D2D2D;
+    color: white;
+    border-color: white;
+}
+
+.microsoft-button:hover {
+     /* border-color: #F03027; */
+     border-color: #FDD81F;
+}
+
+.toggle-link {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: white;
+}
+
+.toggle-link .toggle-button {
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0;
+}
+
+.toggle-link .toggle-button:hover {
+    color: #0056b3;
+}

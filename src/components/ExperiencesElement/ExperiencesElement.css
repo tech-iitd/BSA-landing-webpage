@@ -86,7 +86,8 @@
     height: fit-content;
     display: flex;
     gap: 20px;
-    overflow-x: scroll;
+    overflow-x:scroll;
+    overflow-y: hidden;
     scrollbar-width: none;
     margin-top: 20px;
 }
@@ -147,8 +148,8 @@
 
         
     .experiences-element .experiences-element-first-container .all-experiences-box{
-        max-width: 300px;
-        height: 300px;
+        max-width: 280px;
+        height: 250px;
         font-size: 12px;
         display: flex;
         gap: 10px;
