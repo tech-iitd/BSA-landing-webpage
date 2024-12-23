@@ -22,7 +22,7 @@ const ExperienceBox = ({userReview}) => {
       <p>
         {userReview.rating} stars
       </p>
-      <p className='description's>
+      <p className='description'>
         {userReview.review} 
       </p>
       

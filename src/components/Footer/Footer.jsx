@@ -12,14 +12,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-container">
         {/* Left Section */}
-        <div className="footer-description">
-          <p>
-            We turn novices into champions here at IIT Delhi grounds. The best
-            facilities provided by us have led to great results and our presence
-            is now being felt in the Delhi circles as well as in the inter college
-            meets outside.
-          </p>
-        </div>
+        
 
         {/* Logo Section */}
         <div className="footer-logo">
@@ -30,6 +23,15 @@ const Footer = () => {
             height="200"
             src={bsa_logo}
           />
+        </div>
+
+        <div className="footer-description">
+          <p>
+            We turn novices into champions here at IIT Delhi grounds. The best
+            facilities provided by us have led to great results and our presence
+            is now being felt in the Delhi circles as well as in the inter college
+            meets outside.
+          </p>
         </div>
 
         {/* Useful Links */}
@@ -144,10 +146,6 @@ const Footer = () => {
 
       {/* Footer Bottom Section */}
       <div className="footer-bottom">
-        <div className="footer-bottom-left">
-          <p>Designed and developed by </p>
-          <img style={{width: "20px"}} src={tech_team_logo} alt="" />
-          <p>WebD Team, BSA</p> </div>
         <div className="footer-bottom-center">
           <span>&copy;</span>
           <span> Board for Sports Activities, IIT Delhi, 2024</span>
