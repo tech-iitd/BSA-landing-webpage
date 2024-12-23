@@ -6,6 +6,7 @@ import AboutElement from '../../components/AboutElement/AboutElement';
 import SportsElement from '../../components/SportsElement/SportsElement';
 import UpdatesElement from '../../components/UpdatesElement/UpdatesElement';
 import ExperiencesElement from '../../components/ExperiencesElement/ExperiencesElement';
+import Contact from '../Contact/Contact';
 
 const Home = () => {
   return (
@@ -21,6 +22,9 @@ const Home = () => {
       </section>
       <section id='experiences' className='section'>
         <ExperiencesElement/>
+      </section>
+      <section id='contact' className='section'>
+        <Contact/>
       </section>
     </div>
     

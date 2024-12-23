@@ -42,6 +42,7 @@
 
 .react-calendar button:enabled:hover {
   cursor: pointer;
+  background-color: #ffffff22;
 }
 
 .react-calendar__navigation {
