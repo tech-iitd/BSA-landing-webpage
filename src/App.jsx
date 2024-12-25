@@ -12,6 +12,7 @@ import Profile from './pages/Profile/Profile';
 import Data from './data/Data';
 import Login from './pages/Login/Login';
 import Contact from './pages/Contact/Contact';
+import SportPage from './components/SportPage/SportPage';
 const App = () => {
 
   const [isAuth, setIsAuth] = useState(true);
@@ -41,6 +42,7 @@ const App = () => {
                 <Route path="/login" element={<Login setIsAuth={setIsAuth} />} />
               )
             }
+            <Route path="/sports/:sport" element={<SportPage />} />
           </Routes>   
         </div>
           

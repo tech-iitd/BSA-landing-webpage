@@ -9,7 +9,7 @@ const Contact = () => {
         <div className='connect'>
         <div className='connect-container'>
             <div className='connect-heading'>
-                <h1>CONNECT</h1>
+                <h1>CONTACT</h1>
             </div>
             <div className='connect-details'>
                 <div>

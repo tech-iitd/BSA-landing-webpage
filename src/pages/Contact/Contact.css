@@ -6,7 +6,7 @@
   }
   .connect {
     padding: 60px 20px;
-    background-color: #ea5a26b3;
+    background-color: #ea5a26e0;
     border-bottom-right-radius: 25%;
     border-top-right-radius: 25%;
   }
@@ -80,7 +80,6 @@
       }
       .connect {
         padding: 60px 20px;
-        background-color: #ea5a26bf;
         border-bottom-right-radius: 0%;
         border-top-right-radius: 0%;
       }

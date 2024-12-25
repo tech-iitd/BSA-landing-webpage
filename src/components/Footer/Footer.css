@@ -115,6 +115,10 @@
       align-items: center;
   }
 
+  .footer-description {
+    text-align: center;
+  }
+
   .footer-links,
   .footer-navigation {
       margin: 10px 0;
