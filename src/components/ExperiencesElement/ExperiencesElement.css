@@ -99,14 +99,15 @@
         background-image: url('../../assets/experiences_mbl_bkg.svg');
         grid-template-columns: 0.6fr 0.4fr;
         overflow: hidden;
-        padding-top: 5vh;
     }
 
     .experiences-element .experiences-element-first-container{
         width: 80%;
         display: flex;
         flex-direction: column;
-        padding: 0%
+        padding: 0%;
+        padding-top: 5vh;
+
     }
 
     .experiences-element .experiences-element-first-container p{
@@ -135,8 +136,8 @@
         bottom: 0;
         top: 0;
         top: auto;
-        right: -30%;
-        width: 57%;
+        right: -50%;
+        width: 75%;
         height: auto;
     }
 

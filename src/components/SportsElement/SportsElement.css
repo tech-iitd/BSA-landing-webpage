@@ -78,13 +78,14 @@
         background-image: url('../../assets/sports_mbl_bkg.svg');
         grid-template-columns: 0.75fr 0.25fr;
         overflow: hidden;
-        padding-top: 5vh;
     }
 
     .sports-element .sports-element-first-container{
         display: flex;
         flex-direction: column;
-        padding: 0 5%
+        padding: 0 5%;
+        padding-top: 5vh;
+
     }
 
     .sports-element .sports-element-first-container p{
@@ -119,8 +120,8 @@
     #sports-element-rantangle {
         bottom: 0;
         top: auto;
-        right: -30%;
-        width: 57%;
+        right: -50%;
+        width: 75%;
         height: auto;
     }
 }

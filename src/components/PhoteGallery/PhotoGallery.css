@@ -56,3 +56,11 @@
     height: 100%;
     background: inherit;
 }
+
+@media (max-width: 768px) {
+   
+.photo-gallery-container {
+    flex-direction: column;   
+}
+
+}

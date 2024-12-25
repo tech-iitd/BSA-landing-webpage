@@ -6,7 +6,9 @@
   }
   .connect {
     padding: 60px 20px;
-    background-color: #ea5a26e0;
+    background: url('../../assets/contact_bkg.svg') no-repeat;
+    background-blend-mode:luminosity;
+    /* background-color: #ea5a26e0; */
     border-bottom-right-radius: 25%;
     border-top-right-radius: 25%;
   }

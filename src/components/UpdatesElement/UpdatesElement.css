@@ -76,13 +76,14 @@
         background-image: url('../../assets/updates_mbl_bkg.svg');
         grid-template-columns: 0.75fr 0.25fr;
         overflow: hidden;
-        padding-top: 5vh;
     }
 
     .updates-element .updates-element-first-container{
         display: flex;
         flex-direction: column;
-        padding: 0%
+        padding: 0%;
+        padding-top: 5vh;
+
     }
 
     .updates-element .updates-element-first-container p{
@@ -110,8 +111,8 @@
     #updates-element-rantangle {
         bottom: 0;
         top: auto;
-        right: -30%;
-        width: 57%;
+        right: -50%;
+        width: 75%;
         height: auto;
     }
 }
