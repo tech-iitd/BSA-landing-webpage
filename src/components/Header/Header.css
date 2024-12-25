@@ -49,24 +49,114 @@
     border-right: 3px solid #F03027;
 }
 
-@media (max-width: 768px) {
+
+/* Container Styling */
+.hamburger-menu {
+    position: relative;
+  }
+  
+  .hamburger {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+    z-index: 2; 
+  }
+  
+  .hamburger .line {
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+    transition: all 0.3s ease;
+    z-index: 999;
+  }
+  
+  .hamburger.open .line:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 5px);
+  }
+  
+  .hamburger.open .line:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger.open .line:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -5px);
+  }
+  
+  .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #0000005a;
+    backdrop-filter: blur(5px);
+    width: 70%;
+    height: 100vh;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+
+  .menu::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(90deg, #FDD81F, #F03027);
+  }
+  
+  .menu.open {
+    transform: translateX(0);
+  }
+  
+  .menu ul {
+    list-style: none;
+    padding-top: 40%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+  
+  .menu ul li{
+    width: 100%;
+    margin-left: 40%;
+    padding: 10px 0;
+  }
+  .menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+
+    .menu .profile-icon, .menu .login-button{
+        margin-top: 130%;
+        margin-right: 30%;
+        padding: 10px 20px;
+    }
+  
+  .menu ul li a:hover {
+    color: #007bff;
+  }
+
+  
+  @media (max-width: 768px) {
    
     .header {
-        grid-template-columns: 1fr;
-        justify-content: center;
-        align-items: center;
-    }
-    .header .header-first-container a{
         display: flex;
+        align-items: center;
         justify-content: space-between;
     }
 
-    .header .header-second-container ul {
-        display: none;
-        gap: 10px;
-    }
+   
 
     .header .header-second-container ul li a{
         padding: 5px 10px;
     }
 }
+

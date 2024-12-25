@@ -4,10 +4,36 @@ import './Header.css';
 import bsa_logo from '../../assets/bsa_logo.svg';
 import bsa_text_logo from '../../assets/bsa_text_logo.svg';
 import profile_icon from '../../assets/profile_icon.svg';
+import { use } from 'react';
 
 const Header = ({isAuth}) => {
   const location = useLocation(); 
   const [activeSection, setActiveSection] = useState("");
+  const [isMobile, setIsMobile] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+  
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 768) {
+        setIsMobile(true);
+      }
+      else {
+        setIsMobile(false);
+      }
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   useEffect(() => {
     if (location.pathname !== "/") {
@@ -47,7 +73,56 @@ const Header = ({isAuth}) => {
         </Link>
       </div>
       <div className="header-second-container">
-        <ul>
+        {
+          isMobile? (
+            <div className="hamburger-menu">
+            <div className={`hamburger ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
+              <span className="line"></span>
+              <span className="line"></span>
+              <span className="line"></span>
+            </div>
+      
+            <nav className={`menu ${isOpen ? 'open' : ''}`}>
+              <ul>
+                <li>
+                  <Link to={"/"}>Home</Link>
+                </li>
+                <li>
+                  <Link to={"/about"}>About</Link>
+                </li>
+                <li>
+                  <Link to={"/sports"}>Sports</Link>
+                </li>
+                <li>
+                  <Link to={"/updates"}>Updates</Link>
+                </li>
+                <li>
+                  <Link to={"/experiences"}>Experiences</Link>
+                </li>
+                <li>
+                  <Link to={"/contact"}>Contact</Link>
+                </li>
+                {
+                  isAuth && (
+                    <Link to="/profile" className='profile-icon'>
+                      <img src={profile_icon} alt="Profile Icon" />
+                    </Link>
+                  )
+                }
+                
+                  {
+                    !isAuth && (
+                      <Link to="/login" className="login-button">
+                        Login
+                      </Link>
+                    )
+                  }
+              </ul>
+            </nav>
+          </div>
+          )
+          :
+          (<ul>
           <li>
             <Link to="/about" className={activeSection === "about" ? "active" : ""}>
               About
@@ -90,7 +165,10 @@ const Header = ({isAuth}) => {
             }
           </li>
           
-        </ul>
+        </ul>)
+
+        }
+        
       </div>
     </div>
   );
