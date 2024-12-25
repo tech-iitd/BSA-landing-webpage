@@ -50,7 +50,7 @@ const Header = ({isAuth}) => {
         <ul>
           <li>
             <Link to="/about" className={activeSection === "about" ? "active" : ""}>
-              About Us
+              About
             </Link>
           </li>
           <li>

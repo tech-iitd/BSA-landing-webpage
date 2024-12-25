@@ -1,4 +1,4 @@
-
+/* Footer Styles */
 .footer {
   padding: 30px;
   background-color: #1B1B1D; 
@@ -9,13 +9,14 @@
 .footer-container {
   display: flex;
   justify-content: space-between;
-  align-items: center; 
+  align-items: start; 
   flex-wrap: wrap; 
   gap: 20px; 
 }
 
 .footer-description {
   max-width: 400px;
+  padding-top: 4%;
   font-size: 14px;
   line-height: 1.5;
   color: #ffffffcc;
@@ -30,8 +31,8 @@
 .footer-links,
 .footer-navigation {
   font-size: 15px;
-  margin: 0 20px;
-  text-align: center; 
+  margin: 1% 20px;
+  text-align: start; 
 }
 
 .footer-links-title {
@@ -49,7 +50,7 @@
 
 .footer-links a,
 .footer-navigation a {
-  color: white;
+  color: rgb(161, 161, 161);
   text-decoration: none;
   display: block;
   margin: 5px 0;
@@ -108,23 +109,65 @@
   gap: 10px; 
 }
 
-
+/* Mobile View */
 @media (max-width: 768px) {
+  /* Footer container: Stack elements vertically */
   .footer-container {
-      flex-direction: column;
-      align-items: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px; /* Adjust padding to ensure elements fit well */
   }
 
+  /* Adjust description text alignment */
   .footer-description {
     text-align: center;
+    font-size: 13px; /* Slightly smaller text on mobile */
+    padding-top: 0; /* Remove unnecessary padding */
+    max-width: 100%; /* Ensure it uses full width on small screens */
   }
 
+  /* Make footer links and navigation stack vertically and reduce margins */
   .footer-links,
   .footer-navigation {
-      margin: 10px 0;
+    margin: 10px 0;
+    font-size: 14px; /* Slightly smaller font size for mobile */
+    text-align: center; /* Center-align links on mobile */
   }
 
+  /* Reduce gap between footer links */
+  .footer-links ul,
+  .footer-navigation ul {
+    gap: 5px; /* Reduce gap between links */
+  }
+
+  /* Adjust footer social icons layout */
   .footer-social-icons {
-      margin: 20px 0;
+    margin: 20px 0;
+    gap: 12px; /* Reduce space between icons */
+  }
+
+  .footer-social-icons img {
+    width: 25px;
+    height: 25px; /* Slightly smaller icons for mobile */
+  }
+
+  /* Ensure divider is full width and has adequate spacing */
+  .footer-divider {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  /* Make footer bottom section more compact */
+  .footer-bottom {
+    flex-direction: column;
+    font-size: 12px; /* Smaller text on mobile */
+  }
+
+  /* Footer bottom-left and center alignment */
+  .footer-bottom-center,
+  .footer-bottom-left {
+    font-size: 13px; /* Adjust text size for mobile */
+    text-align: center;
+    gap: 8px;
   }
 }

@@ -11,10 +11,8 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
-        {/* Left Section */}
         
 
-        {/* Logo Section */}
         <div className="footer-logo">
           <img
             alt="BSA-logo"

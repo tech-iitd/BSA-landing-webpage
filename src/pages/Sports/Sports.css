@@ -1,11 +1,12 @@
-.sports-all h1, .our-history h1{
+.sports-all h1, .our-history h1 {
     font-size: 50px;
     color: #fff;
     text-align: center;
     margin: 2% 0;
 }
 
-.sports-all >div{
+/* Container holding the divs */
+.sports-all > div {
     display: flex;
     margin: 0 15%;
     justify-content: center;
@@ -13,8 +14,31 @@
     flex-wrap: wrap;
 }
 
-.sports-all >div a{
+/* Anchor link styles */
+.sports-all > div a {
     text-decoration: none;
     color: white;
     margin: 2.5% 3%;
+}
+
+/* Mobile version styling */
+@media only screen and (max-width: 480px) {
+    /* Heading font size adjustment */
+    .sports-all h1, .our-history h1 {
+        font-size: 30px;  /* Reduce font size for mobile */
+        margin: 5% 0;  /* Adjust margin */
+    }
+
+    /* Adjust the container layout to fit better on mobile */
+    .sports-all > div {
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    /* Adjust the anchor link margins */
+    .sports-all > div a {
+
+        margin: 2%;  /* Adjust margins to make links stack vertically */
+        font-size: 18px;  /* Adjust font size of links */
+    }
 }

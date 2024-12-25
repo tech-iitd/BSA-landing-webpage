@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 4%;
 }
 
 .member-img {
@@ -44,7 +45,7 @@
 
 .member-details {
   position: relative;
-  margin-top: 20px;
+  margin-top: 5px;
   text-align: center;
   width: 90%;
 }
@@ -52,16 +53,55 @@
 .member-details h2 {
   font-size: 18px;
   color: white;
-  margin-bottom: 5px;
 }
 
 .member-details p {
   font-size: 14px;
   color: rgb(206, 206, 206);
-  margin: 5px 0;
 }
 
 .member-details p:nth-child(3) {
-  color: #17A1FA; /* Highlighted color for webmail */
+  color: #17A1FA; 
   font-weight: bold;
+}
+
+@media only screen and (max-width: 480px) {
+  .member-img {
+    width: 150px; 
+    height: 150px; 
+  }
+
+  
+.member-img .frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 95%;
+  height: 95%;
+  object-fit: cover;
+  rotate: -180deg;
+  z-index: 1;
+}
+
+
+  .member-img .image {
+    width: 92%; 
+    height: 95%; 
+    left: 5%; 
+    bottom: 5%; 
+  }
+
+  .member-details h2 {
+    font-size: 16px;
+    margin-bottom: 3px; 
+  }
+
+  .member-details p {
+    font-size: 12px; 
+    margin: 3px 0; 
+  }
+
+  .member-details p:nth-child(3) {
+    font-size: 12px; 
+  }
 }

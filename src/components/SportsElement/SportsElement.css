@@ -77,6 +77,8 @@
     .sports-element {
         background-image: url('../../assets/sports_mbl_bkg.svg');
         grid-template-columns: 0.75fr 0.25fr;
+        overflow: hidden;
+        padding-top: 5vh;
     }
 
     .sports-element .sports-element-first-container{
@@ -118,7 +120,7 @@
         bottom: 0;
         top: auto;
         right: -30%;
-        width: 55%;
+        width: 57%;
         height: auto;
     }
 }

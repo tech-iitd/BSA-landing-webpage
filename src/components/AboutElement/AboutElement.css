@@ -61,6 +61,9 @@
     .about-element {
         background-image: url('../../assets/about_mbl_bkg.svg');
         grid-template-columns: 0.7fr 0.3fr;
+        overflow: hidden;
+        padding-top: 5vh;
+
     }
 
     .about-element .about-element-first-container{
@@ -95,7 +98,7 @@
         bottom: 0;
         top: auto;
         right: -30%;
-        width: 55%;
+        width: 57%;
         height: auto;
     }
 }

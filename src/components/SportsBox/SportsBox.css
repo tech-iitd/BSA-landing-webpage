@@ -1,4 +1,4 @@
-.sports-box{
+.sports-box {
     margin: 2% 4%;
     width: 230px;
     height: 230px;
@@ -13,11 +13,25 @@
     text-align: center;
 }
 
-.sports-box img{
+/* Image styling */
+.sports-box img {
     width: 90%;
     height: 90%;
 }
 
-.sports-box p{
+.sports-box p {
     font-size: 30px;
+}
+
+/* Mobile version styling */
+@media only screen and (max-width: 480px) {
+    .sports-box {
+        width: 150px;  /* Smaller width for mobile */
+        height: 150px;  /* Smaller height for mobile */
+        margin: 5% 3%;  /* Reduced margin for mobile */
+    }
+
+    .sports-box p {
+        font-size: 20px;  /* Smaller font size for mobile */
+    }
 }
