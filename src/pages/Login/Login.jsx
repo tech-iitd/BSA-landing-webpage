@@ -30,7 +30,7 @@ const Login = () => {
             return;
         }
     
-        const oauthUrl = `https://oauthdevclub.vercel.app/signin/?client_id=${clientId}&redirect_uri=${redirectUri}`;
+        const oauthUrl = `https://oauthdevclub.vercel.app/signin?client_id=${clientId}&redirect_uri=${redirectUri}`;
         window.location.href = oauthUrl;
     };
     
