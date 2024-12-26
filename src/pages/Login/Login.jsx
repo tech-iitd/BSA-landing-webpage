@@ -20,9 +20,21 @@ const Login = () => {
         }
     };
 
-    const handleGoogleSignIn = () => {
-        console.log("Sign in with Google");
+    const handleIITDSignIn = () => {
+        const clientId = import.meta.env.VITE_CLIENT_ID;
+        const redirectUri = encodeURIComponent(import.meta.env.VITE_REDIRECT_URI);
+
+    
+        if (!clientId || !redirectUri) {
+            console.error("Environment variables are not loaded properly.");
+            return;
+        }
+    
+        const oauthUrl = `https://oauthdevclub.vercel.app/signin/?client_id=${clientId}&redirect_uri=${redirectUri}`;
+        window.location.href = oauthUrl;
     };
+    
+    
 
     const handleMicrosoftSignIn = () => {
         console.log("Sign in with Microsoft");
@@ -61,9 +73,9 @@ const Login = () => {
                     <div className="alternative-login">
                         <button
                             className="google-button"
-                            onClick={handleGoogleSignIn}
+                            onClick={handleIITDSignIn}
                         >
-                            Sign in with Google
+                            Sign in with IITD OAuth
                         </button>
                         <button
                             className="microsoft-button"
