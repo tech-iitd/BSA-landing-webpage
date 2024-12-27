@@ -109,35 +109,34 @@
   gap: 10px; 
 }
 
-/* Mobile View */
 @media (max-width: 768px) {
-  /* Footer container: Stack elements vertically */
   .footer-container {
-    flex-direction: column;
+    display: grid;
     align-items: center;
-    padding: 20px; /* Adjust padding to ensure elements fit well */
+    padding: 10px; 
   }
 
-  /* Adjust description text alignment */
   .footer-description {
-    text-align: center;
-    font-size: 13px; /* Slightly smaller text on mobile */
-    padding-top: 0; /* Remove unnecessary padding */
-    max-width: 100%; /* Ensure it uses full width on small screens */
+    font-size: 13px;
+    padding-top: 0; 
+    max-width: 100%;
   }
 
-  /* Make footer links and navigation stack vertically and reduce margins */
+  .footer-logo{
+    margin: 0 auto;
+  }
+
   .footer-links,
   .footer-navigation {
     margin: 10px 0;
     font-size: 14px; /* Slightly smaller font size for mobile */
-    text-align: center; /* Center-align links on mobile */
+    text-align: start; 
+
   }
 
-  /* Reduce gap between footer links */
   .footer-links ul,
   .footer-navigation ul {
-    gap: 5px; /* Reduce gap between links */
+    gap: 5px; 
   }
 
   /* Adjust footer social icons layout */

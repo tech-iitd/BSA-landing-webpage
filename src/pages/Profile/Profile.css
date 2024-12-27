@@ -1,0 +1,57 @@
+.profile {
+  padding: 20px;
+  background-color:#00000056;
+  background: url("../../assets/login_bkg.svg") no-repeat center center ;
+  color: #ffffff; 
+  display: flex;
+  flex-direction: column;
+  padding-top: 10%;
+  align-items: center;
+  height: 100vh;
+  background-size: cover;
+}
+
+.profile-details{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 12%;
+}
+
+.profile-details .details{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.profile h1 {
+  font-size: 250%;
+  background: linear-gradient(64deg, #FDD81F 1%, #F03027 99%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  color: transparent; 
+}
+
+.profile strong {
+  color: #F03027; 
+}
+
+
+
+@media (max-width: 768px) {
+  .profile {
+    padding: 15px;
+    padding-top: 50%;
+  }
+
+  .profile-details{
+    padding-left: 0%;
+  }
+
+  .profile h1 {
+    font-size: 1.5rem;
+  }
+
+  .profile p {
+    font-size: 0.62rem;
+  }
+}

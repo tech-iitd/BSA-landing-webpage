@@ -107,7 +107,7 @@
     top: 0;
     width: 3px;
     height: 100%;
-    background: linear-gradient(90deg, #FDD81F, #F03027);
+    background: linear-gradient(-180deg, #FDD81F, #F03027);
   }
   
   .menu.open {
@@ -135,7 +135,7 @@
   }
 
     .menu .profile-icon, .menu .login-button{
-        margin-top: 130%;
+        margin-top: 70%;
         margin-right: 30%;
         padding: 10px 20px;
     }

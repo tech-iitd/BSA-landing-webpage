@@ -14,15 +14,17 @@ import Data from './data/Data';
 import Login from './pages/Login/Login';
 import Contact from './pages/Contact/Contact';
 import SportPage from './components/SportPage/SportPage';
+import Cookies from 'js-cookie';
 
 const App = () => {
-  const [isAuth, setIsAuth] = useState(true);
+  const [isAuth, setIsAuth] = useState(false);
 
   useEffect(() => {
-    // const token = localStorage.getItem('token');
-    // if(token){
-    setIsAuth(!isAuth);
-    // }
+    const token = Cookies.get('token'); // Get the token from cookies
+
+    if (token) {
+      setIsAuth(true);
+    }
   }, []);
 
   const location = useLocation();
