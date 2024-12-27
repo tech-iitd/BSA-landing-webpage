@@ -15,6 +15,7 @@ import Login from './pages/Login/Login';
 import Contact from './pages/Contact/Contact';
 import SportPage from './components/SportPage/SportPage';
 import Cookies from 'js-cookie';
+import Loading from './pages/Loding/Loding';
 
 const App = () => {
   const [isAuth, setIsAuth] = useState(false);
@@ -173,6 +174,7 @@ const App = () => {
                   </motion.div>
                 }
               />
+              <Route path='/loading/:token' element={<Loading/>}/>
             </Routes>
           </AnimatePresence>
         </div>
