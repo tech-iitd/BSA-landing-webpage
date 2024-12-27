@@ -22,7 +22,7 @@ const Login = () => {
 
     const handleIITDSignIn = () => {
         const clientId = import.meta.env.VITE_CLIENT_ID;
-        const redirectUri = encodeURIComponent(import.meta.env.VITE_REDIRECT_URI);
+        const redirectUri = import.meta.env.VITE_REDIRECT_URI;
 
     
         if (!clientId || !redirectUri) {
