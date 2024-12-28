@@ -32,6 +32,7 @@
     font-size: 1.2rem;
     color: #b1c0cd;
     line-height: 1.6;
+    text-align: justify;
   }
   
   .sports-team-players {
@@ -63,14 +64,62 @@
     .sport-page {
       padding: 15px;
     }
+
+    .sport-page .sport-logo img{
+      width: 6rem;
+    }
   
-    .sport-page h1 {
-      font-size: 2rem;
+    .sport-page .sport-logo h1 {
+      font-size: 2.5rem;
     }
   
     .sport-page p {
-      font-size: 1rem;
+      font-size: 1.5rem;
     }
-  
+
+    .sports-team-players h1 {
+      font-size: 2.3rem;
+    }
+    
   }
   
+  @media (max-width: 576px) {
+    .sport-page {
+      padding: 10px;
+    }
+
+    .sport-page .sport-logo img{
+      width: 5rem;
+    }
+  
+    .sport-page .sport-logo h1 {
+      font-size: 2.25rem;
+    }
+  
+    .sport-page p {
+      font-size: 1.2rem;
+    }
+
+    .sports-team-players h1 {
+      font-size: 2rem;
+    }
+  }
+
+@media (max-width: 480px) {
+
+  .sport-page .sport-logo img{
+    width: 4.5rem;
+  }
+
+  .sport-page .sport-logo h1 {
+    font-size: 2.1rem;
+  }
+
+  .sport-page p {
+    font-size: 1rem;
+  }
+
+  .sports-team-players h1 {
+    font-size: 1.9rem;
+  }
+}
