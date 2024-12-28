@@ -55,8 +55,9 @@
   .sports-team-players .team-members{
     display: flex;
     gap: 5%;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
+    margin: auto;
   }
   
   /* Responsive Design */
