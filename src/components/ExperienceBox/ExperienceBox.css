@@ -55,8 +55,7 @@
 }
 
 .experience-box .description{
-    min-height: 200px;
-    max-height: 200px;
+    height: 169px;
     overflow-y: scroll;
     font-weight: lighter;
 }
