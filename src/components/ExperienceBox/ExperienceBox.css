@@ -1,10 +1,11 @@
 .experience-box {
     background-color: white;
     color: black;
-    padding: 20px;
+    padding: 30px 50px;
     border-radius: 10px;
-    min-width: 380px;
-    max-width: 380px;
+    min-width: 480px;
+    width: 488px;
+    z-index:3;
 
 }
 
@@ -14,22 +15,41 @@
     display: flex;
 }
 
+.experience-box .user-info{
+    flex-direction: column;
+    gap: 1rem;
+    /* margin-bottom: 1rem; */
+}
+
+.experience-box .user-info .user-name{
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+.experience-box .user-info .user-title{
+    font-size: 0.95rem;
+    font-weight: lighter;
+}
+
+.experience-box .rating{
+    margin: 1rem 0;
+}
+
 .experience-box-social{
     display: flex;
     gap: 1rem;
 }
 
 .experience-box-social img{
-    width: 40px;
-    height: 40px;
-    border: 1px solid rgb(223, 223, 223);
-    padding: 10px;
-    border-radius: 10px;
+    width: 52px;
+    height: 52px;
+    border: 1px solid #EBE7E0;
+    padding: 15px;
+    border-radius: 8px;
 }
 
 .experience-box-social img:hover{
     cursor: pointer;
-    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
     scale: 1.1;
     transition: 250ms;
 }
@@ -38,7 +58,7 @@
     min-height: 200px;
     max-height: 200px;
     overflow-y: scroll;
-    scrollbar-width: thin;
+    font-weight: lighter;
 }
 
 .experience-box .description::-webkit-scrollbar{
@@ -47,7 +67,7 @@
 
 
 .experience-box .description::-webkit-scrollbar-thumb{
-    background-color: green;
+    background-color: #97938d;
 }
 
 
