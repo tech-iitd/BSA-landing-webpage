@@ -8,7 +8,9 @@ const Member = ({player}) => {
     <div className='member'>
       <div className='member-img'>
         <img className='frame' src={user_frame} alt="" />
-        <img className='image' src={member_img} alt="" />
+        <div className='image-container'>
+          <img className='image' src={member_img} alt="" />
+        </div>
       </div>
 
       <div className='member-details'>

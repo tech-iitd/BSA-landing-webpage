@@ -2,6 +2,7 @@ import './ExperienceBox.css';
 import twitter from '../../assets/twitter.svg';
 import facebook from '../../assets/facebook.svg';
 import linkedin from '../../assets/linkedin.svg';
+import Rating from '@mui/material/Rating';
 
 
 const ExperienceBox = ({userReview}) => {
@@ -23,7 +24,7 @@ const ExperienceBox = ({userReview}) => {
       </div>
 
       <p className='rating'>
-        {userReview.rating} stars
+        <Rating  size='small' name="size-medium" defaultValue={userReview.rating} readOnly  />
       </p>
       
       <p className='description'>
