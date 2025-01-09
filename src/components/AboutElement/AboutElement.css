@@ -86,7 +86,8 @@
     .about-element .about-element-first-container > a {
         font-size: 120%;
         justify-content: center;
-        margin-top: 90%;
+         position: absolute;
+         bottom: 10%;
     }
 
     .about-element .about-element-second-container img {

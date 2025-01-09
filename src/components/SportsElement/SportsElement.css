@@ -108,7 +108,8 @@
     .sports-element .sports-element-first-container > a {
         font-size: 120%;
         justify-content: center;
-        margin-top: 20%;
+        position: absolute;
+        bottom: 10%;
     }
 
     .sports-element .sports-element-second-container img {

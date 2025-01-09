@@ -127,7 +127,9 @@
     .experiences-element .experiences-element-first-container > a {
         font-size: 120%;
         justify-content: center;
-        margin-top: 60%;
+        position: absolute;
+        bottom: 10%;
+
     }
 
     .experiences-element .experiences-element-second-container img {

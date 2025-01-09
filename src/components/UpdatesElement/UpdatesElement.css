@@ -100,7 +100,8 @@
     .updates-element .updates-element-first-container > a {
         font-size: 120%;
         justify-content: center;
-        margin-top: 60%;
+        position: absolute;
+        bottom: 10%;
     }
 
     .updates-element .updates-element-second-container img {
