@@ -83,6 +83,8 @@
         flex-direction: column;
         padding: 0%;
         padding-top: 5vh;
+        align-items: flex-start;
+        padding-left: 5%;
 
     }
 
@@ -91,18 +93,19 @@
     }
 
     .updates-element .updates-element-first-container h1 {
-        font-size: 150%;
+        font-size: 200%;
         text-align: center;
     }
 
     .updates-element .updates-element-first-container > a {
-        font-size: 80%;
+        font-size: 120%;
         justify-content: center;
+        margin-top: 60%;
     }
 
     .updates-element .updates-element-second-container img {
         bottom: 20%;
-        right: -25%;
+        right: -28%;
         width: 55%;
         margin: 0 auto;
         display: block;

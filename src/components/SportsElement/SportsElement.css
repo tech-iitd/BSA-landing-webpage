@@ -22,7 +22,7 @@
 
 .sports-element .sports-element-first-container h1{
     font-size: 300%;
-    background: linear-gradient(64deg, #DDDDD9, #deded900);
+    background: linear-gradient(64deg, #DDDDD9, #deded931);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
     color: transparent; 
@@ -32,7 +32,7 @@
     display: flex;
     align-items: center;
     font-size: 150%;
-    background: linear-gradient(64deg, #DDDDD9, #deded900);
+    background: linear-gradient(64deg, #DDDDD9, #deded931);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
     color: transparent; 
@@ -85,6 +85,7 @@
         flex-direction: column;
         padding: 0 5%;
         padding-top: 5vh;
+        align-items: flex-start;
 
     }
 
@@ -93,7 +94,7 @@
     }
 
     .sports-element .sports-element-first-container h1 {
-        font-size: 150%;
+        font-size: 200%;
         text-align: center;
     }
 
@@ -105,8 +106,9 @@
     }
 
     .sports-element .sports-element-first-container > a {
-        font-size: 80%;
+        font-size: 120%;
         justify-content: center;
+        margin-top: 20%;
     }
 
     .sports-element .sports-element-second-container img {
