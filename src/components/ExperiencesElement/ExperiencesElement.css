@@ -122,6 +122,8 @@
     .experiences-element .experiences-element-first-container h1 {
         font-size: 200%;
         text-align: center;
+        margin-bottom: 10%;
+
     }
 
     .experiences-element .experiences-element-first-container > a {

@@ -95,6 +95,8 @@
     .updates-element .updates-element-first-container h1 {
         font-size: 200%;
         text-align: center;
+        margin-bottom: 10%;
+
     }
 
     .updates-element .updates-element-first-container > a {

@@ -76,18 +76,21 @@
 
     .about-element .about-element-first-container p{
         font-size: 12px;
+        width: 80%;
+        text-align:justify;
     }
 
     .about-element .about-element-first-container h1 {
         font-size: 200%;
         text-align: center;
+        margin-bottom: 10%;
     }
 
     .about-element .about-element-first-container > a {
         font-size: 120%;
         justify-content: center;
-         position: absolute;
-         bottom: 10%;
+        position: absolute;
+        bottom: 10%;
     }
 
     .about-element .about-element-second-container img {
