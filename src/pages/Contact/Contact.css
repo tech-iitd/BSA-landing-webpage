@@ -1,20 +1,10 @@
-/* General styles */
 
-  .contact-outer-container{
-    background-color: #1B1B1D;
-
-  }
-  .connect {
-    padding: 60px 20px;
-    background: url('../../assets/contact_bkg.svg') no-repeat;
-    background-blend-mode:luminosity;
-    /* background-color: #ea5a26e0; */
-    border-bottom-right-radius: 25%;
-    border-top-right-radius: 25%;
-  }
-  
   .connect-container {
-    max-width: 65%;
+    max-width: 100%;
+    background: url('../../assets/footer_connect_bkg.svg') no-repeat;
+    background-blend-mode:luminosity;
+    border-bottom-right-radius: 250px;
+    padding: 3.9% 10%;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -58,6 +48,17 @@
     transition: color 0.3s ease;
   }
 
+  .location{
+    color: white;
+    margin: 0;
+    transition: color 0.3s ease;
+  }
+  .location:hover{
+    cursor: pointer;
+    color: #FDD81F;
+
+  }
+
   .connect-details a:hover {
     color: #FDD81F;
   }
@@ -67,6 +68,21 @@
     margin-top: 40px;
     display: flex;
     justify-content: center;
+    position: relative;
+  }
+
+  .map .cross{
+    position: absolute;
+    top: 0;
+    right: 5%;
+    margin: 10px;
+    cursor: pointer;
+    z-index: 1000;
+    color: white;
+    background-color: #ea5a26;
+    padding: 10px;
+    border-radius: 5px;
+
   }
   
   iframe {
@@ -76,19 +92,10 @@
   
   /* Responsive design */
   @media (max-width: 768px) {
-    .contact-outer-container{
-        background-color: #1B1B1D;
-    
-      }
-      .connect {
-        padding: 60px 20px;
-        border-bottom-right-radius: 0%;
-        border-top-right-radius: 0%;
-      }
-      
     .connect-container {
       flex-direction: column;
       text-align: center;
+      border-bottom-right-radius: 0px;
     }
   
     .connect-heading {

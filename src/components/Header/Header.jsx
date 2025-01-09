@@ -100,7 +100,7 @@ const Header = ({isAuth}) => {
                   <Link to={"/experiences"}>Experiences</Link>
                 </li>
                 <li>
-                  <Link to={"/contact"}>Contact</Link>
+                  <Link to={"/connect"}>Connect</Link>
                 </li>
                 {
                   isAuth && (
@@ -144,8 +144,8 @@ const Header = ({isAuth}) => {
             </Link>
           </li>
           <li>
-            <Link to="/contact" className={activeSection === "contact" ? "active" : ""}>
-              Contact
+            <Link to="/connect" className={activeSection === "connect" ? "active" : ""}>
+              Connect
             </Link>
           </li>
           {

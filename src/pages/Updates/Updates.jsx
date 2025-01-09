@@ -3,8 +3,10 @@ import './Updates.css';
 import UpdatesElement from '../../components/UpdatesElement/UpdatesElement';
 const Updates = () => {
   return (
-    <div>
-      <UpdatesElement/>
+    <div className='updates-page-top'>
+      <h1>
+        UPDATES
+      </h1>
     </div>
   );
 }

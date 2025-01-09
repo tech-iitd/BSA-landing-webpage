@@ -1,0 +1,19 @@
+.experiences_page_top{
+    background-image: url('../../assets/experiences_page_bkg.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 25vh;
+    position: relative;
+}
+
+.experiences_page_top h1{
+    position: absolute;
+    margin-left: 10%;
+    padding-top: 3%;
+    font-size: 300%;
+    background: linear-gradient(64deg, #DDDDD9, #deded931);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    color: transparent; 
+}

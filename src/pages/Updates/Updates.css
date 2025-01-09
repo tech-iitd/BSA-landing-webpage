@@ -1,0 +1,19 @@
+.updates-page-top{
+    background-image: url('../../assets/updates_page_bkg.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 25vh;
+    position: relative;
+}
+
+.updates-page-top h1{
+    position: absolute;
+    margin-left: 10%;
+    padding-top: 3%;
+    font-size: 300%;
+    background: linear-gradient(64deg, #FDD81F 1%, #F03027 99%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    color: transparent; 
+}

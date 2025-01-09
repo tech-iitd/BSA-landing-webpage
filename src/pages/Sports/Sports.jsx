@@ -9,9 +9,13 @@ const Sports = () => {
   const { sports } = useContext(dataContext);
   return (
     <div>
-      <SportsElement/>
+      <div className='sports-page-top'>
+        <h1>
+          SPORTS
+        </h1>
+      </div>
       <div className='sports-all'>
-        <h1>SPORTS</h1>
+        <h1>Discover The Sport We Offer</h1>
         <div>
           <Link to={'/sports/cricket'}>
             <SportsBox img={sports.cricket.img} name={sports.cricket.name}/>

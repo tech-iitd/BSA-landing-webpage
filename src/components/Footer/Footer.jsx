@@ -1,18 +1,71 @@
 import React from "react";
-import "./Footer.css"; 
+import "./Footer.css";
 import linkedin_footer from "../../assets/linkedin_footer.svg";
 import facebook_footer from "../../assets/facebook_footer.svg";
 import youtube_footer from "../../assets/youtube_footer.svg";
 import instagram_footer from "../../assets/instagram_footer.svg";
 import tech_team_logo from "../../assets/tech_team_logo.svg";
+import location_icon from '../../assets/location_icon.svg';
+import phone_icon from '../../assets/phone_icon.svg';
+import email_icon from '../../assets/email_icon.svg';
 import bsa_logo from "../../assets/bsa_logo.svg";
 
 const Footer = () => {
+
+  const handleLocationClick = () => {
+      const map = document.querySelector('.map');
+      const footer_container = document.querySelector('.footer-container');
+      map.scrollIntoView({behavior: 'smooth'});
+      map.style.display = 'flex';
+      footer_container.style.display = 'none';
+  };
+
+  const handleRemoveMap = () => {
+      const map = document.querySelector('.map');
+      map.style.display = 'none';
+      const footer_container = document.querySelector('.footer-container');
+      footer_container.style.display = 'flex';
+  }
+
   return (
     <footer className="footer">
-      <div className="footer-container">
-        
-
+      <div className="contact-container">
+        <div className="connect-container">
+          <div className="connect-heading">
+            <h1>CONNECT</h1>
+          </div>
+          <div className="connect-details">
+            <div className="location" > 
+              <img src={location_icon} alt="address" />
+              <p onClick={handleLocationClick}>
+                BSA Office Student Activity Centre (SAC) Indian Institute of
+                Technology Delhi Hauz Khas, New Delhi, 110016
+              </p>
+            </div>
+            <div>
+              <img src={phone_icon} alt="phone" />
+              <a href="tel:+91 11 2659-1501">+91 11 2659-1501</a>
+            </div>
+            <div>
+              <img src={email_icon} alt="email" />
+              <a href="mailto:bsagsec@iitd.ac.in">bsagsec@iitd.ac.in</a>
+            </div>
+          </div>
+        </div>
+        <div style={{display:"none"}} className='map'>
+            <h1 onClick={handleRemoveMap} className="cross">X</h1>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.800420384915!2d77.19276789999999!3d28.545718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1df6b9055fb5%3A0x81c10b266b1ea3c0!2sIndian%20Institute%20Of%20Technology%20Delhi%20(IIT%20Delhi)!5e0!3m2!1sen!2sin!4v1734966370251!5m2!1sen!2sin"
+                width="80%"
+                height="222"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+        </div>
+      </div>
+      <div  className="footer-container">
         <div className="footer-logo">
           <img
             alt="BSA-logo"
@@ -22,13 +75,12 @@ const Footer = () => {
             src={bsa_logo}
           />
         </div>
-
         <div className="footer-description">
           <p>
             We turn novices into champions here at IIT Delhi grounds. The best
             facilities provided by us have led to great results and our presence
-            is now being felt in the Delhi circles as well as in the inter college
-            meets outside.
+            is now being felt in the Delhi circles as well as in the inter
+            college meets outside.
           </p>
         </div>
 
@@ -136,7 +188,7 @@ const Footer = () => {
           <img src={linkedin_footer} alt="" />
         </a>
         <a href="https://www.youtube.com/@bsaiitd2741" target="_blank">
-          <img src={youtube_footer} alt="" /> 
+          <img src={youtube_footer} alt="" />
         </a>
       </div>
 

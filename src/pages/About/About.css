@@ -1,3 +1,27 @@
+.about{
+    background-image: url('../../assets/about_page_bkg.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 25vh;
+    position: relative;
+}
+.about h1{
+    position: absolute;
+    margin-left: 10%;
+    padding-top: 3%;
+    font-size: 300%;
+    background: linear-gradient(64deg, #FDD81F 1%, #F03027 99%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    color: transparent; 
+}
+
+.about-page-content{
+    margin: 2% 10%;
+    margin-right: 35%;
+}
+
 .team-members{
     gap: 5%;
     display: flex;

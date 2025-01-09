@@ -116,7 +116,7 @@ const App = () => {
                 }
               />
               <Route
-                path="/contact"
+                path="/connect"
                 element={
                   <motion.div
                     initial="initial"

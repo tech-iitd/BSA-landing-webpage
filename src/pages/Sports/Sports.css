@@ -1,8 +1,27 @@
-.sports-all h1, .our-history h1 {
-    font-size: 50px;
-    color: #fff;
-    text-align: center;
-    margin: 2% 0;
+.sports-page-top{
+    background-image: url('../../assets/sports_page_bkg.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 25vh;
+    position: relative;
+}
+
+.sports-page-top h1{
+    position: absolute;
+    margin-left: 10%;
+    padding-top: 3%;
+    font-size: 300%;
+    background: linear-gradient(64deg, #DDDDD9, #deded931);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    color: transparent; 
+}
+
+
+.sports-all h1{
+    align-items: flex-start;
+    margin: 2% 10%;
 }
 
 /* Container holding the divs */
@@ -21,6 +40,12 @@
     margin: 2.5% 3%;
 }
 
+.our-history h1 {
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+    margin: 2% 0;
+}
 /* Mobile version styling */
 @media only screen and (max-width: 480px) {
     /* Heading font size adjustment */

@@ -1,6 +1,5 @@
 /* Footer Styles */
 .footer {
-  padding: 30px;
   background-color: #1B1B1D; 
   color: white;
   font-family: 'Arial', sans-serif;
@@ -12,6 +11,7 @@
   align-items: start; 
   flex-wrap: wrap; 
   gap: 20px; 
+  padding: 30px;
 }
 
 .footer-description {
