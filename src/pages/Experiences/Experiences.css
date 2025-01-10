@@ -17,3 +17,23 @@
     -webkit-text-fill-color: transparent; 
     color: transparent; 
 }
+
+.experiences_page_content h1{
+    margin: 2% 10%;
+}
+
+.experiences_page_content #exp_tag_line{
+    justify-self: center;
+    margin: 2% 0%;
+}
+
+.experiences_page_reviews{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+    margin: 5% 10%;
+    height: 100%;
+}

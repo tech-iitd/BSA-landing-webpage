@@ -1,14 +1,20 @@
-
+  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+  
   .connect-container {
+    font-family: "Josefin Sans", serif;
     max-width: 100%;
-    background: url('../../assets/footer_connect_bkg.svg') no-repeat;
-    background-blend-mode:luminosity;
+    background-image: url('../../assets/footer_connect_bkg.svg');
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
     border-bottom-right-radius: 250px;
-    padding: 3.9% 10%;
+    padding: 4% 10%;
+    padding-left: 12%;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 15%;
   }
   
   /* Left Section: Heading */
@@ -18,8 +24,9 @@
   }
   
   .connect-heading h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
+    font-size: 4.5rem;
+    margin-bottom: 18px;
+    font-weight: 400;
     color: white;
   }
   
@@ -28,13 +35,13 @@
     flex: 2;
     display: flex;
     flex-direction: column;
-    gap: 20px; 
+    gap: 35px; 
   }
   
   .connect-details div {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 30px;
   }
   
   .connect-details img {
@@ -74,14 +81,15 @@
   .map .cross{
     position: absolute;
     top: 0;
-    right: 5%;
+    right: 10%;
     margin: 10px;
     cursor: pointer;
     z-index: 1000;
     color: white;
     background-color: #ea5a26;
     padding: 10px;
-    border-radius: 5px;
+    font-weight: 800;
+    border-radius: 20px;
 
   }
   
@@ -96,6 +104,17 @@
       flex-direction: column;
       text-align: center;
       border-bottom-right-radius: 0px;
+    }
+
+    .connect-heading h1 {
+      font-size: 3.5rem;
+      margin-bottom: 18px;
+      font-weight: 400;
+      color: white;
+    }
+
+    .map .cross{
+      right: 0;
     }
   
     .connect-heading {

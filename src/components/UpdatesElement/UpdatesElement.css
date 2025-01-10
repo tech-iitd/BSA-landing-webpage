@@ -85,7 +85,7 @@
         padding-top: 5vh;
         align-items: flex-start;
         padding-left: 5%;
-
+        gap: 5%;
     }
 
     .updates-element .updates-element-first-container p{

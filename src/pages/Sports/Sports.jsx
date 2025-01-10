@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 const Sports = () => {
   const { sports } = useContext(dataContext);
   return (
-    <div>
+    <div className='sports-page'>
       <div className='sports-page-top'>
         <h1>
           SPORTS
@@ -57,12 +57,6 @@ const Sports = () => {
             <SportsBox img={sports.weightlifting.img} name={sports.weightlifting.name}/>
           </Link>
         </div>
-      </div>
-      <div className='our-history'>
-        <h1>
-          OUR HISTORY
-        </h1>
-        <PhotoGallery/>
       </div>
     </div>
   );

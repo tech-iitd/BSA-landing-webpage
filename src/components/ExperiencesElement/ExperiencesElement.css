@@ -113,6 +113,7 @@
         padding-top: 5vh;
         align-items: flex-start;
         z-index: 5;
+        gap: 5%;
     }
 
     .experiences-element .experiences-element-first-container p{

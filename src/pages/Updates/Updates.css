@@ -17,3 +17,13 @@
     -webkit-text-fill-color: transparent; 
     color: transparent; 
 }
+
+.our-history{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin: 5% 10%;
+    height: 100%;
+}

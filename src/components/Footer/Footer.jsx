@@ -53,11 +53,11 @@ const Footer = () => {
           </div>
         </div>
         <div style={{display:"none"}} className='map'>
-            <h1 onClick={handleRemoveMap} className="cross">X</h1>
+            <p onClick={handleRemoveMap} className="cross">X</p>
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.800420384915!2d77.19276789999999!3d28.545718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1df6b9055fb5%3A0x81c10b266b1ea3c0!2sIndian%20Institute%20Of%20Technology%20Delhi%20(IIT%20Delhi)!5e0!3m2!1sen!2sin!4v1734966370251!5m2!1sen!2sin"
-                width="80%"
-                height="222"
+                width="70%"
+                height="192"
                 style={{ border: 0 }}
                 allowFullScreen=""
                 loading="lazy"

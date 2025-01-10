@@ -23,7 +23,7 @@ const Home = () => {
       <section id='experiences' className='section'>
         <ExperiencesElement/>
       </section>
-      <section id='contact' className='section'>
+      <section id='connect' className='section'>
         <Contact/>
       </section>
     </div>

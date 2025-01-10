@@ -41,12 +41,21 @@
     /* align-items: center; */
 }
 
-.our-history{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    margin: 5% 10%;
-    height: 100%;
+@media screen and (max-width: 768px) {
+    .about h1{
+        position: absolute;
+        margin-left: 10%;
+        padding-top: 3%;
+        font-size: 300%;
+        background: linear-gradient(64deg, #FDD81F 1%, #F03027 99%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        color: transparent; 
+    }
+    
+    .about-page-content{
+        margin: 2% 10%;
+        margin-right: 10%;
+    }
+    
 }

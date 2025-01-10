@@ -1,6 +1,6 @@
 /* Footer Styles */
 .footer {
-  background-color: #1B1B1D; 
+  /* background-color: #1B1B1D;  */
   color: white;
   font-family: 'Arial', sans-serif;
 }
@@ -12,6 +12,7 @@
   flex-wrap: wrap; 
   gap: 20px; 
   padding: 30px;
+  padding-bottom: 0;
 }
 
 .footer-description {
@@ -88,6 +89,7 @@
 }
 
 .footer-bottom {
+  padding-bottom: 10px;
   display: flex;
   justify-content: center;
   align-items: center;

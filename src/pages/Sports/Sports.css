@@ -1,3 +1,12 @@
+/* .sports-page {
+    background-image: url('../../assets/bkg_img.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat-y;
+    height: 100vh;
+} */
+
+
 .sports-page-top{
     background-image: url('../../assets/sports_page_bkg.svg');
     background-position: center;
@@ -40,18 +49,12 @@
     margin: 2.5% 3%;
 }
 
-.our-history h1 {
-    font-size: 50px;
-    color: #fff;
-    text-align: center;
-    margin: 2% 0;
-}
 /* Mobile version styling */
 @media only screen and (max-width: 480px) {
     /* Heading font size adjustment */
-    .sports-all h1, .our-history h1 {
-        font-size: 30px;  /* Reduce font size for mobile */
-        margin: 5% 0;  /* Adjust margin */
+    .sports-all h1 {
+        font-size: 20px;  /* Reduce font size for mobile */
+        margin: 5% 10;  /* Adjust margin */
     }
 
     /* Adjust the container layout to fit better on mobile */
