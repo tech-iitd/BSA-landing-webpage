@@ -7,14 +7,15 @@
     background-position:center;
     background-size: cover;
     background-repeat: no-repeat;
-    border-bottom-right-radius: 250px;
-    padding: 4% 10%;
+    border-bottom-right-radius: 350px;
+    padding: 6% 10%;
     padding-left: 12%;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 15%;
+    font-size: 1rem;
   }
   
   /* Left Section: Heading */
@@ -24,7 +25,7 @@
   }
   
   .connect-heading h1 {
-    font-size: 4.5rem;
+    font-size: 5rem;
     margin-bottom: 18px;
     font-weight: 400;
     color: white;
@@ -72,7 +73,7 @@
   
   /* Map section */
   .map {
-    margin-top: 40px;
+    margin-top: 30px;
     display: flex;
     justify-content: center;
     position: relative;
@@ -81,7 +82,7 @@
   .map .cross{
     position: absolute;
     top: 0;
-    right: 10%;
+    right: 1%;
     margin: 10px;
     cursor: pointer;
     z-index: 1000;

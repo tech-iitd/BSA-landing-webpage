@@ -7,10 +7,14 @@ import SportsElement from '../../components/SportsElement/SportsElement';
 import UpdatesElement from '../../components/UpdatesElement/UpdatesElement';
 import ExperiencesElement from '../../components/ExperiencesElement/ExperiencesElement';
 import Contact from '../Contact/Contact';
+import HeroSection from '../../components/HeroSection/HeroSection';
 
 const Home = () => {
   return (
     <div>
+      <section>
+        <HeroSection/>
+      </section>
       <section id='about' className='section'>
         <AboutElement/>
       </section>
