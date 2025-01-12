@@ -16,12 +16,12 @@
     background-color: black;
     display: flex;
     justify-content: space-between;    
-    width:75%;
+    width:95%;
     margin: 0 auto;
 }
 
 .highlightImage{
-    width: 37.5%;
+    width: 40%;
     background: linear-gradient(180deg, #656565 0%, rgba(115, 115, 115, 0) 100.21%);
     margin: -30px
 }
