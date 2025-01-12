@@ -4,9 +4,6 @@ function RecentHighlights() {
   return (
     <div className='highlightBoxContainer'>
         <HighlightBox />
-        <HighlightBox />
-        <HighlightBox />
-        <HighlightBox />
     </div>
   );
 }
