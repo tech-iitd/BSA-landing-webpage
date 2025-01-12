@@ -10,9 +10,9 @@
     padding: 30px;
     clip-path: polygon(50px 0, 100% 0, 100% calc(100% - 50px), calc(100% - 50px) 100%, 0 100%, 0 50px);
 
-    border: 2px solid;
-    /* border-image: linear-gradient(66.72deg, rgba(240, 48, 39, 0) 39.06%, rgba(247, 132, 35, 0.995) 66.52%, #FDD81F 93.98%) fill; */
-    /* -webkit-border-image: linear-gradient(66.72deg, rgba(240, 48, 39, 0) 39.06%, rgba(247, 132, 35, 0.995) 66.52%, #FDD81F 93.98%) 100% / 2px; */
+    border: 1px solid;
+    /* border-image: linear-gradient(66.72deg, rgba(240, 48, 39, 0) 39.06%, rgba(247, 132, 35, 0.995) 66.52%, #FDD81F 93.98%) fill;
+    -webkit-border-image: linear-gradient(66.72deg, rgba(240, 48, 39, 0) 39.06%, rgba(247, 132, 35, 0.995) 66.52%, #FDD81F 93.98%) 100% / 2px; */
     background-color: black;
     display: flex;
     justify-content: space-between;    

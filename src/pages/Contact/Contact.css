@@ -51,12 +51,14 @@
   }
   
   .connect-details a {
+    font-size: 1.1rem;
     color: white;
     margin: 0;
     transition: color 0.3s ease;
   }
 
   .location{
+    font-size: 1.1rem;
     color: white;
     margin: 0;
     transition: color 0.3s ease;

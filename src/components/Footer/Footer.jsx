@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./Footer.css";
 import linkedin_footer from "../../assets/linkedin_footer.svg";
 import facebook_footer from "../../assets/facebook_footer.svg";
@@ -11,7 +11,9 @@ import email_icon from '../../assets/email_icon.svg';
 import bsa_logo from "../../assets/bsa_logo.svg";
 
 const Footer = () => {
-
+  const logo_Ref = useRef(null);
+  const logo_3d_Ref = useRef(null);
+  const play_ref = useRef(true);
   const handleLocationClick = () => {
       const map = document.querySelector('.map');
       const footer_container = document.querySelector('.footer-container');
@@ -25,6 +27,11 @@ const Footer = () => {
       map.style.display = 'none';
       const footer_container = document.querySelector('.footer-container');
       footer_container.style.display = 'flex';
+  }
+
+  const handle_3d_logo = () => {
+    logo_Ref.current.style.display = 'none'
+    logo_3d_Ref.style.display = 'block';
   }
 
   return (
@@ -65,15 +72,23 @@ const Footer = () => {
             ></iframe>
         </div>
       </div>
+
       <div  className="footer-container">
+
         <div className="footer-logo">
+          {/* <iframe ref={logo_3d_Ref} className='bsa-3d-logo' src='https://my.spline.design/untitledcopy-6aefbfe4acc14ee2f8452acf95d83e76/' frameborder='0'></iframe> */}
+          
           <img
+            ref={logo_Ref}
             alt="BSA-logo"
             loading="lazy"
             width="200"
             height="200"
             src={bsa_logo}
           />
+          {/* <button ref={play_ref} onClick={handle_3d_logo}>
+              Play
+          </button> */}
         </div>
         <div className="footer-description">
           <p>

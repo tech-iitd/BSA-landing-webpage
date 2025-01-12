@@ -1,20 +1,22 @@
-/* SportPage.css */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700');
 
 .sport-page {
-    padding: 20px;
-    margin: 0 auto;
-    max-width: 800px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    background-image: url('../../assets/sports_page_bkg.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 25vh;
+    /* position: relative; */
   }
   
   
   .sport-page .sport-logo{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    
+    align-items:center;
+    justify-content: flex-start;
+    margin-left: 20%;
+    padding-top: 2%;
   }
 
   .sport-page .sport-logo img{
@@ -23,7 +25,10 @@
   
   .sport-page .sport-logo h1 {
     font-size: 3rem;
-    color: white;
+    background: linear-gradient(64deg, #FDD81F 30%, #F03027 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    color: transparent; 
     margin: 1.5rem;
   }
  

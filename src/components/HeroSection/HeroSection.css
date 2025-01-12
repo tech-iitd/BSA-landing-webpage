@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 93vh;
     background-color: #020911;
     position: relative;
     perspective: 1200px; /* Enables the 3D effect */
@@ -11,16 +11,16 @@
   }
   
   /* Carousel container */
-  .carousel {
+  .hero-carousel {
     position: relative;
     width: 100%; /* Full width of the container */
     height: 100%; /* Full height of the container */
     transform-style: preserve-3d; /* Preserve 3D space for child elements */
-    transition: transform 0.8s ease-in-out; /* Smooth rotation effect */
+    transition: transform 1s ease-in-out; /* Smooth rotation effect */
   }
   
   /* Individual carousel item */
-  .carousel-item {
+  .hero-carousel .carousel-item {
     position: absolute;
     width: 100%; /* Images take up 80% of the container width */
     height: 100%; /* Images take up 80% of the container height */
@@ -29,10 +29,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: transform 0.5s ease;
+    transition: transform 0.7s ease;
   }
   
-  .carousel-item img {
+  .hero-carousel .carousel-item img {
     /* margin-top: vh; */
     width: 50%; /* Make the image fill the item */
     height: 50%; /* Maintain aspect ratio */
@@ -42,16 +42,16 @@
   
   
   /* Controls */
-  .carousel-controls {
+  .hero-carousel-controls {
     position: absolute;
-    bottom: 20px;
+    bottom: 6%;
     display: flex;
     gap: 20px;
   }
   
-  .carousel-controls button {
-    background-color: #f0312783;
-    color: white;
+  .hero-carousel-controls button {
+    background-color: #f0312731;
+    color: rgba(255, 255, 255, 0.555);
     border: none;
     border-radius: 5px;
     padding: 5px 10px;
@@ -60,12 +60,12 @@
     transition: background-color 0.3s ease;
   }
 
-  .carousel-controls button:focus {
+  .hero-carousel-controls button:focus {
     outline: none;
   }
 
   
-  .carousel-controls button:hover {
-    background-color: #fdd81f88;
+  .hero-carousel-controls button:hover {
+    background-color: #fdd81f4b;
   }
   

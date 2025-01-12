@@ -1,0 +1,40 @@
+
+
+.carousel-highlights .carousel {
+    
+  }
+  
+  /* Individual carousel item */
+  .carousel-highlights .carousel-item {
+    
+  }
+  
+  
+  /* Controls */
+  .carousel-highlights .carousel-controls {
+    position: absolute;
+    bottom: 6%;
+    display: flex;
+    gap: 20px;
+  }
+  
+ .carousel-highlights .carousel-controls button {
+    background-color: #f0312731;
+    color: rgba(255, 255, 255, 0.555);
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+ .carousel-highlights .carousel-controls button:focus {
+    outline: none;
+  }
+
+  
+  .carousel-highlights .carousel-controls button:hover {
+    background-color: #fdd81f4b;
+  }
+  

@@ -4,6 +4,7 @@ import './Header.css';
 import bsa_logo from '../../assets/bsa_logo.svg';
 import bsa_text_logo from '../../assets/bsa_text_logo.svg';
 import profile_icon from '../../assets/profile_icon.svg';
+import add_profile_icon from '../../assets/add_profile_icon.svg';
 
 const Header = ({ isAuth }) => {
   const location = useLocation();
@@ -108,8 +109,8 @@ const Header = ({ isAuth }) => {
                   </Link>
                 )}
                 {!isAuth && (
-                  <Link to="/login" className="login-button" onClick={closeMenu}>
-                    Login
+                  <Link to="/login" className="profile-icon" onClick={closeMenu}>
+                    <img src={add_profile_icon} alt="Login" />
                   </Link>
                 )}
               </ul>
@@ -149,8 +150,8 @@ const Header = ({ isAuth }) => {
             )}
             <li>
               {!isAuth && (
-                <Link to="/login" className="login-button">
-                  Login
+                <Link to="/login">
+                  <img src={add_profile_icon} alt="Login" />
                 </Link>
               )}
             </li>

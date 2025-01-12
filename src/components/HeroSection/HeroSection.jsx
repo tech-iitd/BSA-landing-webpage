@@ -31,14 +31,14 @@ const HeroSection = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % totalImages);
-    }, 3000); // Change image every 3 seconds
+    }, 5000); // Change image every 3 seconds
 
     return () => clearInterval(interval); // Cleanup interval on component unmount
   }, [totalImages]);
 
   return (
     <div className="hero-section">
-      <div className="carousel">
+      <div className="hero-carousel">
         {images.map((image, index) => {
           const rotation = (360 / totalImages) * index; // Rotate each image equally around the Y-axis
           const offset = (360 / totalImages) * currentIndex; // Offset rotation for the active image
@@ -56,7 +56,7 @@ const HeroSection = () => {
           );
         })}
       </div>
-      <div className="carousel-controls">
+      <div className="hero-carousel-controls">
         <button onClick={handlePrev}>◀</button>
         <button onClick={handleNext}>▶</button>
       </div>

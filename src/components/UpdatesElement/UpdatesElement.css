@@ -35,6 +35,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
     color: transparent; 
+    margin-right: 60%;
 }
 
 .updates-element .updates-element-first-container ul{

@@ -28,6 +28,7 @@ const App = () => {
     }
   }, []);
 
+
   const location = useLocation();
 
   const pageVariants = {
@@ -37,6 +38,10 @@ const App = () => {
   };
 
   const pageTransition = { duration: 0.5, ease: 'easeInOut' };
+
+  useEffect(() => {
+    window.scrollTo(0, 0); 
+  }, [location.pathname]); 
 
   return (
     <Data>
