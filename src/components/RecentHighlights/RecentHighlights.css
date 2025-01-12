@@ -1,0 +1,73 @@
+
+.highlightBoxContainer{
+    padding: 20px;
+    width: 100%;
+}
+
+.highlightBox{
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+    padding: 30px;
+    clip-path: polygon(50px 0, 100% 0, 100% calc(100% - 50px), calc(100% - 50px) 100%, 0 100%, 0 50px);
+
+    border: 2px solid;
+    /* border-image: linear-gradient(66.72deg, rgba(240, 48, 39, 0) 39.06%, rgba(247, 132, 35, 0.995) 66.52%, #FDD81F 93.98%) fill; */
+    /* -webkit-border-image: linear-gradient(66.72deg, rgba(240, 48, 39, 0) 39.06%, rgba(247, 132, 35, 0.995) 66.52%, #FDD81F 93.98%) 100% / 2px; */
+    background-color: black;
+    display: flex;
+    justify-content: space-between;    
+    width:75%;
+    margin: 0 auto;
+}
+
+.highlightImage{
+    width: 37.5%;
+    background: linear-gradient(180deg, #656565 0%, rgba(115, 115, 115, 0) 100.21%);
+    margin: -30px
+}
+
+.highlightInfo{
+    display: flex;
+    flex-direction: column;
+    width: 57.5%;
+    font-weight: 300;
+}
+
+.highlightInfo .hightlightHeading{
+    font-size: 30px;
+    font-weight: 400;
+}
+.highlightInfo .highlightDetail{
+    font-size: 18px;
+}
+
+.highlightInfo .team-rows{
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+
+.highlightInfo .team-rows .team{
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0px;
+}
+
+.highlightInfo .team-rows .lost{
+    color: #e9e7e7;
+    font-weight: 200;
+}
+
+.highlightInfo .result{
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+
+.highlightInfo .result a{
+    text-decoration: underline;
+    color: inherit;
+}

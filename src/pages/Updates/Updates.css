@@ -27,3 +27,13 @@
     margin: 5% 10%;
     height: 100%;
 }
+
+.recent-highlights{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin: 5% 10%;
+    height: 100%;
+}
