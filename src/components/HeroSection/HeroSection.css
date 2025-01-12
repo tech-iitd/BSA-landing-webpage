@@ -74,4 +74,7 @@
     .hero-section {
       height: 90vh;
     }
+    .hero-carousel-controls {
+      display: none;
+    }
   }
