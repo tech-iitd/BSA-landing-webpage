@@ -22,40 +22,52 @@
     margin-right: 35%;
 }
 
-.team-members{
+.our-team{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.our-team .team-members{
     gap: 5%;
     display: flex;
-    justify-content:space-evenly;
+    /* justify-content:space-evenly; */
     flex-wrap: wrap;
     margin-top: 20px;
     margin: auto 15%;
-    
 }
 
-.our-team{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
 
-    height: 100%;
-    /* align-items: center; */
-}
 
 @media screen and (max-width: 768px) {
+    .about{
+        height: 18vh;
+        position: relative;
+    }
     .about h1{
-        position: absolute;
         margin-left: 10%;
-        padding-top: 3%;
+        padding-top: 10%;
         font-size: 300%;
-        background: linear-gradient(64deg, #FDD81F 1%, #F03027 99%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent; 
-        color: transparent; 
     }
     
     .about-page-content{
         margin: 2% 10%;
         margin-right: 10%;
     }
+    .our-team{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        height: 100%;
+    }
     
+    .our-team .team-members{
+        gap: 5%;
+        display: flex;
+        justify-content:space-evenly;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        margin: auto 5%;
+    }
 }

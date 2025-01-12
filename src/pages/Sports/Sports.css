@@ -50,8 +50,18 @@
 }
 
 /* Mobile version styling */
-@media only screen and (max-width: 480px) {
-    /* Heading font size adjustment */
+@media screen and (max-width: 768px) {
+
+    .sports-page-top{
+        height: 18vh;
+        position: relative;
+    }
+    .sports-page-top h1{
+        margin-left: 10%;
+        padding-top: 10%;
+        font-size: 300%;
+    }
+
     .sports-all h1 {
         font-size: 20px;  /* Reduce font size for mobile */
         margin: 5% 10;  /* Adjust margin */

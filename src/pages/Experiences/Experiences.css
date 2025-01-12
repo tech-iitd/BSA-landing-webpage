@@ -37,3 +37,32 @@
     margin: 5%;
     height: 100%;
 }
+
+@media screen and (max-width: 768px) {
+    .experiences_page_top{
+        height: 18vh;
+        position: relative;
+    }
+    .experiences_page_top h1{
+        margin-left: 5%;
+        padding-top: 10%;
+        font-size: 300%;
+    }
+
+    .experiences_page_content #exp_tag_line{
+        justify-self: center;
+        /* text-align: center; */
+        margin: 2% 5%;
+    }
+
+    .experiences_page_content h1{
+        margin: 5%;
+    }
+
+    .experiences_page_reviews{
+        gap: 20px;
+        margin-top: 20px;
+        margin: 5%;
+    }
+    
+}

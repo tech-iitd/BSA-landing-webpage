@@ -2,15 +2,13 @@ import React from 'react';
 import './Member.css';
 import user_frame from '../../assets/user-frame.svg';
 import member_img from '../../assets/member_img.png';
+import ronaldo from '../../assets/ronaldo.jpg'
 
 const Member = ({player}) => {
   return (
     <div className='member'>
-      <div className='member-img'>
-        <img className='frame' src={user_frame} alt="" />
-        <div className='image-container'>
+      <div className='member-img-container'>
           <img className='image' src={member_img} alt="" />
-        </div>
       </div>
 
       <div className='member-details'>
