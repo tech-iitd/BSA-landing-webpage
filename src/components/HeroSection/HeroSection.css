@@ -69,3 +69,9 @@
     background-color: #fdd81f4b;
   }
   
+
+  @media (max-width: 768px) {
+    .hero-section {
+      height: 90vh;
+    }
+  }
