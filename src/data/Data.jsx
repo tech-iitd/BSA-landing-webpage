@@ -540,8 +540,36 @@ const Data = ({ children }) => {
     { name: "AB de Villiers" },
   ]
 
+  const highlights = [
+    {
+      date: '19-01-2025',
+      won: 'Manchester United',
+      lost: 'Manchester City, Chelsea, Arsenal',
+      result: 'Manchester United dominated the league.',
+    },
+    {
+      date: '19-01-2025',
+      won: 'Golden State Warriors',
+      lost: 'Los Angeles Lakers, Miami Heat, Chicago Bulls',
+      result: 'Golden State Warriors claimed a decisive victory.',
+    },
+    {
+      date: '19-01-2025',
+      won: 'India',
+      lost: 'Australia, England, South Africa',
+      result: 'India triumphed in the cricket series.',
+    },
+    {
+      date: '19-01-2025',
+      won: 'Lewis Hamilton',
+      lost: 'Max Verstappen, Sergio Pérez, Charles Leclerc',
+      result: 'Lewis Hamilton secured the F1 championship.',
+    }
+    
+    ];
+
   return (
-    <dataContext.Provider value={{ sports, userReviews, sportsData, team_members }}>
+    <dataContext.Provider value={{ sports, userReviews, sportsData, team_members, highlights }}>
       {children}
     </dataContext.Provider>
   );

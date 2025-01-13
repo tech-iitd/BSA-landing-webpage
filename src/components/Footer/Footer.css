@@ -12,18 +12,19 @@
   flex-wrap: wrap; 
   gap: 20px; 
   padding: 5%;
-  padding-bottom: 0;
+  padding-bottom: 1%;
 }
 
 .footer-description {
   max-width: 400px;
   padding-top: 4rem;
-  font-size: 1rem;
-  line-height: 1.5;
-  color: #ffffffcc;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color:  rgb(161, 161, 161);
 }
 
 .footer-logo img {
+  margin-top: 1.3rem;
   display: block;
   max-width: 100%;
   height: auto;
@@ -69,7 +70,7 @@
   color: rgb(161, 161, 161);
   text-decoration: none;
   display: block;
-  margin: 15px 0;
+  margin: 20px 0;
   transition: color 0.3s ease;
 }
 
@@ -82,12 +83,12 @@
   display: flex;
   justify-content: center;
   margin: 2% 0;
-  gap: 20px; 
+  gap: 15px; 
 }
 
 .footer-social-icons img {
-  width: 90%;
-  height: 90%;
+  width: 85%;
+  height: 85%;
   cursor: pointer;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }

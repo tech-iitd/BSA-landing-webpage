@@ -1,40 +1,59 @@
+.carousel-highlights {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
 
+.carousel-highlights .carousel-highlights-content {
+  width: 90%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 410px;
+}
 
-.carousel-highlights .carousel {
-    
-  }
-  
-  /* Individual carousel item */
-  .carousel-highlights .carousel-item {
-    
-  }
-  
-  
-  /* Controls */
-  .carousel-highlights .carousel-controls {
-    position: absolute;
-    bottom: 6%;
-    display: flex;
-    gap: 20px;
-  }
-  
- .carousel-highlights .carousel-controls button {
-    background-color: #f0312731;
-    color: rgba(255, 255, 255, 0.555);
-    border: none;
-    border-radius: 5px;
-    padding: 5px 10px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
+.carousel-highlights .carousel-highlights-controls img{
+  width: 100px;
+  z-index: 10;
+  cursor: pointer;
+}
 
- .carousel-highlights .carousel-controls button:focus {
-    outline: none;
-  }
+.highlight-item {
+  position: absolute;
+  width: 80%;
+  opacity: 0;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  transform-origin: center;
+}
 
-  
-  .carousel-highlights .carousel-controls button:hover {
-    background-color: #fdd81f4b;
-  }
-  
+.highlight-item.current {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+  z-index: 3;
+}
+
+.highlight-item.previous {
+  opacity: 0.5;
+  transform: scale(0.8) translateY(-120%);
+  z-index: 2;
+}
+
+.highlight-item.next {
+  opacity: 0.5;
+  transform: scale(0.8) translateY(120%);
+  z-index: 2;
+}
+
+.highlight-item.hidden {
+  opacity: 0;
+  transform: scale(0.6) translateY(200%);
+  z-index: 1;
+}
+
+button {
+  margin: 10px;
+}

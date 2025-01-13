@@ -4,11 +4,12 @@ import UpdatesElement from '../../components/UpdatesElement/UpdatesElement';
 import PhotoGallery from '../../components/PhoteGallery/PhotoGallery';
 import RecentHighlights from '../../components/RecentHighlights/RecentHighlights';
 import CarouselHighlights from '../../components/CarouselHighlights/CarouselHighlights';
+import PhotoFrame from '../../components/PhotoFrame/PhotoFrame';
 
 
 const Updates = () => {
   return (
-    <div>
+    <div className='updates-page'>
       <div className='updates-page-top'>
         <h1>
           UPDATES
@@ -18,12 +19,18 @@ const Updates = () => {
 
       <div className="recent-highlights">
         <h1>Recent Highlights</h1>
-        {/* <CarouselHighlights/> */}
-        <RecentHighlights date='19-01-2025' won='jwalamukhi' lost='rest all' result='jwala won rest gone'/>
+        <CarouselHighlights/>
       </div>
-
+      <div className='upcoming-events'>
+        <h1>Upcoming Events</h1>
+        <div className='upcoming-events-container'>
+          <PhotoFrame size={350}/>
+          <PhotoFrame size={350}/>
+          <PhotoFrame size={350}/>
+        </div>
+      </div>
       <div className="our-history">
-        <h1>OUR HISTORY</h1>
+        <h1>Our History</h1>
         <PhotoGallery />
       </div>
       </div>
