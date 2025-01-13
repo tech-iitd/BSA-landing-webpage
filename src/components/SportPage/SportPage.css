@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700');
 
+.sport-page-main-container {
+  background-image: url('../../assets/bkg_img.png');
+  background-repeat: repeat-y; /* Repeat along the Y-axis */
+  background-size: 100% auto; /* Fit the width, and height adjusts proportionally */
+  background-position: center; /* Center the image horizontally */
+  margin: 0; /* Remove default body margin */
+}
+
 .sport-page {
     font-family: 'Josefin Sans', sans-serif;
     background-image: url('../../assets/sports_page_bkg.svg');

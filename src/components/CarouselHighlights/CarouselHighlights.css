@@ -16,9 +16,11 @@
   height: 410px;
 }
 
+.carousel-highlights .carousel-highlights-controls{
+  z-index: 10;
+}
 .carousel-highlights .carousel-highlights-controls img{
   width: 100px;
-  z-index: 10;
   cursor: pointer;
 }
 

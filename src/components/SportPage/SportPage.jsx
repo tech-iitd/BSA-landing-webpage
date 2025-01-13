@@ -27,7 +27,7 @@ const SportPage = () => {
   };
 
   return (
-    <div>
+    <div className="sport-page-main-container">
       <div className="sport-page">
         <div className="sport-logo">
           <img src={sports[sportname].img} alt={sport.name} />

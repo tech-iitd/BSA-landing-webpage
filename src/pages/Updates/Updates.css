@@ -1,3 +1,11 @@
+.updates-main-container{
+    background-image: url('../../assets/bkg_img.png');
+  background-repeat: repeat-y; /* Repeat along the Y-axis */
+  background-size: 100% auto; /* Fit the width, and height adjusts proportionally */
+  background-position: center; /* Center the image horizontally */
+  margin: 0; /* Remove default body margin */
+}
+
 .updates-page-top{
     background-image: url('../../assets/updates_page_bkg.svg');
     background-position: center;
@@ -57,15 +65,14 @@
 
 @media screen and (max-width: 768px) {
     .updates-page-top{
-        height: 18v;
+        height: 18vh;
         position: relative;
     }
     .updates-page-top h1{
-        margin-left: 5%;
+        margin-left: 10%;
         padding-top: 10%;
         font-size: 300%;
     }
-
     .upcoming-events-container{
         flex-direction: column;
     }

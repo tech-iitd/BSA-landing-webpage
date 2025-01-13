@@ -8,6 +8,8 @@ import { Link } from 'react-router-dom';
 const Sports = () => {
   const { sports } = useContext(dataContext);
   return (
+    <div className='sports-main-container'>
+
     <div className='sports-page'>
       <div className='sports-page-top'>
         <h1>
@@ -58,6 +60,7 @@ const Sports = () => {
           </Link>
         </div>
       </div>
+    </div>
     </div>
   );
 }

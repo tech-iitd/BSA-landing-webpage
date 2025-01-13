@@ -104,14 +104,9 @@
 }
 
 .highlightInfo .result a {
-    text-decoration: none;
-    color: #1e90ff;
+    text-decoration: underline;
+    color: white;
     font-weight: 400;
-    transition: color 0.3s ease;
-}
-
-.highlightInfo .result a:hover {
-    color: #4682b4;
 }
 
 /* Responsive Design */

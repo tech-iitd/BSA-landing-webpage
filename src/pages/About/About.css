@@ -1,3 +1,10 @@
+.about-main-container{
+    background-image: url('../../assets/bkg_img.png');
+  background-repeat: repeat-y; /* Repeat along the Y-axis */
+  background-size: 100% auto; /* Fit the width, and height adjusts proportionally */
+  background-position: center; /* Center the image horizontally */
+  margin: 0; /* Remove default body margin */
+}
 .about{
     background-image: url('../../assets/about_page_bkg.svg');
     background-position: center;

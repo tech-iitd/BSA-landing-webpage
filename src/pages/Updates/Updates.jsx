@@ -9,6 +9,8 @@ import PhotoFrame from '../../components/PhotoFrame/PhotoFrame';
 
 const Updates = () => {
   return (
+    <div className='updates-main-container'>
+
     <div className='updates-page'>
       <div className='updates-page-top'>
         <h1>
@@ -34,6 +36,7 @@ const Updates = () => {
         <PhotoGallery />
       </div>
       </div>
+    </div>
     </div>
   );
 }

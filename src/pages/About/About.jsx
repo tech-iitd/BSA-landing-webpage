@@ -7,7 +7,7 @@ import { dataContext } from "../../data/Data";
 const About = () => {
   const { team_members } = useContext(dataContext);
   return (
-    <div>
+    <div className="about-main-container">
       <div className="about">
         <h1>ABOUT US</h1>
       </div>

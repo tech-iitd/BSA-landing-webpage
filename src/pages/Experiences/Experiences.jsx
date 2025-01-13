@@ -8,7 +8,7 @@ const Experiences = () => {
 
   const {userReviews} = useContext(dataContext);
   return (
-
+    <div className='experiences-main-container'>
     <div className='experiences-page'>
       <div className='experiences_page_top'>
         <h1>
@@ -26,6 +26,7 @@ const Experiences = () => {
             })}
         </div>
       </div>
+    </div>
     </div>
   );
 }
