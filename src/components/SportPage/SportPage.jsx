@@ -40,7 +40,7 @@ const SportPage = () => {
           <p>{sport.description}</p>
         </div>
         <div className="team-category">
-        <p
+          <p
             onClick={handleTeamCategory}
             style={{
               cursor: "pointer",
@@ -60,17 +60,33 @@ const SportPage = () => {
           </p>
         </div>
         <h3>Leadership Team</h3>
-        {/* <div className="team-leaders">
-          {sport.leaders.map((leader, index) => (
-            <Member player={leader} key={index} />
-          ))}
-        </div> */}
+        {isMale ? (
+          <div className="team-members">
+            {sport.team.men.leaders.map((leader, index) => (
+              <Member player={leader} key={index} />
+            ))}
+          </div>
+        ) : (
+          <div className="team-members">
+            {sport.team.women.leaders.map((leader, index) => (
+              <Member player={leader} key={index} />
+            ))}
+          </div>
+        )}
         <h1>Members</h1>
-        <div className="team-members">
-          {sport.team.map((player, index) => (
-            <Member player={player} key={index} />
-          ))}
-        </div>
+        {isMale ? (
+          <div className="team-members">
+            {sport.team.men.members.map((leader, index) => (
+              <Member player={leader} key={index} />
+            ))}
+          </div>
+        ) : (
+          <div className="team-members">
+            {sport.team.women.members.map((leader, index) => (
+              <Member player={leader} key={index} />
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );

@@ -23,8 +23,8 @@
 }
 
 .experiences_page_content #exp_tag_line{
-    justify-self: center;
-    margin: 2% 0%;
+    justify-self:flex-start;
+    margin: 2% 10%;
 }
 
 .experiences_page_reviews{
@@ -51,7 +51,6 @@
 
     .experiences_page_content #exp_tag_line{
         justify-self: center;
-        /* text-align: center; */
         margin: 2% 5%;
     }
 

@@ -70,6 +70,12 @@
     margin: auto;
   }
   
+  .sports-team-players h1{
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: 500;
+  }
 
   @media screen and (max-width: 768px) {
     .sport-page {

@@ -63,139 +63,473 @@ const Data = ({ children }) => {
     basketball: {
       name: "Basketball",
       description: "Basketball is a popular sport played on a rectangular court where two teams of five players each try to score by shooting a ball through the opposing team’s hoop.",
-      team: [
-        { name: "LeBron James" },
-        { name: "Stephen Curry" },
-        { name: "Kevin Durant" },
-        { name: "Giannis Antetokounmpo" },
-      ],
+      team: {
+        men: {
+          leaders: [
+            { name: "LeBron James" },
+            { name: "Stephen Curry" },
+          ],
+          members: [
+            { name: "Kevin Durant" },
+            { name: "Steve Smith" },
+            { name: "James Harden" },
+            { name: "Kobe Bryant" },
+            { name: "Michael Jordan" },
+            { name: "Shaquille O'Neal" },
+            { name: "Tim Duncan" },
+          ]
+        },
+        women: {
+          leaders: [
+            { name: "Lin Dan" },
+            { name: "Lee Chong Wei" },
+          ],
+          members: [
+            { name: "Carolina Marin" },
+            { name: "P.V. Sindhu" },
+            { name: "Sue Bird" },
+            { name: "Diana Taurasi" },
+            { name: "Candace Parker" },
+            { name: "Maya Moore" },
+            { name: "Elena Delle Donne" },
+          ]
+        }
+      }
     },
     cricket: {
       name: "Cricket",
       description: "Cricket is a bat-and-ball game played between two teams of eleven players on a field at the center of which is a 22-yard pitch.",
-      team: [
-        { name: "Virat Kohli" },
-        { name: "Steve Smith" },
-        { name: "Ben Stokes" },
-        { name: "AB de Villiers" },
-      ],
+      team: {
+        men: {
+          leaders: [
+            { name: "LeBron James" },
+            { name: "Stephen Curry" },
+          ],
+          members: [
+            { name: "Kevin Durant" },
+            { name: "Steve Smith" },
+            { name: "Virat Kohli" },
+            { name: "Rohit Sharma" },
+            { name: "Kane Williamson" },
+            { name: "Joe Root" },
+            { name: "Babar Azam" },
+          ]
+        },
+        women: {
+          leaders: [
+            { name: "Lin Dan" },
+            { name: "Lee Chong Wei" },
+          ],
+          members: [
+            { name: "Carolina Marin" },
+            { name: "P.V. Sindhu" },
+            { name: "Mithali Raj" },
+            { name: "Ellyse Perry" },
+            { name: "Meg Lanning" },
+            { name: "Smriti Mandhana" },
+            { name: "Sophie Devine" },
+          ]
+        }
+      }
     },
     football: {
       name: "Football",
       description: "Football is a team sport played between two teams of eleven players with a spherical ball. It is the most popular sport in the world.",
-      team: [
-        { name: "Lionel Messi" },
-        { name: "Cristiano Ronaldo" },
-        { name: "Neymar Jr." },
-        { name: "Kylian Mbappé" },
-      ],
-    
+      team: {
+        men: {
+          leaders: [
+            { name: "LeBron James" },
+            { name: "Stephen Curry" },
+          ],
+          members: [
+            { name: "Kevin Durant" },
+            { name: "Steve Smith" },
+            { name: "Lionel Messi" },
+            { name: "Cristiano Ronaldo" },
+            { name: "Neymar" },
+            { name: "Kylian Mbappé" },
+            { name: "Luka Modrić" },
+          ]
+        },
+        women: {
+          leaders: [
+            { name: "Lin Dan" },
+            { name: "Lee Chong Wei" },
+          ],
+          members: [
+            { name: "Carolina Marin" },
+            { name: "P.V. Sindhu" },
+            { name: "Megan Rapinoe" },
+            { name: "Alex Morgan" },
+            { name: "Sam Kerr" },
+            { name: "Christine Sinclair" },
+            { name: "Lucy Bronze" },
+          ]
+        }
+      }
     },
     volleyball: {
       name: "Volleyball",
       description: "Volleyball is a team sport in which two teams of six players are separated by a net. The objective is to score points by grounding the ball on the other team's court.",
-      team: [
-        { name: "Kerri Walsh Jennings" },
-        { name: "Misty May-Treanor" },
-        { name: "Wilfredo León" },
-        { name: "Giba" },
-      ],
-      
+      team: {
+        men: {
+          leaders: [
+            { name: "LeBron James" },
+            { name: "Stephen Curry" },
+          ],
+          members: [
+            { name: "Kevin Durant" },
+            { name: "Steve Smith" },
+            { name: "Maxwell Holt" },
+            { name: "Matt Anderson" },
+            { name: "Taylor Sander" },
+            { name: "Aaron Russell" },
+            { name: "Micah Christenson" },
+          ]
+        },
+        women: {
+          leaders: [
+            { name: "Lin Dan" },
+            { name: "Lee Chong Wei" },
+          ],
+          members: [
+            { name: "Carolina Marin" },
+            { name: "P.V. Sindhu" },
+            { name: "Jordan Larson" },
+            { name: "Kim Yeon-koung" },
+            { name: "Zhu Ting" },
+            { name: "Paola Egonu" },
+            { name: "Tijana Bošković" },
+          ]
+        }
+      }
     },
     lawnTennis: {
       name: "Lawn Tennis",
       description: "Lawn tennis is a racket sport that can be played individually or in doubles on a grass or hard court, aiming to hit the ball over a net.",
-      team: [
-        { name: "Roger Federer" },
-        { name: "Rafael Nadal" },
-        { name: "Serena Williams" },
-        { name: "Novak Djokovic" },
-      ],
+      team: {
+        men: {
+          leaders: [
+            { name: "LeBron James" },
+            { name: "Stephen Curry" },
+          ],
+          members: [
+            { name: "Kevin Durant" },
+            { name: "Steve Smith" },
+            { name: "Roger Federer" },
+            { name: "Rafael Nadal" },
+            { name: "Novak Djokovic" },
+            { name: "Andy Murray" },
+            { name: "Dominic Thiem" },
+          ]
+        },
+        women: {
+          leaders: [
+            { name: "Lin Dan" },
+            { name: "Lee Chong Wei" },
+          ],
+          members: [
+            { name: "Carolina Marin" },
+            { name: "P.V. Sindhu" },
+            { name: "Serena Williams" },
+            { name: "Naomi Osaka" },
+            { name: "Simona Halep" },
+            { name: "Ashleigh Barty" },
+            { name: "Venus Williams" },
+          ]
+        }
+      }
     },
     badminton: {
       name: "Badminton",
       description: "Badminton is a racquet sport played using shuttlecocks, where players or teams try to score points by hitting the shuttlecock over a net.",
-      team: [
-        { name: "Lin Dan" },
-        { name: "Lee Chong Wei" },
-        { name: "Carolina Marin" },
-        { name: "P.V. Sindhu" },
-      ],
+      team: {
+        men: {
+          leaders: [
+            { name: "LeBron James" },
+            { name: "Stephen Curry" },
+          ],
+          members: [
+            { name: "Kevin Durant" },
+            { name: "Steve Smith" },
+            { name: "Chen Long" },
+            { name: "Viktor Axelsen" },
+            { name: "Kento Momota" },
+            { name: "Peter Gade" },
+            { name: "Taufik Hidayat" },
+          ]
+        },
+        women: {
+          leaders: [
+            { name: "Lin Dan" },
+            { name: "Lee Chong Wei" },
+          ],
+          members: [
+            { name: "Carolina Marin" },
+            { name: "P.V. Sindhu" },
+            { name: "Tai Tzu-ying" },
+            { name: "Ratchanok Intanon" },
+            { name: "Nozomi Okuhara" },
+            { name: "Akane Yamaguchi" },
+            { name: "Saina Nehwal" },
+          ]
+        }
+      }
     },
     tableTennis: {
       name: "Table Tennis",
       description: "Table tennis is a sport where two or four players hit a lightweight ball back and forth across a table using small rackets.",
-      team: [
-          {name: "Ma Long" },
-          { name: "Zhang Jike" },
-          { name: "Ding Ning" },
-          { name: "Mima Ito" },
-      ],
+      team: {
+        men: {
+          leaders: [
+            { name: "LeBron James" },
+            { name: "Stephen Curry" },
+          ],
+          members: [
+            { name: "Kevin Durant" },
+            { name: "Steve Smith" },
+            { name: "Ma Long" },
+            { name: "Fan Zhendong" },
+            { name: "Xu Xin" },
+            { name: "Zhang Jike" },
+            { name: "Tomokazu Harimoto" },
+          ]
+        },
+        women: {
+          leaders: [
+            { name: "Lin Dan" },
+            { name: "Lee Chong Wei" },
+          ],
+          members: [
+            { name: "Carolina Marin" },
+            { name: "P.V. Sindhu" },
+            { name: "Chen Meng" },
+            { name: "Sun Yingsha" },
+            { name: "Liu Shiwen" },
+            { name: "Mima Ito" },
+            { name: "Ding Ning" },
+          ]
+        }
+      }
     },
     chess: {
       name: "Chess",
       description: "Chess is a two-player strategy game played on a checkered board, where each player moves their pieces to capture the opponent's king.",
-      team: [
-        { name: "Magnus Carlsen" },
-        { name: "Viswanathan Anand" },
-        { name: "Bobby Fischer" },
-        { name: "Garry Kasparov" },
-      ],
-      
+      team: {
+        men: {
+          leaders: [
+            { name: "LeBron James" },
+            { name: "Stephen Curry" },
+          ],
+          members: [
+            { name: "Kevin Durant" },
+            { name: "Steve Smith" },
+            { name: "Magnus Carlsen" },
+            { name: "Vishwanathan Anand" },
+            { name: "Ian Nepomniachtchi" },
+            { name: "Fabiano Caruana" },
+            { name: "Hikaru Nakamura" },
+          ]
+        },
+        women: {
+          leaders: [
+            { name: "Lin Dan" },
+            { name: "Lee Chong Wei" },
+          ],
+          members: [
+            { name: "Carolina Marin" },
+            { name: "P.V. Sindhu" },
+            { name: "Judith Polgar" },
+            { name: "Hou Yifan" },
+            { name: "Koneru Humpy" },
+            { name: "Alexandra Kosteniuk" },
+            { name: "Harika Dronavalli" },
+          ]
+        }
+      }
     },
     athletics: {
       name: "Athletics",
       description: "Athletics is a collection of sports that involve competitive running, jumping, throwing, and walking.",
-      team: [
-        { name: "Usain Bolt" },
-        { name: "Michael Johnson" },
-        { name: "Florence Griffith-Joyner" },
-        { name: "Allyson Felix" },
-      ],
+      team: {
+        men: {
+          leaders: [
+            { name: "LeBron James" },
+            { name: "Stephen Curry" },
+          ],
+          members: [
+            { name: "Kevin Durant" },
+            { name: "Steve Smith" },
+            { name: "Usain Bolt" },
+            { name: "Mo Farah" },
+            { name: "Eliud Kipchoge" },
+            { name: "Ashton Eaton" },
+            { name: "Yohan Blake" },
+          ]
+        },
+        women: {
+          leaders: [
+            { name: "Lin Dan" },
+            { name: "Lee Chong Wei" },
+          ],
+          members: [
+            { name: "Carolina Marin" },
+            { name: "P.V. Sindhu" },
+            { name: "Allyson Felix" },
+            { name: "Shelly-Ann Fraser-Pryce" },
+            { name: "Caterine Ibargüen" },
+            { name: "Hima Das" },
+            { name: "Tori Bowie" },
+          ]
+        }
+      }
     },
-    hockey: {
-      name: "Hockey",
-      description: "Hockey is a team sport where players use a stick to hit a ball or puck to score goals against the opposing team.",
-      team: [
-        { name: "Wayne Gretzky" },
-        { name: "Sidney Crosby" },
-        { name: "Alex Ovechkin" },
-        { name: "Mario Lemieux" },
-      ],
-     
-    },
-    squash: {
-      name: "Squash",
-      description: "Squash is a fast-paced indoor racket sport where players take turns hitting a ball against a front wall.",
-      team: [
-        { name: "Nicol David" },
-        { name: "Mohamed ElShorbagy" },
-        { name: "Raneem El Weleily" },
-        { name: "Gregory Gaultier" },
-      ],
-    },
-    aquatics: {
-      name: "Aquatics",
-      description: "Aquatics is a sports category involving water-based activities such as swimming, diving, and synchronized swimming.",
-      team: [
-        { name: "Michael Phelps" },
-        { name: "Katie Ledecky" },
-        { name: "Caeleb Dressel" },
-        { name: "Kristin Otto" },
-      ],
-    },
-    weightlifting: {
-      name: "Weightlifting",
-      description: "Weightlifting is a sport that involves lifting a loaded barbell in a competition to lift the heaviest weight possible in two specific lifts: the snatch and the clean and jerk.",
-      team: [
-        { name: "Lasha Talakhadze" },
-        { name: "Ilya Ilyin" },
-        { name: "Tatiana Kashirina" },
-        { name: "Nadezhda Evstyukhina" },
-      ],
-    },
-  };
-
+  hockey: {
+    name: "Hockey",
+    description: "Hockey is a team sport where players use a stick to hit a ball or puck to score goals against the opposing team.",
+    team: {
+      men: {
+        leaders: [
+          { name: "LeBron James" },
+          { name: "Stephen Curry" },
+        ],
+        members: [
+          { name: "Kevin Durant" },
+          { name: "Steve Smith" },
+          { name: "Manpreet Singh" },
+          { name: "PR Sreejesh" },
+          { name: "Lucas Vila" },
+          { name: "Alexander Hendrickx" },
+          { name: "Arthur Van Doren" },
+        ]
+      },
+      women: {
+        leaders: [
+          { name: "Lin Dan" },
+          { name: "Lee Chong Wei" },
+        ],
+        members: [
+          { name: "Carolina Marin" },
+          { name: "P.V. Sindhu" },
+          { name: "Rani Rampal" },
+          { name: "Eva de Goede" },
+          { name: "Maddie Hinch" },
+          { name: "Maria Granatto" },
+          { name: "Agustina Gorzelany" },
+        ]
+      }
+    }
+  },
+  squash: {
+    name: "Squash",
+    description: "Squash is a fast-paced indoor racket sport where players take turns hitting a ball against a front wall.",
+    team: {
+      men: {
+        leaders: [
+          { name: "LeBron James" },
+          { name: "Stephen Curry" },
+        ],
+        members: [
+          { name: "Kevin Durant" },
+          { name: "Steve Smith" },
+          { name: "Ali Farag" },
+          { name: "Mohamed ElShorbagy" },
+          { name: "Paul Coll" },
+          { name: "Tarek Momen" },
+          { name: "Karim Abdel Gawad" },
+        ]
+      },
+      women: {
+        leaders: [
+          { name: "Lin Dan" },
+          { name: "Lee Chong Wei" },
+        ],
+        members: [
+          { name: "Carolina Marin" },
+          { name: "P.V. Sindhu" },
+          { name: "Nour El Sherbini" },
+          { name: "Nouran Gohar" },
+          { name: "Hania El Hammamy" },
+          { name: "Amanda Sobhy" },
+          { name: "Camille Serme" },
+        ]
+      }
+    }
+  },
+  aquatics: {
+    name: "Aquatics",
+    description: "Aquatics is a sports category involving water-based activities such as swimming, diving, and synchronized swimming.",
+    team: {
+      men: {
+        leaders: [
+          { name: "LeBron James" },
+          { name: "Stephen Curry" },
+        ],
+        members: [
+          { name: "Kevin Durant" },
+          { name: "Steve Smith" },
+          { name: "Michael Phelps" },
+          { name: "Caeleb Dressel" },
+          { name: "Ryan Lochte" },
+          { name: "Adam Peaty" },
+          { name: "Sun Yang" },
+        ]
+      },
+      women: {
+        leaders: [
+          { name: "Lin Dan" },
+          { name: "Lee Chong Wei" },
+        ],
+        members: [
+          { name: "Carolina Marin" },
+          { name: "P.V. Sindhu" },
+          { name: "Katie Ledecky" },
+          { name: "Simone Manuel" },
+          { name: "Sarah Sjöström" },
+          { name: "Yulia Efimova" },
+          { name: "Katinka Hosszú" },
+        ]
+      }
+    }
+  },
+  weightlifting: {
+    name: "Weightlifting",
+    description: "Weightlifting is a sport that involves lifting a loaded barbell in a competition to lift the heaviest weight possible in two specific lifts: the snatch and the clean and jerk.",
+    team: {
+      men: {
+        leaders: [
+          { name: "LeBron James" },
+          { name: "Stephen Curry" },
+        ],
+        members: [
+          { name: "Kevin Durant" },
+          { name: "Steve Smith" },
+          { name: "Lasha Talakhadze" },
+          { name: "Shi Zhiyong" },
+          { name: "Ilya Ilyin" },
+          { name: "Lu Xiaojun" },
+          { name: "Saeid Alihosseini" },
+        ]
+      },
+      women: {
+        leaders: [
+          { name: "Lin Dan" },
+          { name: "Lee Chong Wei" },
+        ],
+        members: [
+          { name: "Carolina Marin" },
+          { name: "P.V. Sindhu" },
+          { name: "Hidilyn Diaz" },
+          { name: "Sarah Robles" },
+          { name: "Tatiana Kashirina" },
+          { name: "Jiang Huihua" },
+          { name: "Loredana Toma" },
+        ]
+      }
+    }
+  }  
+};
+  
   const team_members = [
     { name: "Virat Kohli" },
     { name: "LeBron James" },
