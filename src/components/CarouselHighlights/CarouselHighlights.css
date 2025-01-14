@@ -20,7 +20,7 @@
   z-index: 10;
 }
 .carousel-highlights .carousel-highlights-controls img{
-  width: 100px;
+  width: 150px;
   cursor: pointer;
 }
 
@@ -39,14 +39,14 @@
 }
 
 .highlight-item.previous {
-  opacity: 0.5;
-  transform: scale(0.8) translateY(-120%);
+  opacity: 0.4;
+  transform: scale(0.85) translateY(-150%);
   z-index: 2;
 }
 
 .highlight-item.next {
-  opacity: 0.5;
-  transform: scale(0.8) translateY(120%);
+  opacity: 0.4;
+  transform: scale(0.85) translateY(65%);
   z-index: 2;
 }
 

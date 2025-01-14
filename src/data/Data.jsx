@@ -546,30 +546,57 @@ const Data = ({ children }) => {
       won: 'Manchester United',
       lost: 'Manchester City, Chelsea, Arsenal',
       result: 'Manchester United dominated the league.',
+      images:[
+        {src: "https://source.unsplash.com/1600x900/?football", alt: "img"},
+        {src: "https://source.unsplash.com/1600x900/?soccer", alt: "img"},
+        {src: "https://source.unsplash.com/1600x900/?premierleague", alt: "img"},
+      ]
     },
     {
       date: '19-01-2025',
       won: 'Golden State Warriors',
       lost: 'Los Angeles Lakers, Miami Heat, Chicago Bulls',
       result: 'Golden State Warriors claimed a decisive victory.',
+      images:[
+        {src: "https://source.unsplash.com/1600x900/?football", alt: "img"},
+        {src: "https://source.unsplash.com/1600x900/?soccer", alt: "img"},
+        {src: "https://source.unsplash.com/1600x900/?premierleague", alt: "img"},
+      ]
     },
     {
       date: '19-01-2025',
       won: 'India',
       lost: 'Australia, England, South Africa',
       result: 'India triumphed in the cricket series.',
+      images:[
+        {src: "https://source.unsplash.com/1600x900/?football", alt: "img"},
+        {src: "https://source.unsplash.com/1600x900/?soccer", alt: "img"},
+        {src: "https://source.unsplash.com/1600x900/?premierleague", alt: "img"},
+      ]
     },
     {
       date: '19-01-2025',
       won: 'Lewis Hamilton',
       lost: 'Max Verstappen, Sergio Pérez, Charles Leclerc',
       result: 'Lewis Hamilton secured the F1 championship.',
+      images:[
+        {src: "https://source.unsplash.com/1600x900/?football", alt: "img"},
+        {src: "https://source.unsplash.com/1600x900/?soccer", alt: "img"},
+        {src: "https://source.unsplash.com/1600x900/?premierleague", alt: "img"},
+      ]
     }
     
     ];
 
+  const events = [
+    { date: '2024-12-30', title: 'Team Meeting', description: 'Discuss project updates' },
+    { date: '2025-01-21', title: 'Conference', description: 'Attend the annual conference' },
+    { date: '2025-01-02', title: 'Christmas Party', description: 'Holiday celebration with friends' },
+    { date: '2025-01-05', title: 'Christmas Party', description: 'Holiday celebration with friendsHoliday' },
+  ];
+
   return (
-    <dataContext.Provider value={{ sports, userReviews, sportsData, team_members, highlights }}>
+    <dataContext.Provider value={{ sports, userReviews, sportsData, team_members, highlights, events }}>
       {children}
     </dataContext.Provider>
   );

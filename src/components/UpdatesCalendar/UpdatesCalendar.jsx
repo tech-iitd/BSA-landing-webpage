@@ -1,7 +1,8 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, useContext } from 'react';
 import 'react-calendar/dist/Calendar.css';
 import './UpdatesCalendar.css';
 import Calendar from 'react-calendar';
+import { dataContext } from '../../data/Data';
 
 const UpdatesCalendar = () => {
   const [hoveredDate, setHoveredDate] = useState(null);
@@ -12,12 +13,7 @@ const UpdatesCalendar = () => {
 
   const modalRef = useRef(null);
 
-  const events = [
-    { date: '2024-12-30', title: 'Team Meeting', description: 'Discuss project updates' },
-    { date: '2025-01-21', title: 'Conference', description: 'Attend the annual conference' },
-    { date: '2025-01-02', title: 'Christmas Party', description: 'Holiday celebration with friends' },
-    { date: '2025-01-05', title: 'Christmas Party', description: 'Holiday celebration with friendsHoliday celebration with friendsHoliday celebration with friendsHoliday celebration with friendsHoliday celebration with friendsHoliday celebration with friends' },
-  ];
+  const { events } = useContext(dataContext);
 
   const getEventsForDate = (date) => {
     const formattedDate = date.toLocaleDateString('en-CA'); // Formats as YYYY-MM-DD in local time
@@ -81,16 +77,18 @@ const UpdatesCalendar = () => {
         tileContent={({ date }) => {
           const eventsForDate = getEventsForDate(date);
           return (
-            eventsForDate.length > 0 && (
-              <div
-                className="event-indicator"
-                onMouseEnter={(e) => handleMouseEnter(date, e)}
-                onMouseLeave={handleMouseLeave}
-              />
-            )
+            <div
+              className="tile-container"
+              onMouseEnter={(e) => handleMouseEnter(date, e)}
+              onMouseLeave={handleMouseLeave}
+            >
+              {eventsForDate.length > 0 && <div className="hover-tile" />}
+              {eventsForDate.length > 0 && <div className="event-indicator" />}
+            </div>
           );
         }}
       />
+
       {hoveredDate && (
         <div
           className="hover-event-popup tooltip"

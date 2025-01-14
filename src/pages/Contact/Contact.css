@@ -4,11 +4,12 @@
     font-family: "Josefin Sans", serif;
     max-width: 100%;
     background-image: url('../../assets/footer_connect_bkg.svg');
-    background-position:center;
-    background-size: cover;
+    background-size: 100% auto;
+    background-position: center;
     background-repeat: no-repeat;
-    border-bottom-right-radius: 350px;
+    border-bottom-right-radius: 0px;
     padding: 6% 10%;
+    padding-top: 4%;
     padding-left: 12%;
     margin: 0 auto;
     display: flex;

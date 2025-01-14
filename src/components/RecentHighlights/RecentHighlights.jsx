@@ -2,6 +2,9 @@ import "./RecentHighlights.css";
 import play_image from "../../assets/play_image.jpg";
 
 function RecentHighlights({ date, won, lost, result }) {
+
+  const handleMatchGallery = () => {
+  }
   return (
     <div className="highlightBox">
       <div className="highlightInfo">
@@ -23,7 +26,7 @@ function RecentHighlights({ date, won, lost, result }) {
 
         <div className="result">
           <div>{result}</div>
-          <a>Match Photos</a>
+          <a onClick={handleMatchGallery}>Match Photos</a>
         </div>
       </div>
 
