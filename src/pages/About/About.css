@@ -48,6 +48,9 @@
 
 
 @media screen and (max-width: 768px) {
+    .about-main-container{
+        background-image:none;
+    }
     .about{
         height: 18vh;
         position: relative;

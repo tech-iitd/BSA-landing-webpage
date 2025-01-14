@@ -33,30 +33,50 @@ const Data = ({ children }) => {
   };
 
   const userReviews = [
+      {
+        name: 'Jon Snow',
+        designation: 'King in the North',
+        review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet reprehenderit fuga ea veritatis, quos consequuntur nisi vitae perspiciatis iusto commodi ab sequi assumenda praesentium cum reiciendis cupiditate dolorem omnis adipisci!',
+        social :{
+            twitter: 'https://twitter.com',
+            facebook: 'https://facebook.com',
+            linkedin: 'https://linkedin.com'
+        },
+        rating: 2
+    },
     {
-        name: 'Lucky Bhuskute',
-        designation: 'Software Engineer',
+        name: 'Daenerys Targaryen',
+        designation: 'Mother of Dragons',
+        review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet reprehenderit fuga ea veritatis, quos consequuntur nisi vitae perspiciatis iusto commodi ab sequi assumenda praesentium cum reiciendis cupiditate dolorem omnis adipisci!',
+        social :{
+          twitter: 'https://twitter.com',
+          facebook: 'https://facebook.com',
+          linkedin: 'https://linkedin.com'
+      },
+        rating: 3
+    },
+    {
+        name: 'Tyrion Lannister',
+        designation: 'Hand of the King',
         review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet reprehenderit fuga ea veritatis, quos consequuntur nisi vitae perspiciatis iusto commodi ab sequi assumenda praesentium cum reiciendis cupiditate dolorem omnis adipisci!Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet reprehenderit fuga ea veritatis, quos consequuntur nisi vitae perspiciatis iusto commodi ab sequi assumenda praesentium cum reiciendis cupiditate dolorem omnis adipisci!',
+        social :{
+          twitter: 'https://twitter.com',
+          facebook: 'https://facebook.com',
+          linkedin: 'https://linkedin.com'
+      },
         rating: 4
     },
     {
-        name: 'walter white',
-        designation: 'Chemist',
+        name: 'Cersei Lannister',
+        designation: 'Queen of the Seven Kingdoms',
         review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet reprehenderit fuga ea veritatis, quos consequuntur nisi vitae perspiciatis iusto commodi ab sequi assumenda praesentium cum reiciendis cupiditate dolorem omnis adipisci!',
+        social :{
+          twitter: 'https://twitter.com',
+          facebook: 'https://facebook.com',
+          linkedin: 'https://linkedin.com'
+      },
         rating: 5
     },
-    {
-      name: 'walter jr.',
-      designation: 'Student',
-      review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet reprehenderit fuga ea veritatis, quos consequuntur nisi vitae perspiciatis iusto commodi ab sequi assumenda praesentium cum reiciendis cupiditate dolorem omnis adipisci!',
-      rating: 2
-  },
-  {
-      name: 'skyler white',
-      designation: 'Housewife',
-      review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet reprehenderit fuga ea veritatis, quos consequuntur nisi vitae perspiciatis iusto commodi ab sequi assumenda praesentium cum reiciendis cupiditate dolorem omnis adipisci!',
-      rating: 3
-  }
   ];
 
   const sportsData = {

@@ -64,6 +64,9 @@
 }
 
 @media screen and (max-width: 768px) {
+    .updates-main-container{
+        background-image:none;
+    }
     .updates-page-top{
         height: 18vh;
         position: relative;

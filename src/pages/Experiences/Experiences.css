@@ -46,6 +46,9 @@
 }
 
 @media screen and (max-width: 768px) {
+    .experiences-main-container{
+        background-image:none;
+    }
     .experiences_page_top{
         height: 18vh;
         position: relative;

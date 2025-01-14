@@ -86,6 +86,9 @@
   }
 
   @media screen and (max-width: 768px) {
+    .sport-page-main-container{
+      background-image:none;
+  }
     .sport-page {
       padding: 10px;
     }

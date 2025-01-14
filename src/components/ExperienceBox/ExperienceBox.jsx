@@ -3,6 +3,7 @@ import twitter from '../../assets/twitter.svg';
 import facebook from '../../assets/facebook.svg';
 import linkedin from '../../assets/linkedin.svg';
 import Rating from '@mui/material/Rating';
+import { Link, useLocation } from 'react-router-dom';
 
 
 const ExperienceBox = ({userReview}) => {
@@ -16,9 +17,9 @@ const ExperienceBox = ({userReview}) => {
         </div>
 
         <div className='experience-box-social'>
-            <p><img src={linkedin} alt="" /></p>
-            <p><img src={facebook} alt="" /></p>
-            <p><img src={twitter} alt="" /></p>
+            <Link target='_blank' to={userReview.social.linkedin}><img src={linkedin} alt="" /></Link>
+            <Link target='_blank' to={userReview.social.facebook}><img src={facebook} alt="" /></Link>
+            <Link target='_blank' to={userReview.social.twitter}><img src={twitter} alt="" /></Link>
         </div>
 
       </div>
