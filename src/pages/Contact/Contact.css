@@ -108,6 +108,8 @@
       flex-direction: column;
       text-align: center;
       border-bottom-right-radius: 0px;
+      background-size: cover;
+      background-position: center;
     }
 
     .connect-heading h1 {
