@@ -6,9 +6,9 @@ import Rating from '@mui/material/Rating';
 import { Link, useLocation } from 'react-router-dom';
 
 
-const ExperienceBox = ({userReview}) => {
+const ExperienceBox = ({userReview, bkgColor}) => {
   return (
-    <div className='experience-box'>
+    <div style={{backgroundColor: bkgColor}} className='experience-box'>
       <div className='user-details'>
 
         <div className='user-info'>

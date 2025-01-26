@@ -12,6 +12,72 @@ import hockey from '../assets/hockey.svg';
 import squash from '../assets/squash.svg';
 import aquatics from '../assets/aquatics.svg';
 import weightlifting from '../assets/weightlifting.svg';
+import userReviews from './userReviews.json';
+import events from './events.json'
+
+//Team Members Images
+//Athletics
+import sanha from '../assets/teams/athletics/sanha_sigger.png';
+import metla from '../assets/teams/athletics/metla_reshma.png';
+import puneet from '../assets/teams/athletics/puneet.png';
+import anjit from '../assets/teams/athletics/anjit_basumatary.png';
+
+//Aquatics
+import saksham from '../assets/teams/aquatics/saksham_paliwal.png';
+import suchir from '../assets/teams/aquatics/suchir_kohli.png';
+import rutuja from '../assets/teams/aquatics/rutuja_shelke.png';
+import isha from '../assets/teams/aquatics/isha_agrawal.png';
+
+//Football
+import sneha from '../assets/teams/football/sneha_dhaka.png';
+import shweta from '../assets/teams/football/shweta_tiwari.png'
+import mayank from '../assets/teams/football/mayank_arya.png';
+import krish from '../assets/teams/football/krish_goswami.png';
+
+//Hokey
+import bhavesh from '../assets/teams/hockey/bhavesh_bhojwal.png';
+import khemraj from '../assets/teams/hockey/khemraj_newar.png';
+
+//Squash
+import piyush from '../assets/teams/squash/piyush_dahiya.png';
+import anishka from '../assets/teams/squash/anishka_prajapati.png';
+import pranjal from '../assets/teams/squash/pranjal_awasthi.png';
+import ayush from '../assets/teams/squash/ayush_yadav.png';
+
+//Basketball
+import tannu from '../assets/teams/basketball/tannu_shree.png';
+import satwik from '../assets/teams/basketball/satwik_kumar.png';
+import riddhi from '../assets/teams/basketball/riddhi_agrawal.png';
+
+//Chess
+import shourya from '../assets/teams/chess/shourya_vir_jain.png';
+import shoan from '../assets/teams/chess/shoan_raj.png';
+
+//Cricket
+import talin from '../assets/teams/cricket/talin_sharma.png';
+import aniket from '../assets/teams/cricket/aniket_tripathi.png';
+
+//Table Tennis
+import vaishali from '../assets/teams/table_tennis/vaishali_anand.png';
+import dhruv from '../assets/teams/table_tennis/dhruv_jain.png';
+import ayush_dudawat from '../assets/teams/table_tennis/ayush_dudawat.png';
+
+//Tennis 
+import shreyash from '../assets/teams/tennis/shreyash_kumar.png';
+import namish from '../assets/teams/tennis/namish_mittal.png';
+
+//Volleyball
+import rajveer from '../assets/teams/volleyball/rajveer_saini.png';
+import vivek from '../assets/teams/volleyball/vivek_mori.png';
+
+//Weightlifting
+import bhanu from '../assets/teams/weightlifting/bhanu_pratap_singh.png';
+
+
+//badminton
+import meghana from '../assets/teams/badminton/meghana_halder.png';
+
+import { image } from 'framer-motion/client';
 
 export const dataContext = createContext();
 
@@ -32,52 +98,52 @@ const Data = ({ children }) => {
     weightlifting: { img: weightlifting, name: 'Weightlifting' },
   };
 
-  const userReviews = [
-      {
-        name: 'Jon Snow',
-        designation: 'King in the North',
-        review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet reprehenderit fuga ea veritatis, quos consequuntur nisi vitae perspiciatis iusto commodi ab sequi assumenda praesentium cum reiciendis cupiditate dolorem omnis adipisci!',
-        social :{
-            twitter: 'https://twitter.com',
-            facebook: 'https://facebook.com',
-            linkedin: 'https://linkedin.com'
-        },
-        rating: 2
-    },
-    {
-        name: 'Daenerys Targaryen',
-        designation: 'Mother of Dragons',
-        review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet reprehenderit fuga ea veritatis, quos consequuntur nisi vitae perspiciatis iusto commodi ab sequi assumenda praesentium cum reiciendis cupiditate dolorem omnis adipisci!',
-        social :{
-          twitter: 'https://twitter.com',
-          facebook: 'https://facebook.com',
-          linkedin: 'https://linkedin.com'
-      },
-        rating: 3
-    },
-    {
-        name: 'Tyrion Lannister',
-        designation: 'Hand of the King',
-        review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet reprehenderit fuga ea veritatis, quos consequuntur nisi vitae perspiciatis iusto commodi ab sequi assumenda praesentium cum reiciendis cupiditate dolorem omnis adipisci!Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet reprehenderit fuga ea veritatis, quos consequuntur nisi vitae perspiciatis iusto commodi ab sequi assumenda praesentium cum reiciendis cupiditate dolorem omnis adipisci!',
-        social :{
-          twitter: 'https://twitter.com',
-          facebook: 'https://facebook.com',
-          linkedin: 'https://linkedin.com'
-      },
-        rating: 4
-    },
-    {
-        name: 'Cersei Lannister',
-        designation: 'Queen of the Seven Kingdoms',
-        review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet reprehenderit fuga ea veritatis, quos consequuntur nisi vitae perspiciatis iusto commodi ab sequi assumenda praesentium cum reiciendis cupiditate dolorem omnis adipisci!',
-        social :{
-          twitter: 'https://twitter.com',
-          facebook: 'https://facebook.com',
-          linkedin: 'https://linkedin.com'
-      },
-        rating: 5
-    },
-  ];
+  // const userReviews = [
+  //     {
+  //       name: 'Jon Snow',
+  //       designation: 'King in the North',
+  //       review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet reprehenderit fuga ea veritatis, quos consequuntur nisi vitae perspiciatis iusto commodi ab sequi assumenda praesentium cum reiciendis cupiditate dolorem omnis adipisci!',
+  //       social :{
+  //           twitter: 'https://twitter.com',
+  //           facebook: 'https://facebook.com',
+  //           linkedin: 'https://linkedin.com'
+  //       },
+  //       rating: 2
+  //   },
+  //   {
+  //       name: 'Daenerys Targaryen',
+  //       designation: 'Mother of Dragons',
+  //       review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet reprehenderit fuga ea veritatis, quos consequuntur nisi vitae perspiciatis iusto commodi ab sequi assumenda praesentium cum reiciendis cupiditate dolorem omnis adipisci!',
+  //       social :{
+  //         twitter: 'https://twitter.com',
+  //         facebook: 'https://facebook.com',
+  //         linkedin: 'https://linkedin.com'
+  //     },
+  //       rating: 3
+  //   },
+  //   {
+  //       name: 'Tyrion Lannister',
+  //       designation: 'Hand of the King',
+  //       review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet reprehenderit fuga ea veritatis, quos consequuntur nisi vitae perspiciatis iusto commodi ab sequi assumenda praesentium cum reiciendis cupiditate dolorem omnis adipisci!Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet reprehenderit fuga ea veritatis, quos consequuntur nisi vitae perspiciatis iusto commodi ab sequi assumenda praesentium cum reiciendis cupiditate dolorem omnis adipisci!',
+  //       social :{
+  //         twitter: 'https://twitter.com',
+  //         facebook: 'https://facebook.com',
+  //         linkedin: 'https://linkedin.com'
+  //     },
+  //       rating: 4
+  //   },
+  //   {
+  //       name: 'Cersei Lannister',
+  //       designation: 'Queen of the Seven Kingdoms',
+  //       review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet reprehenderit fuga ea veritatis, quos consequuntur nisi vitae perspiciatis iusto commodi ab sequi assumenda praesentium cum reiciendis cupiditate dolorem omnis adipisci!',
+  //       social :{
+  //         twitter: 'https://twitter.com',
+  //         facebook: 'https://facebook.com',
+  //         linkedin: 'https://linkedin.com'
+  //     },
+  //       rating: 5
+  //   },
+  // ];
 
   const sportsData = {
     basketball: {
@@ -86,8 +152,15 @@ const Data = ({ children }) => {
       team: {
         men: {
           leaders: [
-            { name: "LeBron James" },
-            { name: "Stephen Curry" },
+            { name: "Stawik Kumar",
+              post : "Captain",
+              image: satwik,
+             },
+            { name: "Atharva Revankar",
+              post: "Vice Captain",
+              image: image,
+
+             },
           ],
           members: [
             { name: "Kevin Durant" },
@@ -101,8 +174,14 @@ const Data = ({ children }) => {
         },
         women: {
           leaders: [
-            { name: "Lin Dan" },
-            { name: "Lee Chong Wei" },
+            { name: "Riddhi Agrawal",
+              post: "Captain",
+              image: riddhi,
+             },
+            { name: "Tannu Shree",
+              post: "Vice Captain",
+              image: tannu,
+             },
           ],
           members: [
             { name: "Carolina Marin" },
@@ -122,8 +201,14 @@ const Data = ({ children }) => {
       team: {
         men: {
           leaders: [
-            { name: "LeBron James" },
-            { name: "Stephen Curry" },
+            { name: "LeBron James",
+              post: "Captain",
+              image: aniket,
+             },
+            { name: "Stephen Curry",
+              post: "Vice Captain",
+              image: talin,
+             },
           ],
           members: [
             { name: "Kevin Durant" },
@@ -158,8 +243,14 @@ const Data = ({ children }) => {
       team: {
         men: {
           leaders: [
-            { name: "LeBron James" },
-            { name: "Stephen Curry" },
+            { name: "Mayank Arya",
+              post: "Captain",
+              image: mayank,
+             },
+            { name: "Krish Goswami",
+              post: "Vice Captain",
+              image: krish,
+             },
           ],
           members: [
             { name: "Kevin Durant" },
@@ -173,8 +264,14 @@ const Data = ({ children }) => {
         },
         women: {
           leaders: [
-            { name: "Lin Dan" },
-            { name: "Lee Chong Wei" },
+            { name: "Sneha Dhaka",
+              post: "Captain",
+              image: sneha,
+             },
+            { name: "Shweta Tiwari",
+              post: "Vice Captain",
+              image: shweta,
+             },
           ],
           members: [
             { name: "Carolina Marin" },
@@ -194,8 +291,14 @@ const Data = ({ children }) => {
       team: {
         men: {
           leaders: [
-            { name: "LeBron James" },
-            { name: "Stephen Curry" },
+            { name: "Vivek Mori",
+              post: "Captain",
+              image: vivek,
+             },
+            { name: "Rajveer Saini",
+              post: "Vice Captain",
+              image: rajveer,
+             },
           ],
           members: [
             { name: "Kevin Durant" },
@@ -230,8 +333,14 @@ const Data = ({ children }) => {
       team: {
         men: {
           leaders: [
-            { name: "LeBron James" },
-            { name: "Stephen Curry" },
+            { name: "Namish Mittal",
+              post : "Captain",
+              image: namish,
+             },
+            { name: "Shreyash Kumar",
+              post: "Vice Captain",
+              image: shreyash,
+             },
           ],
           members: [
             { name: "Kevin Durant" },
@@ -266,7 +375,7 @@ const Data = ({ children }) => {
       team: {
         men: {
           leaders: [
-            { name: "LeBron James" },
+            { name: "LeBron James"},
             { name: "Stephen Curry" },
           ],
           members: [
@@ -281,7 +390,10 @@ const Data = ({ children }) => {
         },
         women: {
           leaders: [
-            { name: "Lin Dan" },
+            { name: "Meghana Halder",
+              post: "Captain",
+              image: meghana,
+             },
             { name: "Lee Chong Wei" },
           ],
           members: [
@@ -302,8 +414,14 @@ const Data = ({ children }) => {
       team: {
         men: {
           leaders: [
-            { name: "LeBron James" },
-            { name: "Stephen Curry" },
+            { name: "Ayush Dudawat",
+              post: "Captain",
+              image: ayush_dudawat,
+             },
+            { name: "Dhruv Jain",
+              post: "Vice Captain",
+              image: dhruv,
+             },
           ],
           members: [
             { name: "Kevin Durant" },
@@ -317,7 +435,10 @@ const Data = ({ children }) => {
         },
         women: {
           leaders: [
-            { name: "Lin Dan" },
+            { name: "Vaishali Anand",
+              post: "Captain",
+              image: vaishali,
+             },
             { name: "Lee Chong Wei" },
           ],
           members: [
@@ -338,8 +459,14 @@ const Data = ({ children }) => {
       team: {
         men: {
           leaders: [
-            { name: "LeBron James" },
-            { name: "Stephen Curry" },
+            { name: "Shourya Vir Jain",
+              post : "Captain",
+              image: shourya
+             },
+            { name: "Shoan Raj",
+              post: "Vice Captain",
+              image: shoan
+             },
           ],
           members: [
             { name: "Kevin Durant" },
@@ -374,8 +501,14 @@ const Data = ({ children }) => {
       team: {
         men: {
           leaders: [
-            { name: "LeBron James" },
-            { name: "Stephen Curry" },
+            { name: "Puneet",
+              post: "Captain",
+              image: puneet,
+             },
+            { name: "Stephen Curry",
+              post: "Vice Captain",
+              image : anjit
+             },
           ],
           members: [
             { name: "Kevin Durant" },
@@ -389,8 +522,14 @@ const Data = ({ children }) => {
         },
         women: {
           leaders: [
-            { name: "Lin Dan" },
-            { name: "Lee Chong Wei" },
+            { name: "Sanha Sigger",
+              post: "Captain",
+              image: sanha,
+            },
+            { name: "Metla Reshma",
+              post: "Vice Captain",
+              image: metla,
+            },
           ],
           members: [
             { name: "Carolina Marin" },
@@ -410,8 +549,14 @@ const Data = ({ children }) => {
     team: {
       men: {
         leaders: [
-          { name: "LeBron James" },
-          { name: "Stephen Curry" },
+          { name: "Bhavesh Bhojwal",
+            post: "Captain",
+            image: bhavesh,
+           },
+          { name: "Khemraj Newar",
+            post: "Vice Captain",
+            image: khemraj,
+           },
         ],
         members: [
           { name: "Kevin Durant" },
@@ -446,8 +591,14 @@ const Data = ({ children }) => {
     team: {
       men: {
         leaders: [
-          { name: "LeBron James" },
-          { name: "Stephen Curry" },
+          { name: "Ayush Yadav",
+            post : "Captain",
+            image: ayush
+           },
+          { name: "Piyush Dahiya",
+            post: "Vice Captain",
+            image: piyush
+           },
         ],
         members: [
           { name: "Kevin Durant" },
@@ -461,8 +612,14 @@ const Data = ({ children }) => {
       },
       women: {
         leaders: [
-          { name: "Lin Dan" },
-          { name: "Lee Chong Wei" },
+          { name: "Pranjal Awasthi",
+            post: "Captain",
+            image: pranjal
+           },
+           { name: "Anishka Prajapati",
+            post: "Vice Captain",
+            image: anishka
+           },
         ],
         members: [
           { name: "Carolina Marin" },
@@ -482,8 +639,14 @@ const Data = ({ children }) => {
     team: {
       men: {
         leaders: [
-          { name: "LeBron James" },
-          { name: "Stephen Curry" },
+          { name: "Saksham Paliwal",
+            post: "Captain",
+            image: saksham,
+           },
+          { name: "Suchir Kohli",
+            post: "Vice Captain",
+            image: suchir,
+           },
         ],
         members: [
           { name: "Kevin Durant" },
@@ -497,8 +660,14 @@ const Data = ({ children }) => {
       },
       women: {
         leaders: [
-          { name: "Lin Dan" },
-          { name: "Lee Chong Wei" },
+          { name: "Isha Agrawal",
+            post: "Captain",
+            image: isha,
+           },
+          { name: "Rutuja Shelke",
+            post: "Vice Captain",
+            image: rutuja,
+           },
         ],
         members: [
           { name: "Carolina Marin" },
@@ -518,7 +687,10 @@ const Data = ({ children }) => {
     team: {
       men: {
         leaders: [
-          { name: "LeBron James" },
+          { name: "Bhanu Pratap Singh",
+            post: "Captain",
+            image: bhanu,
+           },
           { name: "Stephen Curry" },
         ],
         members: [
@@ -608,12 +780,12 @@ const Data = ({ children }) => {
     
     ];
 
-  const events = [
-    { date: '2024-12-30', title: 'Team Meeting', description: 'Discuss project updates' },
-    { date: '2025-01-21', title: 'Conference', description: 'Attend the annual conference' },
-    { date: '2025-01-02', title: 'Christmas Party', description: 'Holiday celebration with friends' },
-    { date: '2025-01-05', title: 'Christmas Party', description: 'Holiday celebration with friendsHoliday' },
-  ];
+  // const events = [
+  //   { date: '2024-12-30', title: 'Team Meeting', description: 'Discuss project updates' },
+  //   { date: '2025-01-21', title: 'Conference', description: 'Attend the annual conference' },
+  //   { date: '2025-01-02', title: 'Christmas Party', description: 'Holiday celebration with friends' },
+  //   { date: '2025-01-05', title: 'Christmas Party', description: 'Holiday celebration with friendsHoliday' },
+  // ];
 
   return (
     <dataContext.Provider value={{ sports, userReviews, sportsData, team_members, highlights, events }}>

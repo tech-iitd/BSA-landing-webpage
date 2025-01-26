@@ -1,0 +1,16 @@
+[
+    { "date": "2024-12-30", "title": "Team Meeting", "description": "Discuss project updates" },
+    { "date": "2025-01-21", "title": "Conference", "description": "Attend the annual conference" },
+    { "date": "2025-01-02", "title": "Christmas Party", "description": "Holiday celebration with friends" },
+    { "date": "2025-01-05", "title": "Christmas Party", "description": "Holiday celebration with friendsHoliday" },
+    { "date": "2025-02-01", "title": "Team Outing", "description": "A fun day out with the team" },
+    { "date": "2025-02-10", "title": "Workshop", "description": "Participate in a hands-on workshop" },
+    { "date": "2025-02-20", "title": "Hackathon", "description": "Compete in a coding challenge" },
+    { "date": "2025-03-01", "title": "Birthday Celebration", "description": "Celebrate John's birthday" },
+    { "date": "2025-03-10", "title": "Board Meeting", "description": "Quarterly board meeting" },
+    { "date": "2025-03-15", "title": "Product Launch", "description": "Launch new product line" },
+    { "date": "2025-04-05", "title": "Community Service", "description": "Volunteer at local charity" },
+    { "date": "2025-04-10", "title": "Networking Event", "description": "Meet industry professionals" },
+    { "date": "2025-05-01", "title": "Team Training", "description": "Training session for new tools" },
+    { "date": "2025-05-15", "title": "Annual General Meeting", "description": "AGM for stakeholders" }
+]

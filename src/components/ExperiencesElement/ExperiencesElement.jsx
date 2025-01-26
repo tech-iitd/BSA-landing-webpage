@@ -49,7 +49,7 @@ const ExperiencesElement = () => {
             ref={scrollContainerRef} 
           >
             {userReviews.map((userReview, index) => {
-              return <ExperienceBox key={index} userReview={userReview} />;
+              return <ExperienceBox key={index} userReview={userReview} bkgColor="white"/>;
             })}
           </div>
         </div>

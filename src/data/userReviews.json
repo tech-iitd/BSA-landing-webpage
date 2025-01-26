@@ -1,0 +1,86 @@
+[
+    {
+      "Timestamp": "1/19/2025 21:59:17",
+      "social": {
+        "twitter": "https://twitter.com",
+          "facebook": "https://facebook.com",
+          "linkedin": "https://linkedin.com"
+      },
+      "rating": 5,
+      "name": "Harshit Chaudhary",
+      "Phone Number": 9305904011,
+      "Sport": "Hockey",
+      "designation": "Team Member",
+      "review": "BSA has always been close to me right from the day I onboarded. I am grateful to have created countless memories which I will cherish forever !"
+    },
+    {
+      "Timestamp": "1/19/2025 23:22:35",
+      "social": {
+        "twitter": "https://twitter.com",
+          "facebook": "https://facebook.com",
+          "linkedin": "https://linkedin.com"
+      },
+      "rating": 5,
+      "name": "Piyush Dahiya",
+      "Phone Number": 7042358825,
+      "Sport": "Squash",
+      "designation": "Vice Captain",
+      "review": "All faculties and authority personnel were really helpful; they sponsored adequate money, which was very crucial in securing gold. Squash requires dedication and consistency more than any sport, which was possible by constantly playing with state champions in Siri Fort. I loved the whole journey and am ready to do it again for the final year. I wish for my juniors to continue the legacy of squash and get gold in future years."
+    },
+    {
+      "rating": 5,
+      "Timestamp": "1/20/2025 7:54:34",
+      "social": {
+        "twitter": "https://twitter.com",
+          "facebook": "https://facebook.com",
+          "linkedin": "https://linkedin.com"
+      },
+      "name": "Shourya Vir Jain",
+      "Phone Number": 9833831556,
+      "Sport": "Chess",
+      "designation": "Captain",
+      "review": "BSA has been a home away from home ever since I stepped foot on campus. It has been an amazing experience whether it’s to do with Inter IIT or Sportech or any of the external competitions. Rekha Ma’am and Negi Sir have been very supportive as well - helping us getting a chess coach and all requisite items for training including the Mittal Chess Room, coupons for juices and chess clocks and boards. Being a part of the contingent has always been a special experience - with every Inter IIT bringing a fresh set of faces ready to take on the best of the best in a new, interesting location. Some of the best seniors I’ve found have all been a part of BSA and I will be forever grateful to the memories, experiences and community BSA has provided me!"
+    },
+    {
+      "rating": 5,
+      "Timestamp": "1/20/2025 13:14:26",
+      "social": {
+        "twitter": "https://twitter.com",
+          "facebook": "https://facebook.com",
+          "linkedin": "https://linkedin.com"
+      },
+      "name": "Raghav Singla",
+      "Phone Number": 8447799199,
+      "Sport": "Chess",
+      "designation": "Team Member",
+      "review": "The inter IIT was really fun. I got to learn a lot and made new friends. The jersey was cool too. I'm looking forward for more such associationS with the BSA."
+    },
+    {
+      "rating": 5,
+      "Timestamp": "1/20/2025 21:33:51",
+      "social": {
+        "twitter": "https://twitter.com",
+          "facebook": "https://facebook.com",
+          "linkedin": "https://linkedin.com"
+      },
+      "name": "Puneet",
+      "Phone Number": 9991606008,
+      "Sport": "Athletics",
+      "designation": "Captain",
+      "review": "Being part of the Board for Sports Activities (BSA) since 2021 has been a transformative experience, offering me numerous opportunities to grow both as an athlete and as an individual. I've had the privilege of representing our college in three prestigious Inter IIT Sports Meets (2022, 2023, and 2024) and also participated in external tournaments at IIT Roorkee And IIT Kanpur. Over the years, I have earned a total of 25+ medals, comprising 10 gold, 10 silver, and 5 bronze, showcasing my hard work and commitment to excellence. These achievements have taught me the importance of perseverance, teamwork, and strategic thinking. Each tournament has been a learning curve, contributing to my development in sportsmanship and resilience. Through BSA, I have built lasting memories and strong bonds with fellow athletes, fostering a spirit of unity and determination that drives us all toward greater achievements."
+    },
+    {
+      "rating": 5,
+      "Timestamp": "1/25/2025 22:51:09",
+      "social": {
+        "twitter": "https://twitter.com",
+          "facebook": "https://facebook.com",
+          "linkedin": "https://linkedin.com"
+      },
+      "name": "Bhanu Pratap Singh",
+      "Phone Number": 7818869365,
+      "Sport": "Weightlifting",
+      "designation": "Captain",
+      "review": "Being part of BSA at IIT Delhi has been an incredible journey. As the weightlifting captain, I’ve had the chance to lead my team, organize events like the General Championship, and represent my college. It’s taught me teamwork, leadership, and the value of sports in bringing people together. These experiences have made my college life truly unforgettable."
+    }
+  ]

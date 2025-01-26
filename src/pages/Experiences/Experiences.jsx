@@ -22,7 +22,7 @@ const Experiences = () => {
         </h1>
         <div className='experiences_page_reviews'>
           {userReviews.map((userReview, index) => {
-              return <ExperienceBox key={index} userReview={userReview} />;
+              return <ExperienceBox key={index} userReview={userReview} bkgColor={"#F7F6F3"}/>;
             })}
         </div>
       </div>
