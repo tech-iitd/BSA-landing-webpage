@@ -103,7 +103,7 @@ const Header = ({ isAuth }) => {
                 <li>
                   <Link to={"/connect"} onClick={closeMenu}>Connect</Link>
                 </li>
-                {isAuth && (
+                {/* {isAuth && (
                   <Link to="/profile" className="profile-icon" onClick={closeMenu}>
                     <img src={profile_icon} alt="Profile Icon" />
                   </Link>
@@ -112,7 +112,12 @@ const Header = ({ isAuth }) => {
                   <Link to="/login" className="profile-icon" onClick={closeMenu}>
                     <img src={add_profile_icon} alt="Login" />
                   </Link>
-                )}
+                )} */}
+                <li>
+                  <Link target='blank' to={"https://sportshub.iitd.ac.in"}className="profile-icon" onClick={closeMenu}>
+                  SportsHub
+                  </Link>
+                </li>
               </ul>
             </nav>
           </div>
@@ -143,7 +148,7 @@ const Header = ({ isAuth }) => {
                 Connect
               </Link>
             </li>
-            {isAuth && (
+            {/* {isAuth && (
               <Link to="/profile">
                 <img src={profile_icon} alt="Profile Icon" />
               </Link>
@@ -154,6 +159,11 @@ const Header = ({ isAuth }) => {
                   <img src={add_profile_icon} alt="Login" />
                 </Link>
               )}
+            </li> */}
+            <li className='sports-hub'>
+                <Link target='blank' to={"https://sportshub.iitd.ac.in"}className="profile-icon" onClick={closeMenu}>
+                  SportsHub
+                  </Link>
             </li>
           </ul>
         )}

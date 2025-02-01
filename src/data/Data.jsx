@@ -15,12 +15,43 @@ import weightlifting from '../assets/weightlifting.svg';
 import userReviews from './userReviews.json';
 import events from './events.json'
 
+
+//Hostel Sports Secretaries Images
+import jwalamukhi_secretary from '../assets/secretaries/jwalamukhi.png';
+import girnar_secretary from '../assets/secretaries/girnar.png';
+import aravali_secretary from '../assets/secretaries/aravali.png';
+import kailash_secretary from '../assets/secretaries/kailash.png';
+import satpura_secretary from '../assets/secretaries/satpura.png';
+import shivalik_secretary from '../assets/secretaries/shivalik.png';
+import udaigiri_secretary from '../assets/secretaries/udaigiri.png';
+import zanskar_secretary from '../assets/secretaries/zanskar.png';
+import kumaon_secretary from '../assets/secretaries/kumaon.png';
+import nalanda_secretary from '../assets/secretaries/nalanda.png';
+import sahyadri_secretary from '../assets/secretaries/sahyadri.png';
+import dronagiri_secretary from '../assets/secretaries/dronagiri.png';
+import saptagiri_secretary from '../assets/secretaries/saptagiri.png';
+// import nilgiri_secretary from '../assets/secretaries/nilgiri.png';
+import vindhyachal_secretary from '../assets/secretaries/vindhyachal.png';
+// import kara_secretary from '../assets/secretaries/kara.png';
+// import himadri_secretary from '../assets/secretaries/himadri.png';
+
+
+
+
+
 //Team Members Images
 //Athletics
 import sanha from '../assets/teams/athletics/sanha_sigger.png';
 import metla from '../assets/teams/athletics/metla_reshma.png';
 import puneet from '../assets/teams/athletics/puneet.png';
 import anjit from '../assets/teams/athletics/anjit_basumatary.png';
+  //members
+  import Robinson_Karangala from '../assets/teams/athletics/Robinson Karangala.png';
+  import Sanjay_Lohar from '../assets/teams/athletics/Sanjay Lohar.png';
+  import Aashutosh from '../assets/teams/athletics/Aashutosh.png';
+  import Kavya_Kumar from '../assets/teams/athletics/Kavya Kumar.png';
+  import Ravi_Charan from '../assets/teams/athletics/Ravi Charan.png';
+
 
 //Aquatics
 import saksham from '../assets/teams/aquatics/saksham_paliwal.png';
@@ -37,45 +68,112 @@ import krish from '../assets/teams/football/krish_goswami.png';
 //Hokey
 import bhavesh from '../assets/teams/hockey/bhavesh_bhojwal.png';
 import khemraj from '../assets/teams/hockey/khemraj_newar.png';
+  //members
+import devansh_pratap_singh from '../assets/teams/hockey/devansh pratap singh.png';
+import Gajendra_Meena from '../assets/teams/hockey/Gajendra Meena.png';
+import Harshit_Chaudhary from '../assets/teams/hockey/Harshit Chaudhary.png';
+import Manish_Kumar from '../assets/teams/hockey/Manish Kumar.png';
+import Narendra_Nath_Sharma from '../assets/teams/hockey/Narendra Nath Sharma.png';
+import Srijan_Gupta from '../assets/teams/hockey/Srijan Gupta.png';
 
 //Squash
 import piyush from '../assets/teams/squash/piyush_dahiya.png';
 import anishka from '../assets/teams/squash/anishka_prajapati.png';
 import pranjal from '../assets/teams/squash/pranjal_awasthi.png';
 import ayush from '../assets/teams/squash/ayush_yadav.png';
+  //members
+  import Sarthak_singh from '../assets/teams/squash/Sarthak Singh.png';
+  import Antriksh_Saran from '../assets/teams/squash/Antriksh Saran.png';
+  import Ananya_Singh from '../assets/teams/squash/Ananya Singh.png';
+  import Urvi from '../assets/teams/squash/Urvi.png';
 
 //Basketball
 import tannu from '../assets/teams/basketball/tannu_shree.png';
 import satwik from '../assets/teams/basketball/satwik_kumar.png';
 import riddhi from '../assets/teams/basketball/riddhi_agrawal.png';
+  //members
+  import Armaan_vaid from '../assets/teams/basketball/Armaan vaid.png';
+  import Dharana_Sehgal from '../assets/teams/basketball/Dharana Sehgal.png';
+  import Harsh_Agarwal from '../assets/teams/basketball/Harsh Agarwal.png';
+  import Kashvi from '../assets/teams/basketball/Kashvi.png';
+  import Pinaki from '../assets/teams/basketball/Pinaki.png';
+  import Prashanthi_Jothi from '../assets/teams/basketball/Prashanthi Jothi.png';
+  import Aditya_Bansal from '../assets/teams/basketball/Aditya Bansal.png';
+  import Smriti_Sehrawat from '../assets/teams/basketball/Smriti Sehrawat.png';
+  import Tatsam_Ranjan_Sharma from '../assets/teams/basketball/Tatsam Ranjan Sharma.png';
+  import Vartika from '../assets/teams/basketball/Vartika.png';
 
 //Chess
 import shourya from '../assets/teams/chess/shourya_vir_jain.png';
 import shoan from '../assets/teams/chess/shoan_raj.png';
+  //members
+  import soham_sameer_palkar from '../assets/teams/chess/Soham Sameer Palkar.png';
+  import Shamil_Mohammed from '../assets/teams/chess/Shamil Mohammed.png';
+  import Raghav_Singla from '../assets/teams/chess/Raghav Singla.png';
 
 //Cricket
 import talin from '../assets/teams/cricket/talin_sharma.png';
 import aniket from '../assets/teams/cricket/aniket_tripathi.png';
+  //members
+  import Rishit_Ojha from '../assets/teams/cricket/Rishit Ojha.png';
+  import Lavkush_Verma from '../assets/teams/cricket/Lavkush Verma.png';
+  import Madhav_Biyani from '../assets/teams/cricket/Madhav Biyani.png';
+  import Nishant_Kumar_Meena from '../assets/teams/cricket/Nishant Kumar Meena.png';
+  import Harsh_Jain from '../assets/teams/cricket/Harsh Jain.png';
 
 //Table Tennis
 import vaishali from '../assets/teams/table_tennis/vaishali_anand.png';
 import dhruv from '../assets/teams/table_tennis/dhruv_jain.png';
 import ayush_dudawat from '../assets/teams/table_tennis/ayush_dudawat.png';
+  //members
+  import Akash from '../assets/teams/table_tennis/Akash.png';
+  import Danish_Jhanji from '../assets/teams/table_tennis/Danish Jhanji.png';
+  import Arnav_Garg from '../assets/teams/table_tennis/Arnav Garg.png';
+  import Divija_Motwani from '../assets/teams/table_tennis/Divija Motwani.png';
+  import Sidh_Bansal from '../assets/teams/table_tennis/Sidh Bansal.png';
 
 //Tennis 
 import shreyash from '../assets/teams/tennis/shreyash_kumar.png';
 import namish from '../assets/teams/tennis/namish_mittal.png';
+  //members
+  import Chappa_Sri_Vinay from '../assets/teams/tennis/Chappa Sri Vinay.png';
+  import Faiq_Ahmed from '../assets/teams/tennis/Faiq Ahmed.png';
+  import Smart_Yadav from '../assets/teams/tennis/Smart Yadav.png';
+  import Vaibhav_krishna_sriram from '../assets/teams/tennis/Vaibhav krishna sriram.png';
+  import Tushita from '../assets/teams/tennis/Tushita.png'
 
 //Volleyball
 import rajveer from '../assets/teams/volleyball/rajveer_saini.png';
 import vivek from '../assets/teams/volleyball/vivek_mori.png';
+ 
+  //members
+  import shyamali from '../assets/teams/volleyball/Shyamali.png';
+  import Pallavi from '../assets/teams/volleyball/Pallavi.png';
+  import Bhavana from '../assets/teams/volleyball/Bhavana.png';
+  import Gurseerat from '../assets/teams/volleyball/Gurseerat.png';
+  import Lovey from '../assets/teams/volleyball/Lovey.png';
+  import Alka from '../assets/teams/volleyball/Alka.png';
+  import Priti from '../assets/teams/volleyball/Priti.png';
+  import Priya from '../assets/teams/volleyball/Priya.png';
+
 
 //Weightlifting
 import bhanu from '../assets/teams/weightlifting/bhanu_pratap_singh.png';
+import Abhinav_Pal from '../assets/teams/weightlifting/Abhinav Pal.png';
+import Haneesh_Bhagat from '../assets/teams/weightlifting/Haneesh Bhagat.png';
+import Yuvraj_Dawar from '../assets/teams/weightlifting/Yuvraj Dawar.png';
+import Hari_Om from '../assets/teams/weightlifting/Hari Om.png'
 
 
 //badminton
 import meghana from '../assets/teams/badminton/meghana_halder.png';
+  //members
+  import Prakkhyaat_Prajaapat from '../assets/teams/badminton/Prakkhyaat Prajaapat.png';
+  import Ruchika from '../assets/teams/badminton/Ruchika.png';
+  import Krithik_Eeswar from '../assets/teams/badminton/Krithik Eeswar.png';
+  import Vinayak from '../assets/teams/badminton/Vinayak.png';
+  import Saumya_Tayal from '../assets/teams/badminton/Saumya Tayal.png';
+  import Aditya_Yadav from '../assets/teams/badminton/Aditya Yadav.png';
 
 import { image } from 'framer-motion/client';
 
@@ -163,13 +261,13 @@ const Data = ({ children }) => {
              },
           ],
           members: [
-            { name: "Kevin Durant" },
-            { name: "Steve Smith" },
-            { name: "James Harden" },
-            { name: "Kobe Bryant" },
-            { name: "Michael Jordan" },
-            { name: "Shaquille O'Neal" },
-            { name: "Tim Duncan" },
+            { name: "Armaan Vaid",
+              image: Armaan_vaid
+             },
+             { name: "Harsh Agarwal", image: Harsh_Agarwal },
+             { name: "Pinaki", image: Pinaki },
+             { name: "Aditya Bansal", image: Aditya_Bansal },
+             { name: "Tatsam Ranjan Sharma", image: Tatsam_Ranjan_Sharma },
           ]
         },
         women: {
@@ -184,13 +282,13 @@ const Data = ({ children }) => {
              },
           ],
           members: [
-            { name: "Carolina Marin" },
-            { name: "P.V. Sindhu" },
-            { name: "Sue Bird" },
-            { name: "Diana Taurasi" },
-            { name: "Candace Parker" },
-            { name: "Maya Moore" },
-            { name: "Elena Delle Donne" },
+            { name: "Dharana Sehgal",
+              image: Dharana_Sehgal,
+             },
+             { name: "Kashvi", image: Kashvi },
+            { name: "Vartika", image: Vartika },
+            { name: "Smriti Sehrawat", image: Smriti_Sehrawat },
+            { name: "Prashanthi Jothi", image: Prashanthi_Jothi },
           ]
         }
       }
@@ -205,19 +303,20 @@ const Data = ({ children }) => {
               post: "Captain",
               image: aniket,
              },
-            { name: "Stephen Curry",
+            { name: "Talin Sharma",
               post: "Vice Captain",
               image: talin,
              },
           ],
           members: [
-            { name: "Kevin Durant" },
-            { name: "Steve Smith" },
-            { name: "Virat Kohli" },
-            { name: "Rohit Sharma" },
-            { name: "Kane Williamson" },
-            { name: "Joe Root" },
-            { name: "Babar Azam" },
+            { name: "Rishit Ojha",
+              image: Rishit_Ojha,
+             },
+             { name: "Lavkush Verma", image: Lavkush_Verma },
+            { name: "Madhav Biyani", image: Madhav_Biyani },
+            { name: "Nishant Kumar Meena", image: Nishant_Kumar_Meena },
+            { name: "Harsh Jain", image: Harsh_Jain }
+           
           ]
         },
         women: {
@@ -226,7 +325,7 @@ const Data = ({ children }) => {
             { name: "Lee Chong Wei" },
           ],
           members: [
-            { name: "Carolina Marin" },
+  
             { name: "P.V. Sindhu" },
             { name: "Mithali Raj" },
             { name: "Ellyse Perry" },
@@ -253,7 +352,7 @@ const Data = ({ children }) => {
              },
           ],
           members: [
-            { name: "Kevin Durant" },
+        
             { name: "Steve Smith" },
             { name: "Lionel Messi" },
             { name: "Cristiano Ronaldo" },
@@ -316,13 +415,18 @@ const Data = ({ children }) => {
             { name: "Lee Chong Wei" },
           ],
           members: [
-            { name: "Carolina Marin" },
-            { name: "P.V. Sindhu" },
-            { name: "Jordan Larson" },
-            { name: "Kim Yeon-koung" },
-            { name: "Zhu Ting" },
-            { name: "Paola Egonu" },
-            { name: "Tijana Bošković" },
+            { name: "Shyamali",
+              image: shyamali,
+            },
+            { name: "Pallavi",
+              image: Pallavi,
+             },
+             { name: "Bhavana", image: Bhavana },
+             { name: "Gurseerat", image: Gurseerat },
+             { name: "Lovey", image: Lovey },
+             { name: "Alka", image: Alka },
+             { name: "Priti", image: Priti },
+             { name: "Priya", image: Priya }
           ]
         }
       }
@@ -343,13 +447,10 @@ const Data = ({ children }) => {
              },
           ],
           members: [
-            { name: "Kevin Durant" },
-            { name: "Steve Smith" },
-            { name: "Roger Federer" },
-            { name: "Rafael Nadal" },
-            { name: "Novak Djokovic" },
-            { name: "Andy Murray" },
-            { name: "Dominic Thiem" },
+            { name: "Chappa Sri Vinay", image: Chappa_Sri_Vinay },
+            { name: "Faiq Ahmed", image: Faiq_Ahmed },
+            { name: "Smart Yadav", image: Smart_Yadav },
+            { name: "Vaibhav Krishna Sriram", image: Vaibhav_krishna_sriram },
           ]
         },
         women: {
@@ -358,7 +459,7 @@ const Data = ({ children }) => {
             { name: "Lee Chong Wei" },
           ],
           members: [
-            { name: "Carolina Marin" },
+            { name: "Tushita", image: Tushita },
             { name: "P.V. Sindhu" },
             { name: "Serena Williams" },
             { name: "Naomi Osaka" },
@@ -379,7 +480,11 @@ const Data = ({ children }) => {
             { name: "Stephen Curry" },
           ],
           members: [
-            { name: "Kevin Durant" },
+            { name: "Prakkhyaat Prajaapat",
+              image: Prakkhyaat_Prajaapat,
+             },
+            { name: "Krithik Eeswar", image: Krithik_Eeswar },
+            { name: "Vinayak", image: Vinayak },
             { name: "Steve Smith" },
             { name: "Chen Long" },
             { name: "Viktor Axelsen" },
@@ -397,7 +502,9 @@ const Data = ({ children }) => {
             { name: "Lee Chong Wei" },
           ],
           members: [
-            { name: "Carolina Marin" },
+            { name: "Ruchika", image: Ruchika },
+            { name: "Saumya Tayal", image: Saumya_Tayal },
+            { name: "Aditya Yadav", image: Aditya_Yadav },
             { name: "P.V. Sindhu" },
             { name: "Tai Tzu-ying" },
             { name: "Ratchanok Intanon" },
@@ -424,12 +531,10 @@ const Data = ({ children }) => {
              },
           ],
           members: [
-            { name: "Kevin Durant" },
-            { name: "Steve Smith" },
-            { name: "Ma Long" },
-            { name: "Fan Zhendong" },
-            { name: "Xu Xin" },
-            { name: "Zhang Jike" },
+            { name: "Akash", image: Akash },
+            { name: "Danish Jhanji", image: Danish_Jhanji },
+            { name: "Arnav Garg", image: Arnav_Garg },
+            { name: "Sidh Bansal", image: Sidh_Bansal },
             { name: "Tomokazu Harimoto" },
           ]
         },
@@ -442,7 +547,7 @@ const Data = ({ children }) => {
             { name: "Lee Chong Wei" },
           ],
           members: [
-            { name: "Carolina Marin" },
+            { name: "Divija Motwani", image: Divija_Motwani },
             { name: "P.V. Sindhu" },
             { name: "Chen Meng" },
             { name: "Sun Yingsha" },
@@ -469,7 +574,11 @@ const Data = ({ children }) => {
              },
           ],
           members: [
-            { name: "Kevin Durant" },
+            { name: "Soham Sameer Palkar",
+              image: soham_sameer_palkar
+             },
+             { name: "Shamil Mohammed", image: Shamil_Mohammed },
+            { name: "Raghav Singla", image: Raghav_Singla },
             { name: "Steve Smith" },
             { name: "Magnus Carlsen" },
             { name: "Vishwanathan Anand" },
@@ -505,19 +614,20 @@ const Data = ({ children }) => {
               post: "Captain",
               image: puneet,
              },
-            { name: "Stephen Curry",
+            { name: "Anjit Basumatary",
               post: "Vice Captain",
               image : anjit
              },
           ],
           members: [
-            { name: "Kevin Durant" },
-            { name: "Steve Smith" },
-            { name: "Usain Bolt" },
-            { name: "Mo Farah" },
-            { name: "Eliud Kipchoge" },
-            { name: "Ashton Eaton" },
-            { name: "Yohan Blake" },
+            { name: "Robinson Karangala",
+              image: Robinson_Karangala,
+             },
+             { name: "Sanjay Lohar", image: Sanjay_Lohar },
+            { name: "Aashutosh", image: Aashutosh },
+            { name: "Kavya Kumar", image: Kavya_Kumar },
+            { name: "Ravi Charan", image: Ravi_Charan },
+
           ]
         },
         women: {
@@ -559,13 +669,14 @@ const Data = ({ children }) => {
            },
         ],
         members: [
-          { name: "Kevin Durant" },
-          { name: "Steve Smith" },
-          { name: "Manpreet Singh" },
-          { name: "PR Sreejesh" },
-          { name: "Lucas Vila" },
-          { name: "Alexander Hendrickx" },
-          { name: "Arthur Van Doren" },
+          { name: "Devansh Pratap Singh",
+            image: devansh_pratap_singh,
+           },
+           { name: "Gajendra Meena", image: Gajendra_Meena },
+           { name: "Harshit Chaudhary", image: Harshit_Chaudhary },
+           { name: "Manish Kumar", image: Manish_Kumar },
+           { name: "Narendra Nath Sharma", image: Narendra_Nath_Sharma },
+           { name: "Srijan Gupta", image: Srijan_Gupta }
         ]
       },
       women: {
@@ -601,8 +712,12 @@ const Data = ({ children }) => {
            },
         ],
         members: [
-          { name: "Kevin Durant" },
-          { name: "Steve Smith" },
+          { name: "Sarthak Singh",
+            image: Sarthak_singh,
+           },
+          { name: "Antriksh Saran",
+            image: Antriksh_Saran,
+           },
           { name: "Ali Farag" },
           { name: "Mohamed ElShorbagy" },
           { name: "Paul Coll" },
@@ -622,8 +737,12 @@ const Data = ({ children }) => {
            },
         ],
         members: [
-          { name: "Carolina Marin" },
-          { name: "P.V. Sindhu" },
+          { name: "Urvi",
+            image: Urvi,
+           },
+          { name: "Ananya Singh",
+            image: Ananya_Singh,
+           },
           { name: "Nour El Sherbini" },
           { name: "Nouran Gohar" },
           { name: "Hania El Hammamy" },
@@ -694,9 +813,10 @@ const Data = ({ children }) => {
           { name: "Stephen Curry" },
         ],
         members: [
-          { name: "Kevin Durant" },
-          { name: "Steve Smith" },
-          { name: "Lasha Talakhadze" },
+          { name: "Abhinav Pal", image: Abhinav_Pal },
+          { name: "Haneesh Bhagat", image: Haneesh_Bhagat },
+          { name: "Yuvraj Dawar", image: Yuvraj_Dawar },
+          {name: "Hari Om", image: Hari_Om},
           { name: "Shi Zhiyong" },
           { name: "Ilya Ilyin" },
           { name: "Lu Xiaojun" },
@@ -721,15 +841,29 @@ const Data = ({ children }) => {
     }
   }  
 };
+
+
+  
   
   const team_members = [
-    { name: "Virat Kohli" },
-    { name: "LeBron James" },
-    { name: "Stephen Curry" },
-    { name: "Kevin Durant" },
-    { name: "Steve Smith" },
-    { name: "Ben Stokes" },
-    { name: "AB de Villiers" },
+    { name: "Rohit Raj Mourya", post: "Jwalamukhi", image: jwalamukhi_secretary },
+    { name: "Nitesh Dohre ", post: "Dronagiri", image: dronagiri_secretary },
+    { name: "Tatsam Ranjan", post: "Zanskar", image: zanskar_secretary },
+    { name: "Manish Patel", post: "Satpura", image: satpura_secretary },
+    { name: "Ishant Singh", post: "Saptagiri", image: saptagiri_secretary },
+    {name: "Abhishek Singh", post: "Vindhyachal", image: vindhyachal_secretary },
+    { name: "Aishwary Sharma", post: "Aravali", image: aravali_secretary },
+    { name: "Ananya khandelwal ", post: "Kailash", image: kailash_secretary },
+    { name: "krish shah", post: "Shivalik", image: shivalik_secretary },
+    { name: "Vaibhav Ahuja", post: "Udaigiri", image: udaigiri_secretary },
+    { name: "Harshvardhan Singh ", post: "Kumaon", image: kumaon_secretary },
+    { name: "Bharavi Yadav", post: "Nalanda", image: nalanda_secretary },
+    { name: "Sita Bissu ", post: "Sahyadri", image: sahyadri_secretary },
+    
+    { name: "Kinshuk Goswami ", post: "Girnar", image: girnar_secretary },
+
+    // { name: "Madhav Biyani", post: "Nilgiri", image: nilgiri_secretary },
+
   ]
 
   const highlights = [

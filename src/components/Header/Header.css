@@ -145,6 +145,13 @@
     color: #FDD81F;
   }
 
+  .sports-hub{
+    background-color: #F03027;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+  }
+
   
   @media (max-width: 768px) {
    

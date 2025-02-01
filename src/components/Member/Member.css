@@ -14,11 +14,14 @@
   margin-top: 20px;
   border-radius: 50%;
   background-image: url(../../assets/user-frame.svg);
+  /* background-color: #FDD81F; */
   background-position: center;
   background-size: cover;
   contain: content;
   display: flex;
   justify-items: center;
+  /* border: 5px solid #F03027; */
+
 }
 
 .member-img-container .image {
