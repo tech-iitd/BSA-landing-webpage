@@ -69,7 +69,7 @@ import krish from '../assets/teams/football/krish_goswami.png';
 import bhavesh from '../assets/teams/hockey/bhavesh_bhojwal.png';
 import khemraj from '../assets/teams/hockey/khemraj_newar.png';
   //members
-import devansh_pratap_singh from '../assets/teams/hockey/devansh pratap singh.png';
+import devansh_pratap_singh from '../assets/teams/hockey/Devansh pratap singh.png';
 import Gajendra_Meena from '../assets/teams/hockey/Gajendra Meena.png';
 import Harshit_Chaudhary from '../assets/teams/hockey/Harshit Chaudhary.png';
 import Manish_Kumar from '../assets/teams/hockey/Manish Kumar.png';
