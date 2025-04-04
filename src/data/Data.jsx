@@ -92,7 +92,7 @@ import tannu from '../assets/teams/basketball/tannu_shree.png';
 import satwik from '../assets/teams/basketball/satwik_kumar.png';
 import riddhi from '../assets/teams/basketball/riddhi_agrawal.png';
   //members
-  import Armaan_vaid from '../assets/teams/basketball/Armaan vaid.png';
+  import Armaan_vaid from '../assets/teams/basketball/Armaan Vaid.png';
   import Dharana_Sehgal from '../assets/teams/basketball/Dharana Sehgal.png';
   import Harsh_Agarwal from '../assets/teams/basketball/Harsh Agarwal.png';
   import Kashvi from '../assets/teams/basketball/Kashvi.png';
@@ -139,7 +139,7 @@ import namish from '../assets/teams/tennis/namish_mittal.png';
   import Chappa_Sri_Vinay from '../assets/teams/tennis/Chappa Sri Vinay.png';
   import Faiq_Ahmed from '../assets/teams/tennis/Faiq Ahmed.png';
   import Smart_Yadav from '../assets/teams/tennis/Smart Yadav.png';
-  import Vaibhav_krishna_sriram from '../assets/teams/tennis/Vaibhav krishna sriram.png';
+  import Vaibhav_krishna_sriram from '../assets/teams/tennis/Vaibhav Krishna Sriram.png';
   import Tushita from '../assets/teams/tennis/Tushita.png'
 
 //Volleyball
