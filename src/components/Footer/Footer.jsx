@@ -213,7 +213,7 @@ const Footer = () => {
       <div className="footer-bottom">
         <div className="footer-bottom-center">
           <span>&copy;</span>
-          <span> Board for Sports Activities, IIT Delhi, 2024</span>
+          <span> Board for Sports Activities, IIT Delhi, 2025</span>
         </div>
       </div>
     </footer>
