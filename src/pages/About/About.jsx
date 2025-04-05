@@ -34,6 +34,14 @@ const About = () => {
           mind resides in a healthy body.
         </p>
       </div>
+      {/* <div className="our-team">
+        <h1>Faculty</h1>
+        <div className="team-members">
+          {team_members.map((member, index) => (
+            <Member player={member} key={index} />
+          ))}
+        </div>
+      </div> */}
       <div className="our-team">
         <h1>OUR TEAM</h1>
         <div className="team-members">

@@ -23,14 +23,6 @@ const Updates = () => {
         <h1>Recent Highlights</h1>
         <CarouselHighlights/>
       </div>
-      <div className='upcoming-events'>
-        <h1>Upcoming Events</h1>
-        <div className='upcoming-events-container'>
-          <PhotoFrame size={350}/>
-          <PhotoFrame size={350}/>
-          <PhotoFrame size={350}/>
-        </div>
-      </div>
       <div className="our-history">
         <h1>Our History</h1>
         <PhotoGallery />
