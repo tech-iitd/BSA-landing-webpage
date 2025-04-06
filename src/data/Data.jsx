@@ -131,7 +131,7 @@ import anishka from '../assets/teams/squash/anishka_prajapati.png';
 import pranjal from '../assets/teams/squash/pranjal_awasthi.png';
 import ayush from '../assets/teams/squash/ayush_yadav.png';
   //members
-  import Sarthak_singh from '../assets/teams/squash/Sarthak Singh.png';
+  import Sarthak_singh from '../assets/teams/squash/Sarthak-Singh.png';
   import Antriksh_Saran from '../assets/teams/squash/Antriksh Saran.png';
   import Ananya_Singh from '../assets/teams/squash/Ananya Singh.png';
   import Urvi from '../assets/teams/squash/Urvi.png';
@@ -185,7 +185,7 @@ import aniket from '../assets/teams/cricket/aniket_tripathi.png';
   import Lavkush_Verma from '../assets/teams/cricket/Lavkush Verma.png';
   import Madhav_Biyani from '../assets/teams/cricket/Madhav Biyani.png';
   import Nishant_Kumar_Meena from '../assets/teams/cricket/Nishant Kumar Meena.png';
-  import Harsh_Jain from '../assets/teams/cricket/Harsh Jain.png';
+  import Harsh_Jain from '../assets/teams/cricket/Harsh-Jain.png';
   //men
   import Abhishek_Shukla from '../assets/teams/cricket/men/Abhishek Shukla.png';
   import Aman_Nohwal from '../assets/teams/cricket/men/Aman Nohwal.png';
