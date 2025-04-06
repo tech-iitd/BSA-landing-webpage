@@ -46,30 +46,30 @@ import metla from '../assets/teams/athletics/metla_reshma.png';
 import puneet from '../assets/teams/athletics/puneet.png';
 import anjit from '../assets/teams/athletics/anjit_basumatary.png';
   //members
-  import Robinson_Karangala from '../assets/teams/athletics/Robinson Karangala.png';
-  import Sanjay_Lohar from '../assets/teams/athletics/Sanjay Lohar.png';
+  import Robinson_Karangala from '../assets/teams/athletics/Robinson_Karangala.png';
+  import Sanjay_Lohar from '../assets/teams/athletics/Sanjay_Lohar.png';
   import Aashutosh from '../assets/teams/athletics/Aashutosh.png';
-  import Kavya_Kumar from '../assets/teams/athletics/Kavya Kumar.png';
-  import Ravi_Charan from '../assets/teams/athletics/Ravi Charan.png';
+  import Kavya_Kumar from '../assets/teams/athletics/Kavya_Kumar.png';
+  import Ravi_Charan from '../assets/teams/athletics/Ravi_Charan.png';
   //women
-  import Ananya_Yadav from '../assets/teams/athletics/women/Ananya Yadav.png';
-  import Kanta_Meena from '../assets/teams/athletics/women/Kanta Meena.png';
-  import Kriti_Sharma from '../assets/teams/athletics/women/Kriti Sharma.png';
-  import Manya_Kansal from '../assets/teams/athletics/women/Manya Kansal.png';
-  import Nanita_Basumatary from '../assets/teams/athletics/women/Nanita Basumatary.png';
-  import Pooja_H_M from '../assets/teams/athletics/women/Pooja H M.png';
-  import Sita_Bissu from '../assets/teams/athletics/women/Sita Bissu.png';
+  import Ananya_Yadav from '../assets/teams/athletics/women/Ananya_Yadav.png';
+  import Kanta_Meena from '../assets/teams/athletics/women/Kanta_Meena.png';
+  import Kriti_Sharma from '../assets/teams/athletics/women/Kriti_Sharma.png';
+  import Manya_Kansal from '../assets/teams/athletics/women/Manya_Kansal.png';
+  import Nanita_Basumatary from '../assets/teams/athletics/women/Nanita_Basumatary.png';
+  import Pooja_H_M from '../assets/teams/athletics/women/Pooja_H_M.png';
+  import Sita_Bissu from '../assets/teams/athletics/women/Sita_Bissu.png';
   //men
-  import Ashish_Kumar_Dhillon from '../assets/teams/athletics/men/Ashish Kumar Dhillon.png';
+  import Ashish_Kumar_Dhillon from '../assets/teams/athletics/men/Ashish_Kumar_Dhillon.png';
   import Daksh from '../assets/teams/athletics/men/Daksh.png';
 import Gaurav from '../assets/teams/athletics/men/Gaurav.png';
 import Kushal from '../assets/teams/athletics/men/Kushal.png';
 import Mohan from '../assets/teams/athletics/men/Mohan.png';
-import Priyanshu_Pal from '../assets/teams/athletics/men/Priyanshu Pal.png';
+import Priyanshu_Pal from '../assets/teams/athletics/men/Priyanshu_Pal.png';
 import Rohan from '../assets/teams/athletics/men/Rohan.png';
-import T_Sivaramakrishna_Reddy from '../assets/teams/athletics/men/T Sivaramakrishna Reddy.png';
-import Tushar_Sharma from '../assets/teams/athletics/men/Tushar Sharma.png';
-import Vansh_Saini from '../assets/teams/athletics/men/Vansh Saini.png';
+import T_Sivaramakrishna_Reddy from '../assets/teams/athletics/men/T_Sivaramakrishna_Reddy.png';
+import Tushar_Sharma from '../assets/teams/athletics/men/Tushar_Sharma.png';
+import Vansh_Saini from '../assets/teams/athletics/men/Vansh_Saini.png';
 
 
 
@@ -79,7 +79,7 @@ import saksham from '../assets/teams/aquatics/saksham_paliwal.png';
 import suchir from '../assets/teams/aquatics/suchir_kohli.png';
 import rutuja from '../assets/teams/aquatics/rutuja_shelke.png';
 import isha from '../assets/teams/aquatics/isha_agrawal.png';
-import Rishita_Shukla from '../assets/teams/aquatics/Rishita Shukla.png';
+import Rishita_Shukla from '../assets/teams/aquatics/Rishita_Shukla.png';
 
 //Football
 import sneha from '../assets/teams/football/sneha_dhaka.png';
@@ -87,43 +87,46 @@ import shweta from '../assets/teams/football/shweta_tiwari.png'
 import mayank from '../assets/teams/football/mayank_arya.png';
 import krish from '../assets/teams/football/krish_goswami.png';
   //men
-  import Anirudh_Srinivas from '../assets/teams/football/men/Anirudh Srinivas.png';
-import Arjun_Sharma from '../assets/teams/football/men/Arjun Sharma.png';
-import Arun_Kumar from '../assets/teams/football/men/Arun Kumar.png';
-import Ashutosh from '../assets/teams/football/men/Ashutosh.png';
-import Deepak_Meena from '../assets/teams/football/men/Deepak Meena.png';
-import Dhruv_Singh from '../assets/teams/football/men/Dhruv Singh.png';
-import Mayank_Arya from '../assets/teams/football/men/Mayank Arya.png';
-import Pritish_Mitra from '../assets/teams/football/men/Pritish Mitra.png';
-import Rithik_Rajendran from '../assets/teams/football/men/Rithik Rajendran.png';
-import Samarth_Singla from '../assets/teams/football/men/Samarth Singla.png';
-import Siddhant_Vernekar from '../assets/teams/football/men/Siddhant Vernekar.png';
-import Sriram from '../assets/teams/football/men/Sriram.png'; 
-import Tanmay_Jhalani from '../assets/teams/football/men/Tanmay Jhalani.png';
-import Vaibhav_Singh from '../assets/teams/football/men/Vaibhav Singh.png';
-import Yash_Bafna from '../assets/teams/football/men/Yash Bafna.png';
-import Yengkhom_Barnibash_Singh from '../assets/teams/football/men/Yengkhom Barnibash Singh.png';
-import yug_dev_chauhan from '../assets/teams/football/men/yug dev chauhan.png';
+  import Anirudh_Srinivas from '../assets/teams/football/men/Anirudh_Srinivas.png';
+  import Arjun_Sharma from '../assets/teams/football/men/Arjun_Sharma.png';
+  import Arun_Kumar from '../assets/teams/football/men/Arun_Kumar.png';
+  import Ashutosh from '../assets/teams/football/men/Ashutosh.png';
+  import Deepak_Meena from '../assets/teams/football/men/Deepak_Meena.png';
+  import Dhruv_Singh from '../assets/teams/football/men/Dhruv_Singh.png';
+  import Mayank_Arya from '../assets/teams/football/men/Mayank_Arya.png';
+  import Pritish_Mitra from '../assets/teams/football/men/Pritish_Mitra.png';
+  import Rithik_Rajendran from '../assets/teams/football/men/Rithik_Rajendran.png';
+  import Samarth_Singla from '../assets/teams/football/men/Samarth_Singla.png';
+  import Siddhant_Vernekar from '../assets/teams/football/men/Siddhant_Vernekar.png';
+  import Sriram from '../assets/teams/football/men/Sriram.png'; 
+  import Tanmay_Jhalani from '../assets/teams/football/men/Tanmay_Jhalani.png';
+  import Vaibhav_Singh from '../assets/teams/football/men/Vaibhav_Singh.png';
+  import Yash_Bafna from '../assets/teams/football/men/Yash_Bafna.png';
+  import Yengkhom_Barnibash_Singh from '../assets/teams/football/men/Yengkhom_Barnibash_Singh.png';
+  import yug_dev_chauhan from '../assets/teams/football/men/yug_dev_chauhan.png';
+  
 
 
-
-//Hokey
+//Hockey
 import bhavesh from '../assets/teams/hockey/bhavesh_bhojwal.png';
 import khemraj from '../assets/teams/hockey/khemraj_newar.png';
-  //members
-import devansh_pratap_singh from '../assets/teams/hockey/Devansh pratap singh.png';
-import Gajendra_Meena from '../assets/teams/hockey/Gajendra Meena.png';
-import Harshit_Chaudhary from '../assets/teams/hockey/Harshit Chaudhary.png';
-import Manish_Kumar from '../assets/teams/hockey/Manish Kumar.png';
-import Narendra_Nath_Sharma from '../assets/teams/hockey/Narendra Nath Sharma.png';
-import Srijan_Gupta from '../assets/teams/hockey/Srijan Gupta.png';
+
+//members
+import devansh_pratap_singh from '../assets/teams/hockey/Devansh_pratap_singh.png';
+import Gajendra_Meena from '../assets/teams/hockey/Gajendra_Meena.png';
+import Harshit_Chaudhary from '../assets/teams/hockey/Harshit_Chaudhary.png';
+import Manish_Kumar from '../assets/teams/hockey/Manish_Kumar.png';
+import Narendra_Nath_Sharma from '../assets/teams/hockey/Narendra_Nath_Sharma.png';
+import Srijan_Gupta from '../assets/teams/hockey/Srijan_Gupta.png';
+
 //men
-import Abhishek_Singh_Dangi from '../assets/teams/hockey/men/Abhishek Singh Dangi.png';
-import Gaurav_Raju_Shende from '../assets/teams/hockey/men/Gaurav Raju Shende.png';
-import Jagveer_Meena from '../assets/teams/hockey/men/Jagveer Meena.png';
-import Mohit_Kumar_Gautam from '../assets/teams/hockey/men/Mohit Kumar Gautam.png';
-import Ravindra_Khoja from '../assets/teams/hockey/men/Ravindra Khoja.png';
+import Abhishek_Singh_Dangi from '../assets/teams/hockey/men/Abhishek_Singh_Dangi.png';
+import Gaurav_Raju_Shende from '../assets/teams/hockey/men/Gaurav_Raju_Shende.png';
+import Jagveer_Meena from '../assets/teams/hockey/men/Jagveer_Meena.png';
+import Mohit_Kumar_Gautam from '../assets/teams/hockey/men/Mohit_Kumar_Gautam.png';
+import Ravindra_Khoja from '../assets/teams/hockey/men/Ravindra_Khoja.png';
 import Vishesh from '../assets/teams/hockey/men/Vishesh.png';
+
 
 //Squash
 import piyush from '../assets/teams/squash/piyush_dahiya.png';
@@ -131,69 +134,75 @@ import anishka from '../assets/teams/squash/anishka_prajapati.png';
 import pranjal from '../assets/teams/squash/pranjal_awasthi.png';
 import ayush from '../assets/teams/squash/ayush_yadav.png';
   //members
-  import Sarthak_singh from '../assets/teams/squash/Sarthak-Singh.png';
-  import Antriksh_Saran from '../assets/teams/squash/Antriksh Saran.png';
-  import Ananya_Singh from '../assets/teams/squash/Ananya Singh.png';
+  import Sarthak_singh from '../assets/teams/squash/Sarthak_Singh.png';
+  import Antriksh_Saran from '../assets/teams/squash/Antriksh_Saran.png';
+  import Ananya_Singh from '../assets/teams/squash/Ananya_Singh.png';
   import Urvi from '../assets/teams/squash/Urvi.png';
+
 
 //Basketball
 import tannu from '../assets/teams/basketball/tannu_shree.png';
 import satwik from '../assets/teams/basketball/satwik_kumar.png';
 import riddhi from '../assets/teams/basketball/riddhi_agrawal.png';
-  //members
-  import Armaan_vaid from '../assets/teams/basketball/Armaan Vaid.png';
-  import Dharana_Sehgal from '../assets/teams/basketball/Dharana Sehgal.png';
-  import Harsh_Agarwal from '../assets/teams/basketball/Harsh Agarwal.png';
-  import Kashvi from '../assets/teams/basketball/Kashvi.png';
-  import Pinaki from '../assets/teams/basketball/Pinaki.png';
-  import Prashanthi_Jothi from '../assets/teams/basketball/Prashanthi Jothi.png';
-  import Aditya_Bansal from '../assets/teams/basketball/Aditya Bansal.png';
-  import Smriti_Sehrawat from '../assets/teams/basketball/Smriti Sehrawat.png';
-  import Tatsam_Ranjan_Sharma from '../assets/teams/basketball/Tatsam Ranjan Sharma.png';
-  import Vartika from '../assets/teams/basketball/Vartika.png';
-  //women
-  import Akanksha_Singh from '../assets/teams/basketball/women/Akanksha Singh.png';
-  import Divya from '../assets/teams/basketball/women/Divya.png';
-  import Lipie_Sinha from '../assets/teams/basketball/women/Lipie Sinha.png';
-  import Nandani from '../assets/teams/basketball/women/Nandani.png';
-  import Shreshtha from '../assets/teams/basketball/women/Shreshtha.png';
-  import Yukti_Yadav from '../assets/teams/basketball/women/Yukti Yadav.png';
-  //men
-  import Atharv_Saxena from '../assets/teams/basketball/men/Atharv Saxena.png';
-  import Bhavishya_K_Singh from '../assets/teams/basketball/men/Bhavishya K Singh.png';
-  import Dushyant_Soni from '../assets/teams/basketball/men/Dushyant Soni.png';
-  import Saksham_Paliwal from '../assets/teams/basketball/men/Saksham Paliwal.png';
-  import Vasu_Singh from '../assets/teams/basketball/men/Vasu Singh.png';
-  import Venkat_Aravind_Bose_Vanthala from '../assets/teams/basketball/men/Venkat Aravind Bose Vanthala.png';
 
-  
+//members
+import Armaan_vaid from '../assets/teams/basketball/Armaan_Vaid.png';
+import Dharana_Sehgal from '../assets/teams/basketball/Dharana_Sehgal.png';
+import Harsh_Agarwal from '../assets/teams/basketball/Harsh_Agarwal.png';
+import Kashvi from '../assets/teams/basketball/Kashvi.png';
+import Pinaki from '../assets/teams/basketball/Pinaki.png';
+import Prashanthi_Jothi from '../assets/teams/basketball/Prashanthi_Jothi.png';
+import Aditya_Bansal from '../assets/teams/basketball/Aditya_Bansal.png';
+import Smriti_Sehrawat from '../assets/teams/basketball/Smriti_Sehrawat.png';
+import Tatsam_Ranjan_Sharma from '../assets/teams/basketball/Tatsam_Ranjan_Sharma.png';
+import Vartika from '../assets/teams/basketball/Vartika.png';
+
+//women
+import Akanksha_Singh from '../assets/teams/basketball/women/Akanksha_Singh.png';
+import Divya from '../assets/teams/basketball/women/Divya.png';
+import Lipie_Sinha from '../assets/teams/basketball/women/Lipie_Sinha.png';
+import Nandani from '../assets/teams/basketball/women/Nandani.png';
+import Shreshtha from '../assets/teams/basketball/women/Shreshtha.png';
+import Yukti_Yadav from '../assets/teams/basketball/women/Yukti_Yadav.png';
+
+//men
+import Atharv_Saxena from '../assets/teams/basketball/men/Atharv_Saxena.png';
+import Bhavishya_K_Singh from '../assets/teams/basketball/men/Bhavishya_K_Singh.png';
+import Dushyant_Soni from '../assets/teams/basketball/men/Dushyant_Soni.png';
+import Saksham_Paliwal from '../assets/teams/basketball/men/Saksham_Paliwal.png';
+import Vasu_Singh from '../assets/teams/basketball/men/Vasu_Singh.png';
+import Venkat_Aravind_Bose_Vanthala from '../assets/teams/basketball/men/Venkat_Aravind_Bose_Vanthala.png';
+
+
+
 
   //Chess
   import shourya from '../assets/teams/chess/shourya_vir_jain.png';
 import shoan from '../assets/teams/chess/shoan_raj.png';
   //members
-  import soham_sameer_palkar from '../assets/teams/chess/Soham Sameer Palkar.png';
-  import Shamil_Mohammed from '../assets/teams/chess/Shamil Mohammed.png';
-  import Raghav_Singla from '../assets/teams/chess/Raghav Singla.png';
-  import Sumit_Biswal from '../assets/teams/chess/Sumit Biswal.png';
+  import soham_sameer_palkar from '../assets/teams/chess/Soham_Sameer_Palkar.png';
+  import Shamil_Mohammed from '../assets/teams/chess/Shamil_Mohammed.png';
+  import Raghav_Singla from '../assets/teams/chess/Raghav_Singla.png';
+  import Sumit_Biswal from '../assets/teams/chess/Sumit_Biswal.png';
 
 //Cricket
 import talin from '../assets/teams/cricket/talin_sharma.png';
 import aniket from '../assets/teams/cricket/aniket_tripathi.png';
-  //members
-  import Rishit_Ojha from '../assets/teams/cricket/Rishit Ojha.png';
-  import Lavkush_Verma from '../assets/teams/cricket/Lavkush Verma.png';
-  import Madhav_Biyani from '../assets/teams/cricket/Madhav Biyani.png';
-  import Nishant_Kumar_Meena from '../assets/teams/cricket/Nishant Kumar Meena.png';
-  import Harsh_Jain from '../assets/teams/cricket/Harsh-Jain.png';
-  //men
-  import Abhishek_Shukla from '../assets/teams/cricket/men/Abhishek Shukla.png';
-  import Aman_Nohwal from '../assets/teams/cricket/men/Aman Nohwal.png';
-  import Daksh_Davas from '../assets/teams/cricket/men/Daksh Davas.png';
-  import Garvit_Verma from '../assets/teams/cricket/men/Garvit Verma.png';
-  import Ilyas_Mir from '../assets/teams/cricket/men/Ilyas Mir.png';
-  import Kanish_Khatana from '../assets/teams/cricket/men/Kanish Khatana.png';
-  import Utkarsh_Singh from '../assets/teams/cricket/men/Utkarsh Singh.png';
+//members
+import Rishit_Ojha from '../assets/teams/cricket/Rishit_Ojha.png';
+import Lavkush_Verma from '../assets/teams/cricket/Lavkush_Verma.png';
+import Madhav_Biyani from '../assets/teams/cricket/Madhav_Biyani.png';
+import Nishant_Kumar_Meena from '../assets/teams/cricket/Nishant_Kumar_Meena.png';
+import Harsh_Jain from '../assets/teams/cricket/Harsh_Jain.png';
+//men
+import Abhishek_Shukla from '../assets/teams/cricket/men/Abhishek_Shukla.png';
+import Aman_Nohwal from '../assets/teams/cricket/men/Aman_Nohwal.png';
+import Daksh_Davas from '../assets/teams/cricket/men/Daksh_Davas.png';
+import Garvit_Verma from '../assets/teams/cricket/men/Garvit_Verma.png';
+import Ilyas_Mir from '../assets/teams/cricket/men/Ilyas_Mir.png';
+import Kanish_Khatana from '../assets/teams/cricket/men/Kanish_Khatana.png';
+import Utkarsh_Singh from '../assets/teams/cricket/men/Utkarsh_Singh.png';
+
 
 //Table Tennis
 import vaishali from '../assets/teams/table_tennis/vaishali_anand.png';
@@ -201,72 +210,75 @@ import dhruv from '../assets/teams/table_tennis/dhruv_jain.png';
 import ayush_dudawat from '../assets/teams/table_tennis/ayush_dudawat.png';
   //members
   import Akash from '../assets/teams/table_tennis/Akash.png';
-  import Danish_Jhanji from '../assets/teams/table_tennis/Danish Jhanji.png';
-  import Arnav_Garg from '../assets/teams/table_tennis/Arnav Garg.png';
-  import Divija_Motwani from '../assets/teams/table_tennis/Divija Motwani.png';
-  import Sidh_Bansal from '../assets/teams/table_tennis/Sidh Bansal.png';
+  import Danish_Jhanji from '../assets/teams/table_tennis/Danish_Jhanji.png';
+  import Arnav_Garg from '../assets/teams/table_tennis/Arnav_Garg.png';
+  import Divija_Motwani from '../assets/teams/table_tennis/Divija_Motwani.png';
+  import Sidh_Bansal from '../assets/teams/table_tennis/Sidh_Bansal.png';
 
 //Tennis 
 import shreyash from '../assets/teams/tennis/shreyash_kumar.png';
 import namish from '../assets/teams/tennis/namish_mittal.png';
   //members
-  import Chappa_Sri_Vinay from '../assets/teams/tennis/Chappa Sri Vinay.png';
-  import Faiq_Ahmed from '../assets/teams/tennis/Faiq Ahmed.png';
-  import Smart_Yadav from '../assets/teams/tennis/Smart Yadav.png';
-  import Vaibhav_krishna_sriram from '../assets/teams/tennis/Vaibhav Krishna Sriram.png';
+  import Chappa_Sri_Vinay from '../assets/teams/tennis/Chappa_Sri_Vinay.png';
+  import Faiq_Ahmed from '../assets/teams/tennis/Faiq_Ahmed.png';
+  import Smart_Yadav from '../assets/teams/tennis/Smart_Yadav.png';
+  import Vaibhav_krishna_sriram from '../assets/teams/tennis/Vaibhav_Krishna_Sriram.png';
   import Tushita from '../assets/teams/tennis/Tushita.png';
-  import Tara_Dhondiyal from '../assets/teams/tennis/Tara Dhondiyal.png';
+  import Tara_Dhondiyal from '../assets/teams/tennis/Tara_Dhondiyal.png';
   // import Ananya_Singh from '../assets/teams/tennis/Ananya Singh.png';
 
 //Volleyball
 import rajveer from '../assets/teams/volleyball/rajveer_saini.png';
 import vivek from '../assets/teams/volleyball/vivek_mori.png';
- 
-  //members
-  import shyamali from '../assets/teams/volleyball/Shyamali.png';
-  import Pallavi from '../assets/teams/volleyball/Pallavi.png';
-  import Bhavana from '../assets/teams/volleyball/Bhavana.png';
-  import Gurseerat from '../assets/teams/volleyball/Gurseerat.png';
-  import Lovey from '../assets/teams/volleyball/Lovey.png';
-  import Alka from '../assets/teams/volleyball/Alka.png';
-  import Priti from '../assets/teams/volleyball/Priti.png';
-  import Priya from '../assets/teams/volleyball/Priya.png';
-  //women
-  import Khushi_Yadav from '../assets/teams/volleyball/women/Khushi Yadav.png';
-  import Sanskriti_Jain from '../assets/teams/volleyball/women/Sanskriti Jain.png';
-  import Taniska_Choudhary from '../assets/teams/volleyball/women/Taniska Choudhary.png';
-  import Vaishnavi from '../assets/teams/volleyball/women/Vaishnavi.png';
-  //men
-  import Ankit from '../assets/teams/volleyball/men/Ankit.png';
-  import Dheeraj_Kumar from '../assets/teams/volleyball/men/Dheeraj Kumar.png';
-  import Gaurav_Kumar from '../assets/teams/volleyball/men/Gaurav Kumar.png';
-  import Himanshu from '../assets/teams/volleyball/men/Himanshu.png';
-  import Ishan from '../assets/teams/volleyball/men/Ishan.png';
-  import Shiven_Rathore from '../assets/teams/volleyball/men/Shiven Rathore.png';
-  import Sudheer from '../assets/teams/volleyball/men/Sudheer.png';
-  import Surendra from '../assets/teams/volleyball/men/Surendra.png';
-  import Yuvraj_Singh from '../assets/teams/volleyball/men/Yuvraj Singh.png';
+
+//members
+import shyamali from '../assets/teams/volleyball/Shyamali.png';
+import Pallavi from '../assets/teams/volleyball/Pallavi.png';
+import Bhavana from '../assets/teams/volleyball/Bhavana.png';
+import Gurseerat from '../assets/teams/volleyball/Gurseerat.png';
+import Lovey from '../assets/teams/volleyball/Lovey.png';
+import Alka from '../assets/teams/volleyball/Alka.png';
+import Priti from '../assets/teams/volleyball/Priti.png';
+import Priya from '../assets/teams/volleyball/Priya.png';
+
+//women
+import Khushi_Yadav from '../assets/teams/volleyball/women/Khushi_Yadav.png';
+import Sanskriti_Jain from '../assets/teams/volleyball/women/Sanskriti_Jain.png';
+import Taniska_Choudhary from '../assets/teams/volleyball/women/Taniska_Choudhary.png';
+import Vaishnavi from '../assets/teams/volleyball/women/Vaishnavi.png';
+
+//men
+import Ankit from '../assets/teams/volleyball/men/Ankit.png';
+import Dheeraj_Kumar from '../assets/teams/volleyball/men/Dheeraj_Kumar.png';
+import Gaurav_Kumar from '../assets/teams/volleyball/men/Gaurav_Kumar.png';
+import Himanshu from '../assets/teams/volleyball/men/Himanshu.png';
+import Ishan from '../assets/teams/volleyball/men/Ishan.png';
+import Shiven_Rathore from '../assets/teams/volleyball/men/Shiven_Rathore.png';
+import Sudheer from '../assets/teams/volleyball/men/Sudheer.png';
+import Surendra from '../assets/teams/volleyball/men/Surendra.png';
+import Yuvraj_Singh from '../assets/teams/volleyball/men/Yuvraj_Singh.png';
+
   
 
 
 //Weightlifting
 import bhanu from '../assets/teams/weightlifting/bhanu_pratap_singh.png';
-import Abhinav_Pal from '../assets/teams/weightlifting/Abhinav Pal.png';
-import Haneesh_Bhagat from '../assets/teams/weightlifting/Haneesh Bhagat.png';
-import Yuvraj_Dawar from '../assets/teams/weightlifting/Yuvraj Dawar.png';
-import Hari_Om from '../assets/teams/weightlifting/Hari Om.png'
+import Abhinav_Pal from '../assets/teams/weightlifting/Abhinav_Pal.png';
+import Haneesh_Bhagat from '../assets/teams/weightlifting/Haneesh_Bhagat.png';
+import Yuvraj_Dawar from '../assets/teams/weightlifting/Yuvraj_Dawar.png';
+import Hari_Om from '../assets/teams/weightlifting/Hari_Om.png'
 
 
 //badminton
 import meghana from '../assets/teams/badminton/meghana_halder.png';
   //members
-  import Prakkhyaat_Prajaapat from '../assets/teams/badminton/Prakkhyaat Prajaapat.png';
+  import Prakkhyaat_Prajaapat from '../assets/teams/badminton/Prakkhyaat_Prajaapat.png';
   import Ruchika from '../assets/teams/badminton/Ruchika.png';
-  import Krithik_Eeswar from '../assets/teams/badminton/Krithik Eeswar.png';
+  import Krithik_Eeswar from '../assets/teams/badminton/Krithik_Eeswar.png';
   import Vinayak from '../assets/teams/badminton/Vinayak.png';
-  import Saumya_Tayal from '../assets/teams/badminton/Saumya Tayal.png';
-  import Aditya_Yadav from '../assets/teams/badminton/Aditya Yadav.png';
-  import Shiwang_Gupta from '../assets/teams/badminton/Shiwang Gupta.png';
+  import Saumya_Tayal from '../assets/teams/badminton/Saumya_Tayal.png';
+  import Aditya_Yadav from '../assets/teams/badminton/Aditya_Yadav.png';
+  import Shiwang_Gupta from '../assets/teams/badminton/Shiwang_Gupta.png';
 
 import { image } from 'framer-motion/client';
 
