@@ -1,4 +1,4 @@
-import React, { useContext, useRef, useState } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import "./SportPage.css";
 import { dataContext } from "../../data/Data";
 import { useLocation } from "react-router-dom";
@@ -9,16 +9,34 @@ const SportPage = () => {
   const location = useLocation();
   const sportname = location.pathname.split("/")[2];
 
-  const [isMale, setIsMale] = useState(() => Math.floor(Math.random() * 2));
 
   const sport = sportsData[sportname];
+ 
 
   if (!sport) {
     return <div className="error">Sport not found</div>;
   }
 
+  const [isMale, setIsMale] = useState(() => Math.floor(Math.random() * 2));
+  const [womenTeam, setWomenTeam] = useState(true);
+  useEffect(() => {
+    const hasNoWomenTeam =
+      sport.team.women.members.length === 0 &&
+      sport.team.women.leaders.length === 0;
+  
+    if (hasNoWomenTeam) {
+      setIsMale(true);
+      setWomenTeam(false);
+    } else {
+      setWomenTeam(true);
+    }
+  }, [sport]);
+  
+
   const handleTeamCategory = (e) => {
+
     const selectedCategory = e.target.innerText;
+
     if (selectedCategory === "Men Team") {
       setIsMale(true);
     } else if (selectedCategory === "Women Team") {
@@ -54,6 +72,7 @@ const SportPage = () => {
             style={{
               cursor: "pointer",
               borderBottom: !isMale ? "2px solid #FDD81F" : "none",
+              display: `${womenTeam ? "block" : "none"}`,
             }}
           >
             Women Team
