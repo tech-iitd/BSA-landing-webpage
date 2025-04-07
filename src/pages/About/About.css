@@ -39,7 +39,7 @@
 .our-team .team-members{
     gap: 5%;
     display: flex;
-    /* justify-content:space-evenly; */
+    justify-content:space-evenly;
     flex-wrap: wrap;
     margin-top: 20px;
     margin: auto 15%;

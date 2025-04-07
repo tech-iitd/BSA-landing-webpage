@@ -45,8 +45,7 @@ const Footer = () => {
             <div className="location" > 
               <img src={location_icon} alt="address" />
               <p onClick={handleLocationClick}>
-                BSA Office Student Activity Centre (SAC) Indian Institute of
-                Technology Delhi Hauz Khas, New Delhi, 110016
+              BSA Office, Student Activity Centre (SAC), Indian Institute of Technology Delhi, Hauz Khas, New Delhi, 110016, India
               </p>
             </div>
             <div>

@@ -3,9 +3,24 @@ import "./About.css";
 import { Link } from "react-router-dom";
 import Member from "../../components/Member/Member";
 import PhotoGallery from "../../components/PhoteGallery/PhotoGallery";
+import profile from "../../assets/profile.png";
 import { dataContext } from "../../data/Data";
 const About = () => {
   const { team_members } = useContext(dataContext);
+
+  const administrativeTeam =  [
+    { name: "xyz", post: "President", image: profile },
+    { name: "xyz", post: "Vice President", image: profile },
+    // { name: "xyz", post: "General Secretary", image: profile },
+    { name: "xyz", post: "Sports Officer", image: profile },
+    { name: "xyz", post: "Vice Sports Officer", image: profile },
+  ]
+
+  const topTeam = [
+    { name: "xyz", post: "General Secretary", image: profile },
+    { name: "xyz", post: "Deputy General Secretary", image: profile },
+  ]
+
   return (
     <div className="about-main-container">
       <div className="about">
@@ -34,16 +49,21 @@ const About = () => {
           mind resides in a healthy body.
         </p>
       </div>
-      {/* <div className="our-team">
-        <h1>Faculty</h1>
+      <div className="our-team">
+        <h1>ADMINISTRATIVE TEAM</h1>
         <div className="team-members">
-          {team_members.map((member, index) => (
+          {administrativeTeam.map((member, index) => (
             <Member player={member} key={index} />
           ))}
         </div>
-      </div> */}
+      </div>
       <div className="our-team">
-        <h1>OUR TEAM</h1>
+        <h1>STUDENTS TEAM</h1>
+        <div className="team-members">
+          {topTeam.map((member, index) => (
+            <Member player={member} key={index} />
+          ))}
+        </div>
         <div className="team-members">
           {team_members.map((member, index) => (
             <Member player={member} key={index} />

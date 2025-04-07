@@ -13,8 +13,8 @@ const Member = ({player}) => {
 
       <div className='member-details'>
         <h2>{player.name}</h2>
-        <p>{player.post? player.post: null}</p>
-        <p style={{ color: '#17A1FA' }}>webmail</p>
+        <p style={{ color: '#17A1FA' }}>{player.post? player.post: null}</p>
+        {/* <p style={{ color: '#17A1FA' }}>webmail</p> */}
       </div>
     </div>
   );
