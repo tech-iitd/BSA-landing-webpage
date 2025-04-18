@@ -9,6 +9,7 @@ import joint_sports_officer from "../../assets/officers/joint_sports_officer.png
 import president from "../../assets/officers/president.png";
 import sports_officer from "../../assets/officers/sports_officer.png";
 import general_secretary from "../../assets/officers/general_secretary.png";
+import deputy_general_secretary from "../../assets/officers/deputy_general_secretary.png";
 const About = () => {
   const { team_members } = useContext(dataContext);
 
@@ -20,7 +21,7 @@ const About = () => {
 
   const topTeam = [
     { name: "Kushal", post: "General Secretary", image: general_secretary },
-    { name: "xyz", post: "Deputy General Secretary", image: profile },
+    { name: "Harshit Chaudhary", post: "Deputy General Secretary", image: deputy_general_secretary },
   ]
 
   return (
