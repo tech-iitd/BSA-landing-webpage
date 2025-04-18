@@ -5,19 +5,21 @@ import Member from "../../components/Member/Member";
 import PhotoGallery from "../../components/PhoteGallery/PhotoGallery";
 import profile from "../../assets/profile.png";
 import { dataContext } from "../../data/Data";
+import joint_sports_officer from "../../assets/officers/joint_sports_officer.png";
+import president from "../../assets/officers/president.png";
+import sports_officer from "../../assets/officers/sports_officer.png";
+import general_secretary from "../../assets/officers/general_secretary.png";
 const About = () => {
   const { team_members } = useContext(dataContext);
 
   const administrativeTeam =  [
-    { name: "xyz", post: "President", image: profile },
-    { name: "xyz", post: "Vice President", image: profile },
-    // { name: "xyz", post: "General Secretary", image: profile },
-    { name: "xyz", post: "Sports Officer", image: profile },
-    { name: "xyz", post: "Vice Sports Officer", image: profile },
+    { name: "Dr. Rekha Sati Deoli", post: "Joint Sports Officer", image: joint_sports_officer },
+    { name: "Prof. Punit Sharma", post: "President", image: president },
+    { name: " Dr. Deepak Negi", post: "Sports Officer", image: sports_officer },
   ]
 
   const topTeam = [
-    { name: "xyz", post: "General Secretary", image: profile },
+    { name: "Kushal", post: "General Secretary", image: general_secretary },
     { name: "xyz", post: "Deputy General Secretary", image: profile },
   ]
 
