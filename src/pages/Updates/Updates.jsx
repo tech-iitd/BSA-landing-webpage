@@ -18,11 +18,11 @@ const Updates = () => {
         </h1>
       </div>
       <div>
-
+{/* 
       <div className="recent-highlights">
         <h1>Recent Highlights</h1>
         <CarouselHighlights/>
-      </div>
+      </div> */}
       <div className="our-history">
         <h1>Our History</h1>
         <PhotoGallery />
