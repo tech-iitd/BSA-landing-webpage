@@ -1,7 +1,7 @@
-.sports-element{
+.sports-element {
     position: relative;
     background-image: url('../../assets/sports_bkg_img.svg');
-    background-position:center;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     display: grid;
@@ -11,52 +11,104 @@
     align-items: center;
 }
 
-.sports-element .sports-element-first-container{
+.sports-element .sports-element-first-container {
     display: grid;
     height: 95vh;
     grid-template-rows: 2fr 6fr 2fr;
     padding: 5% 10%;
 }
 
-
-
-.sports-element .sports-element-first-container h1{
+.sports-element .sports-element-first-container h1 {
     font-size: 300%;
     background: linear-gradient(64deg, #DDDDD9, #deded931);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    color: transparent; 
+    -webkit-text-fill-color: transparent;
+    color: transparent;
 }
 
-.sports-element .sports-element-first-container >a{
+.sports-element .sports-element-first-container > a {
     display: flex;
     align-items: center;
     font-size: 150%;
     background: linear-gradient(64deg, #DDDDD9, #deded931);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    color: transparent; 
+    -webkit-text-fill-color: transparent;
+    color: transparent;
 }
 
-.sports-element .sports-element-first-container ul{
+.sports-element .sports-element-first-container ul {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     padding: 10px 0;
+    gap: 20px;
 }
 
+/* Each sport tile */
+.sports-element .sports-element-first-container ul li .sport-tile {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+}
 
+/* Image container */
+.sports-element .sports-element-first-container ul li .sport-image-wrap {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+}
 
-.sports-element .sports-element-first-container ul li img{
-    margin-right: 40px;
-    margin-left: 0%;
+/* The sport image */
+.sports-element .sports-element-first-container ul li .sport-image-wrap img {
+    display: block;
     width: 85px;
+    height: auto;
+    transition: transform 220ms ease, box-shadow 220ms ease;
+    transform-origin: center bottom;
 }
+
+/* The label */
+.sports-element .sports-element-first-container ul li .sport-image-wrap .sport-label {
+    margin-top: 8px; /* places label right below image */
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 180ms ease, transform 180ms ease;
+    transform: translateY(5px);
+    z-index: 6;
+}
+
+/* Hover effects */
+.sports-element .sports-element-first-container ul li .sport-image-wrap:hover img,
+.sports-element .sports-element-first-container ul li .sport-tile:focus .sport-image-wrap img {
+    transform: scale(1.35);
+    z-index: 5;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.sports-element .sports-element-first-container ul li .sport-image-wrap:hover .sport-label,
+.sports-element .sports-element-first-container ul li .sport-tile:focus .sport-image-wrap .sport-label {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Right-side image container */
 .sports-element .sports-element-second-container {
     height: 100%;
 }
 
-.sports-element .sports-element-second-container img{
+.sports-element .sports-element-second-container img {
     bottom: 2;
     position: absolute;
     right: 6%;
@@ -64,7 +116,7 @@
     z-index: 2;
 }
 
-#sports-element-rantangle{
+#sports-element-rantangle {
     position: absolute;
     right: 8%;
     width: 25%;
@@ -72,7 +124,7 @@
     z-index: 1;
 }
 
-/* Mobile styles */
+/* --- Mobile Styles --- */
 @media (max-width: 768px) {
     .sports-element {
         background-image: url('../../assets/sports_mbl_bkg.svg');
@@ -80,16 +132,15 @@
         overflow: hidden;
     }
 
-    .sports-element .sports-element-first-container{
+    .sports-element .sports-element-first-container {
         display: flex;
         flex-direction: column;
         padding: 0 5%;
         padding-top: 5vh;
         align-items: flex-start;
-
     }
 
-    .sports-element .sports-element-first-container p{
+    .sports-element .sports-element-first-container p {
         font-size: 12px;
     }
 
@@ -97,14 +148,15 @@
         font-size: 200%;
         text-align: center;
         margin-bottom: 10%;
-
     }
 
-    .sports-element .sports-element-first-container ul li img{
-        margin: 5% ;
-        margin-right: 20px;
-        margin-left: 0%;
+    .sports-element .sports-element-first-container ul li .sport-image-wrap img {
         width: 55px;
+    }
+
+    .sports-element .sports-element-first-container ul li .sport-image-wrap .sport-label {
+        font-size: 10px;
+        margin-top: 6px;
     }
 
     .sports-element .sports-element-first-container > a {
