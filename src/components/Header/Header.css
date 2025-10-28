@@ -1,5 +1,5 @@
 .header {
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     color: white;
     top: 0;
     left: 0;
@@ -37,7 +37,7 @@
 }
 
 .header .header-second-container ul li a{
-    color: white;
+    color: Red;
     padding: 5px 13px;
     text-decoration: none;
 }
@@ -147,9 +147,16 @@
 
   .sports-hub{
     background-color: #F03027;
-    color: white;
     padding: 5px;
     border-radius: 5px;
+  }
+  
+  .sports-hub a {
+    color: white !important;
+  }
+  
+  .mobile-sports-hub a {
+    color: white !important;
   }
 
   

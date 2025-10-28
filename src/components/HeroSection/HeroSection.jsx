@@ -1,64 +1,31 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './HeroSection.css';
-import hero_image_1 from '../../assets/hero_image_1.png';
-import hero_image_2 from '../../assets/hero_image_2.png';
-import hero_image_3 from '../../assets/hero_image_3.png';
-import hero_image_4 from '../../assets/hero_image_4.png';
-import hero_image_5 from '../../assets/hero_image_5.png';
+import header_image from '../../assets/header_image.png';
+import get_set_go from '../../assets/get_set_go.svg';
+import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  // Array of image URLs
-  const images = [
-    hero_image_1,
-    hero_image_2,
-    hero_image_3,
-    hero_image_4,
-    hero_image_5,
-  ];
-
-  const totalImages = images.length;
-
-  const handleNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % totalImages);
-  };
-
-  const handlePrev = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + totalImages) % totalImages);
-  };
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % totalImages);
-    }, 5000); // Change image every 3 seconds
-
-    return () => clearInterval(interval); // Cleanup interval on component unmount
-  }, [totalImages]);
-
   return (
     <div className="hero-section">
-      <div className="hero-carousel">
-        {images.map((image, index) => {
-          const rotation = (360 / totalImages) * index; // Rotate each image equally around the Y-axis
-          const offset = (360 / totalImages) * currentIndex; // Offset rotation for the active image
-
-          return (
-            <div
-              key={index}
-              className={`carousel-item ${currentIndex === index ? 'active' : ''}`}
-              style={{
-                transform: `rotateY(${rotation - offset}deg) translateZ(600px)`,
-              }}
-            >
-              <img src={image} alt={`Slide ${index + 1}`} />
-            </div>
-          );
-        })}
-      </div>
-      <div className="hero-carousel-controls">
-        <button onClick={handlePrev}>◀</button>
-        <button onClick={handleNext}>▶</button>
+      <div
+        className="hero-header-image"
+        style={{ backgroundImage: `url(${header_image})` }}
+      >
+        <img src={header_image} alt="Header" className="hero-header-img" loading="eager" />
+        <div className="hero-overlay">
+          <h2 className="hero-title">SPORTS AT IIT DELHI</h2>
+          <div className="hero-text">
+            <p>
+              At IIT Delhi, the Board for Sports Activities (BSA) fosters excellence with top-notch facilities and a thriving culture.
+              Comprising 300+ members, BSA promotes sports for all—students, faculty, and residents—balancing competitive achievements and fitness.
+              Known for producing national-level players, we also host tournaments, social events, and collaborations, making sports inclusive and accessible.
+            </p>
+          </div>
+          <Link to="/about" className="hero-cta" aria-label="Explore more about BSA">
+            <span className="cta-text">EXPLORE MORE</span>
+            <img src={get_set_go} alt="go" className="cta-icon" />
+          </Link>
+        </div>
       </div>
     </div>
   );

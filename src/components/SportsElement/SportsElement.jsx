@@ -1,5 +1,6 @@
 import sports_person from "../../assets/sports_person.svg";
 import sports_ractangle from "../../assets/sports_ractangle.svg";
+import get_set_go from '../../assets/get_set_go.svg';
 import React, { useContext } from "react";
 import "./SportsElement.css";
 import { dataContext } from "../../data/Data";
@@ -121,9 +122,10 @@ const SportsElement = () => {
             </Link>
           </li>
         </ul>
-        <Link to={"/sports"} className="know-more-link">
-          KNOW MORE
-        </Link>
+          <Link to="/sports" className="hero-cta" aria-label="Explore more about Sports">
+                    <span className="cta-text">EXPLORE MORE</span>
+                    <img src={get_set_go} alt="go" className="cta-icon" />
+                  </Link>
       </div>
       <div className="sports-element-second-container">
         <img src={sports_person} alt="" />
