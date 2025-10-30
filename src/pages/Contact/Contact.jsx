@@ -6,7 +6,8 @@ import email_icon from '../../assets/email_icon.svg';
 const Contact = () => {
   return (
     <div className='contact-outer-container'>
-        {/* <div className='connect'>
+        {
+         <div className='connect'>
         <div className='connect-container'>
             <div className='connect-heading'>
                 <h1>CONTACT</h1>
@@ -42,7 +43,8 @@ const Contact = () => {
                 referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
         </div>
-        </div> */}
+        </div> 
+        }
     </div>
   );
 }

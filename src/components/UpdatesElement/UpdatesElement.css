@@ -1,125 +1,245 @@
-.updates-element{
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap');
+
+.updates-element {
     position: relative;
-    background-image: url('../../assets/updates_bkg_img.svg');
-    background-position:center;
+    background-color: white;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     display: grid;
-    grid-template-columns: 0.6fr 0.4fr;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: stretch;
+    min-height: 90vh;
+    gap: 0;
+    font-family: 'MuseoModerno', sans-serif;
+}
+
+.updates-element .updates-element-first-container {
+    display: flex;
+    flex-direction: column;
+    padding: 5% 9%;
+    gap: 3rem;
+    height: 100%;
+}
+
+.updates-element .updates-element-first-container h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #F03027;
+    margin: 0;
+    letter-spacing: 0.05em;
+    font-family: 'MuseoModerno', sans-serif;
+    flex-shrink: 0;
+}
+
+.updates-element .calendar-section {
+    display: flex;
+    width: 100%;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    min-height: 0;
 }
 
-.updates-element .updates-element-first-container{
-    display: grid;
-    height: 95vh;
-    grid-template-rows: 2fr 6fr 2fr;
-    padding: 5% 9%;
-}
-
-
-.updates-element .updates-element-first-container h1{
-    font-size: 300%;
-    background: linear-gradient(64deg, #FDD81F 1%, #F03027 99%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    color: transparent; 
-}
-
-.updates-element .updates-element-first-container >a{
+.updates-element .calendar-placeholder {
+    width: 100%;
     display: flex;
+    justify-content: center;
     align-items: center;
-    font-size: 150%;
-    background: linear-gradient(64deg, #FDD81F 1%, #F03027 99%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    color: transparent; 
-    margin-right: 60%;
+    color: #333;
 }
 
-.updates-element .updates-element-first-container ul{
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 10px 0;
+.updates-element .explore-link {
+    font-size: 1.5rem;
+    color: #F03027;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    transition: opacity 0.3s ease;
+    font-family: 'MuseoModerno', sans-serif;
+    flex-shrink: 0;
 }
 
-.updates-element .updates-element-first-container ul li img{
-    margin: 10px;
-    width: 60px;
+.updates-element .explore-link:hover {
+    opacity: 0.8;
 }
+
 .updates-element .updates-element-second-container {
+    display: flex;
+    flex-direction: column;
+    padding: 5% 5%;
+    gap: 2rem;
+    border-left: 1px solid #ddd;
     height: 100%;
 }
 
-.updates-element .updates-element-second-container img{
-    bottom: 1;
-    position: absolute;
-    right: 9%;
-    width: 19.5%;
-    z-index: 2;
+.updates-element .updates-element-second-container h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #F03027;
+    margin: 0;
+    letter-spacing: 0.05em;
+    font-family: 'MuseoModerno', sans-serif;
+    flex-shrink: 0;
 }
 
-#updates-element-rantangle{
-    position: absolute;
-    right: 8%;
-    width: 25%;
-    height: 100%;
-    z-index: 1;
+.updates-element .events-box {
+    width: 100%;
+    flex: 1;
+    border: 2px solid #333;
+    border-radius: 24px;
+    background-color: white;
+    padding: 20px;
+    max-height: 400px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
+.updates-element .events-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 8px;
+    flex: 1;
+    min-height: 0;
+}
 
-/* Mobile styles */
+.updates-element .events-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+.updates-element .events-list::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.updates-element .events-list::-webkit-scrollbar-thumb {
+    background: #F03027;
+    border-radius: 10px;
+}
+
+.updates-element .events-list::-webkit-scrollbar-thumb:hover {
+    background: #d92a1f;
+}
+
+.updates-element .event-item-display {
+    display: flex;
+    gap: 15px;
+    padding: 12px;
+    border-left: 4px solid #F03027;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    flex-shrink: 0;
+}
+
+.updates-element .event-item-display:hover {
+    background-color: #f0f0f0;
+}
+
+.updates-element .event-date {
+    font-size: 0.9rem;
+    color: #F03027;
+    font-weight: bold;
+    white-space: nowrap;
+    min-width: 80px;
+}
+
+.updates-element .event-content h4 {
+    margin: 0;
+    font-size: 1rem;
+    color: #333;
+    font-family: 'MuseoModerno', sans-serif;
+}
+
+.updates-element .event-content p {
+    margin: 4px 0 0 0;
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.updates-element .no-events {
+    text-align: center;
+    color: #999;
+    padding: 40px 20px;
+    font-size: 1rem;
+}
+
+.updates-element .react-calendar {
+    background-color: white;
+}
+
+.updates-element .react-calendar__tile {
+    color: #333 !important;
+}
+
+.updates-element .react-calendar__month-view__days__day--neighboringMonth {
+    color: #ccc !important;
+}
+
+.updates-element .react-calendar__month-view__days__day:not(.react-calendar__month-view__days__day--neighboringMonth) {
+    color: #333 !important;
+}
+
+.updates-element .react-calendar__month-view__days__day--weekend:not(.react-calendar__month-view__days__day--neighboringMonth) {
+    color: #F03027 !important;
+}
+
+.updates-element .react-calendar__month-view__days__day--weekend {
+    color: #F03027 !important;
+}
+
+.updates-element .react-calendar__month-view__weekdays__weekday {
+    color: #333 !important;
+}
+
+.updates-element .react-calendar__month-view__weekNumbers .react-calendar__tile {
+    color: #333 !important;
+}
+
+.updates-element .react-calendar__navigation {
+    background-color: white;
+}
+
+.updates-element .react-calendar__navigation button {
+    color: #333 !important;
+}
+
+.updates-element .react-calendar__tile--now {
+    background: #F03027 !important;
+    color: white !important;
+}
+
 @media (max-width: 768px) {
     .updates-element {
-        background-image: url('../../assets/updates_mbl_bkg.svg');
-        grid-template-columns: 0.75fr 0.25fr;
-        overflow: hidden;
+        grid-template-columns: 1fr;
+        min-height: auto;
     }
 
-    .updates-element .updates-element-first-container{
-        display: flex;
-        flex-direction: column;
-        padding: 0%;
-        padding-top: 5vh;
-        align-items: flex-start;
-        padding-left: 5%;
-        gap: 5%;
-    }
-
-    .updates-element .updates-element-first-container p{
-        font-size: 12px;
+    .updates-element .updates-element-first-container {
+        padding: 5%;
+        gap: 2rem;
     }
 
     .updates-element .updates-element-first-container h1 {
-        font-size: 200%;
-        text-align: center;
-        margin-bottom: 10%;
-
+        font-size: 2rem;
     }
 
-    .updates-element .updates-element-first-container > a {
-        font-size: 120%;
-        justify-content: center;
-        position: absolute;
-        bottom: 10%;
+    .updates-element .explore-link {
+        font-size: 1.2rem;
     }
 
-    .updates-element .updates-element-second-container img {
-        bottom: 20%;
-        right: -28%;
-        width: 55%;
-        margin: 0 auto;
-        display: block;
+    .updates-element .updates-element-second-container {
+        border-left: none;
+        border-top: 1px solid #ddd;
+        padding: 5%;
+        min-height: 50vh;
     }
 
-    #updates-element-rantangle {
-        bottom: 0;
-        top: auto;
-        right: -50%;
-        width: 75%;
-        height: auto;
+    .updates-element .updates-element-second-container h2 {
+        font-size: 2rem;
     }
 }

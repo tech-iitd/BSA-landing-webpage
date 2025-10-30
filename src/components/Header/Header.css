@@ -14,6 +14,23 @@
     z-index: 1000;
 }
 
+.header-first-container a {
+  display: flex;
+  align-items: center; 
+  gap: 10px;          
+  text-decoration: none;
+}
+
+.header-first-container img:first-child {
+  width: 80px;
+}
+
+.header-first-container img:last-child {
+  width: 80px;
+  margin-top: 3px;
+}
+
+
 .header::after {
     content: '';
     position: absolute;
@@ -23,11 +40,6 @@
     height: 3px;
     background: linear-gradient(90deg, #FDD81F, #F03027);
 }
-
-.header .header-first-container {
-    display: flex;
-}
-
 
 .header .header-second-container ul {
     display: flex;
@@ -69,7 +81,7 @@
   .hamburger .line {
     width: 25px;
     height: 3px;
-    background-color: #ffffff;
+    background-color: #000000;
     transition: all 0.3s ease;
     z-index: 999;
   }

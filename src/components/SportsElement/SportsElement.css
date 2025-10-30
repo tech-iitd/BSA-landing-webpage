@@ -181,7 +181,7 @@
 /* --- Mobile Styles --- */
 @media (max-width: 768px) {
     .sports-element {
-        background-image: url('../../assets/sports_mbl_bkg.svg');
+        background-color: #ffffff;
         grid-template-columns: 0.75fr 0.25fr;
         overflow: hidden;
     }

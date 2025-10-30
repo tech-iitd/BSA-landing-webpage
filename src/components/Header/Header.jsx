@@ -95,10 +95,7 @@ const Header = ({ isAuth }) => {
                   <Link to={"/sports"} onClick={closeMenu}>Sports</Link>
                 </li>
                 <li>
-                  <Link to={"/updates"} onClick={closeMenu}>Updates</Link>
-                </li>
-                <li>
-                  <Link to={"/experiences"} onClick={closeMenu}>Experiences</Link>
+                  <Link to={"/updates"} onClick={closeMenu}>Events</Link>
                 </li>
                 <li>
                   <Link to={"/connect"} onClick={closeMenu}>Connect</Link>
