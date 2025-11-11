@@ -1,94 +1,205 @@
-.sports-main-container{
-    background-image: url('../../assets/bkg_img.png');
-  background-repeat: repeat-y; /* Repeat along the Y-axis */
-  background-size: 100% auto; /* Fit the width, and height adjusts proportionally */
-  background-position: center; /* Center the image horizontally */
-  margin: 0; /* Remove default body margin */
+.sports-main-container {
+  min-height: 100vh;
+  background-color: #ffffff;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
-/* .sports-page {
-    background-image: url('../../assets/bkg_img.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: repeat-y;
-    height: 100vh;
-} */
-
-
-.sports-page-top{
-    background-image: url('../../assets/sports_page_bkg.svg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 25vh;
-    position: relative;
+/* Hero Section */
+.sports-hero {
+  background-color: #f9fafb;
+  position: relative;
+  height: 16rem;
+  overflow: hidden;
 }
 
-.sports-page-top h1{
-    position: absolute;
-    margin-left: 10%;
-    padding-top: 3%;
-    font-size: 300%;
-    background: linear-gradient(64deg, #DDDDD9, #deded931);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    color: transparent; 
+@media (min-width: 768px) {
+  .sports-hero {
+    height: 18rem;
+  }
 }
 
-
-.sports-all h1{
-    align-items: flex-start;
-    margin: 2% 10%;
+.sports-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #dc2626 0%, #f59e0b 100%);
+  opacity: 0.9;
 }
 
-/* Container holding the divs */
-.sports-all > div {
-    display: flex;
-    margin: 0 15%;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+.sports-hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3rem;
+  background: linear-gradient(to top, #ffffff, transparent);
 }
 
-/* Anchor link styles */
-.sports-all > div a {
-    text-decoration: none;
-    color: white;
-    margin: 2.5% 3%;
+.sports-hero-pattern {
+  position: absolute;
+  inset: 0;
+  opacity: 0.15;
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS1vcGFjaXR5PSIwLjMiIHN0cm9rZS13aWR0aD0iMiIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmlkKSIvPjwvc3ZnPg==');
 }
 
-/* Mobile version styling */
-@media screen and (max-width: 768px) {
+.sports-hero-content {
+  position: relative;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
 
-    .sports-main-container{
-        background-image:none;
-    }
+.sports-hero h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: white;
+  text-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+  animation: fadeInUp 0.8s ease-out;
+  margin: 0;
+  letter-spacing: 0.1em;
+}
 
-    .sports-page-top{
-        height: 18vh;
-        position: relative;
-    }
-    .sports-page-top h1{
-        margin-left: 10%;
-        padding-top: 10%;
-        font-size: 300%;
-    }
+@media (min-width: 768px) {
+  .sports-hero h1 {
+    font-size: 4rem;
+  }
+}
 
-    .sports-all h1 {
-        font-size: 20px;  /* Reduce font size for mobile */
-        margin: 5% 10;  /* Adjust margin */
-    }
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
-    /* Adjust the container layout to fit better on mobile */
-    .sports-all > div {
-        flex-wrap: wrap;
-        margin: 0;
-    }
+/* Content Section */
+.sports-content-wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  margin-top: -1.5rem;
+}
 
-    /* Adjust the anchor link margins */
-    .sports-all > div a {
+.sports-header {
+  background: white;
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  padding: 2.5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  transition: all 0.5s ease;
+}
 
-        margin: 2%;  /* Adjust margins to make links stack vertically */
-        font-size: 18px;  /* Adjust font size of links */
-    }
+.sports-header:hover {
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 768px) {
+  .sports-header {
+    padding: 1.5rem;
+  }
+}
+
+.sports-header h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  background: linear-gradient(to right, #dc2626, #f59e0b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@media (min-width: 768px) {
+  .sports-header h2 {
+    font-size: 2.5rem;
+  }
+}
+
+.sports-header-line {
+  width: 8rem;
+  height: 0.25rem;
+  background: linear-gradient(to right, #dc2626, #f59e0b);
+  margin: 0 auto 1.5rem;
+  border-radius: 9999px;
+}
+
+.sports-subtitle {
+  color: #6b7280;
+  font-size: 1.125rem;
+  line-height: 1.75;
+  max-width: 48rem;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .sports-subtitle {
+    font-size: 1rem;
+  }
+}
+
+/* Sports Grid */
+.sports-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+  margin-bottom: 4rem;
+}
+
+@media (max-width: 640px) {
+  .sports-grid {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1.5rem;
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .sports-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+}
+
+.sports-grid-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  animation: fadeInScale 0.6s ease-out backwards;
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.sports-grid-link:hover {
+  transform: translateY(-0.25rem);
+  transition: transform 0.3s ease;
+}
+
+/* Remove default focus outline and add custom one */
+.sports-grid-link:focus {
+  outline: none;
+}
+
+.sports-grid-link:focus-visible {
+  outline: 2px solid #dc2626;
+  outline-offset: 4px;
+  border-radius: 1rem;
 }

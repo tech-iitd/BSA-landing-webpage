@@ -89,9 +89,6 @@ const Header = ({ isAuth }) => {
                   <Link to={"/"} onClick={closeMenu}>Home</Link>
                 </li>
                 <li>
-                  <Link to={"/about"} onClick={closeMenu}>About</Link>
-                </li>
-                <li>
                   <Link to={"/sports"} onClick={closeMenu}>Sports</Link>
                 </li>
                 <li>
@@ -121,8 +118,8 @@ const Header = ({ isAuth }) => {
         ) : (
           <ul>
             <li>
-              <Link to="/about" className={activeSection === "about" ? "active" : ""}>
-                About
+              <Link to="/" className={activeSection === "home" ? "active" : ""}>
+                Home
               </Link>
             </li>
             <li>
@@ -132,12 +129,7 @@ const Header = ({ isAuth }) => {
             </li>
             <li>
               <Link to="/updates" className={activeSection === "updates" ? "active" : ""}>
-                Updates
-              </Link>
-            </li>
-            <li>
-              <Link to="/experiences" className={activeSection === "experiences" ? "active" : ""}>
-                Experiences
+                Events
               </Link>
             </li>
             <li>

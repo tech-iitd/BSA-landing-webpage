@@ -1,245 +1,486 @@
 @import url('https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap');
 
-.updates-element {
-    position: relative;
-    background-color: white;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    align-items: stretch;
-    min-height: 90vh;
-    gap: 0;
-    font-family: 'MuseoModerno', sans-serif;
+/* Main Container */
+.updates-section {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  padding: 60px 20px;
+  font-family: 'MuseoModerno', sans-serif;
 }
 
-.updates-element .updates-element-first-container {
-    display: flex;
-    flex-direction: column;
-    padding: 5% 9%;
-    gap: 3rem;
-    height: 100%;
+.updates-container {
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
-.updates-element .updates-element-first-container h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    color: #F03027;
-    margin: 0;
-    letter-spacing: 0.05em;
-    font-family: 'MuseoModerno', sans-serif;
-    flex-shrink: 0;
+/* Header Section */
+.updates-header {
+  text-align: center;
+  margin-bottom: 48px;
+  animation: fadeInDown 0.6s ease-out;
 }
 
-.updates-element .calendar-section {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    min-height: 0;
+.header-content {
+  display: inline-block;
 }
 
-.updates-element .calendar-placeholder {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #333;
+.section-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0 0 16px 0;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
 }
 
-.updates-element .explore-link {
-    font-size: 1.5rem;
-    color: #F03027;
-    text-decoration: none;
-    font-weight: bold;
-    letter-spacing: 0.05em;
-    transition: opacity 0.3s ease;
-    font-family: 'MuseoModerno', sans-serif;
-    flex-shrink: 0;
+.title-icon {
+  color: #F03027;
+  font-size: 3rem;
+  animation: pulse 2s ease-in-out infinite;
 }
 
-.updates-element .explore-link:hover {
-    opacity: 0.8;
+.section-subtitle {
+  font-size: 1.125rem;
+  color: #6b7280;
+  margin: 0;
+  font-weight: 400;
 }
 
-.updates-element .updates-element-second-container {
-    display: flex;
-    flex-direction: column;
-    padding: 5% 5%;
-    gap: 2rem;
-    border-left: 1px solid #ddd;
-    height: 100%;
+/* Grid Layout */
+.updates-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: start;
 }
 
-.updates-element .updates-element-second-container h2 {
-    font-size: 3rem;
-    font-weight: bold;
-    color: #F03027;
-    margin: 0;
-    letter-spacing: 0.05em;
-    font-family: 'MuseoModerno', sans-serif;
-    flex-shrink: 0;
+/* Card Styles */
+.calendar-card,
+.events-card {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 24px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  height: 100%;
+  min-height: 100%;
 }
 
-.updates-element .events-box {
-    width: 100%;
-    flex: 1;
-    border: 2px solid #333;
-    border-radius: 24px;
-    background-color: white;
-    padding: 20px;
-    max-height: 400px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
+
+.calendar-card:hover,
+.events-card:hover {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
 }
 
-.updates-element .events-list {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    overflow-y: auto;
-    overflow-x: hidden;
-    padding-right: 8px;
-    flex: 1;
-    min-height: 0;
+.card-header {
+  padding: 24px 32px;
+  border-bottom: 2px solid #f3f4f6;
+  position: relative;
 }
 
-.updates-element .events-list::-webkit-scrollbar {
-    width: 6px;
+.card-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #F03027;
+  margin: 0;
+  letter-spacing: 0.05em;
 }
 
-.updates-element .events-list::-webkit-scrollbar-track {
-    background: #f1f1f1;
-    border-radius: 10px;
+.header-decoration {
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #F03027 0%, #ff6b6b 100%);
+  border-radius: 2px;
+  margin-top: 12px;
 }
 
-.updates-element .events-list::-webkit-scrollbar-thumb {
-    background: #F03027;
-    border-radius: 10px;
+/* Calendar Container */
+.calendar-wrapper {
+  padding: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 450px;
 }
 
-.updates-element .events-list::-webkit-scrollbar-thumb:hover {
-    background: #d92a1f;
+/* Events Container */
+.events-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
-.updates-element .event-item-display {
-    display: flex;
-    gap: 15px;
-    padding: 12px;
-    border-left: 4px solid #F03027;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    transition: background-color 0.3s ease;
-    flex-shrink: 0;
+.events-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 600px;
 }
 
-.updates-element .event-item-display:hover {
-    background-color: #f0f0f0;
+/* Category Filter */
+.category-filter {
+  padding: 16px 32px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #f3f4f6;
 }
 
-.updates-element .event-date {
-    font-size: 0.9rem;
-    color: #F03027;
-    font-weight: bold;
-    white-space: nowrap;
-    min-width: 80px;
+.filter-btn {
+  padding: 8px 20px;
+  border: 2px solid #e5e7eb;
+  background: white;
+  color: #6b7280;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'MuseoModerno', sans-serif;
 }
 
-.updates-element .event-content h4 {
-    margin: 0;
-    font-size: 1rem;
-    color: #333;
-    font-family: 'MuseoModerno', sans-serif;
+.filter-btn:hover {
+  border-color: #F03027;
+  color: #F03027;
+  transform: translateY(-1px);
 }
 
-.updates-element .event-content p {
-    margin: 4px 0 0 0;
-    font-size: 0.85rem;
-    color: #666;
+.filter-btn.active {
+  background: linear-gradient(135deg, #F03027 0%, #ff6b6b 100%);
+  color: white;
+  border-color: #F03027;
 }
 
-.updates-element .no-events {
-    text-align: center;
-    color: #999;
-    padding: 40px 20px;
-    font-size: 1rem;
+/* Events List */
+.events-list-container {
+  flex: 1;
+  padding: 24px 32px;
+  overflow: hidden;
 }
 
-.updates-element .react-calendar {
-    background-color: white;
+.events-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-height: 480px;
+  overflow-y: auto;
+  padding-right: 8px;
 }
 
-.updates-element .react-calendar__tile {
-    color: #333 !important;
+.events-list::-webkit-scrollbar {
+  width: 6px;
 }
 
-.updates-element .react-calendar__month-view__days__day--neighboringMonth {
-    color: #ccc !important;
+.events-list::-webkit-scrollbar-track {
+  background: #f3f4f6;
+  border-radius: 10px;
 }
 
-.updates-element .react-calendar__month-view__days__day:not(.react-calendar__month-view__days__day--neighboringMonth) {
-    color: #333 !important;
+.events-list::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #F03027 0%, #ff6b6b 100%);
+  border-radius: 10px;
 }
 
-.updates-element .react-calendar__month-view__days__day--weekend:not(.react-calendar__month-view__days__day--neighboringMonth) {
-    color: #F03027 !important;
+.events-list::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #d92a1f 0%, #ff5252 100%);
 }
 
-.updates-element .react-calendar__month-view__days__day--weekend {
-    color: #F03027 !important;
+/* Event Card */
+.event-card {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+  background: linear-gradient(135deg, #fef2f2 0%, #fff5f5 100%);
+  border-radius: 16px;
+  border-left: 4px solid #F03027;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: visible; /* important fix */
 }
 
-.updates-element .react-calendar__month-view__weekdays__weekday {
-    color: #333 !important;
+.event-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(240, 48, 39, 0.05) 0%, transparent 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
-.updates-element .react-calendar__month-view__weekNumbers .react-calendar__tile {
-    color: #333 !important;
+.event-card:hover {
+  transform: translateX(4px);
+  box-shadow: 0 4px 12px rgba(240, 48, 39, 0.15);
 }
 
-.updates-element .react-calendar__navigation {
-    background-color: white;
+.event-card:hover::before {
+  opacity: 1;
 }
 
-.updates-element .react-calendar__navigation button {
-    color: #333 !important;
+/* Event Date Badge */
+.event-date-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #F03027 0%, #ff6b6b 100%);
+  color: white;
+  border-radius: 12px;
+  padding: 12px 16px;
+  min-width: 70px;
+  box-shadow: 0 4px 8px rgba(240, 48, 39, 0.2);
+  flex-shrink: 0;
 }
 
-.updates-element .react-calendar__tile--now {
-    background: #F03027 !important;
-    color: white !important;
+.date-day {
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.date-month {
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 4px;
+}
+
+/* Event Details */
+.event-details {
+  flex: 1;
+  min-width: 0;
+  overflow-wrap: break-word;
+}
+
+.event-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0 0 8px 0;
+  font-family: 'MuseoModerno', sans-serif;
+}
+
+.event-description {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin: 0 0 12px 0;
+  line-height: 1.5;
+}
+
+.event-meta {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.75rem;
+  color: #F03027;
+  font-weight: 600;
+}
+
+.meta-item svg {
+  font-size: 0.875rem;
+}
+
+/* Event Status */
+.event-status {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  padding: 4px 12px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #F03027;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* No Events State */
+.no-events {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  text-align: center;
+  height: 100%;
+}
+
+.no-events-icon {
+  font-size: 4rem;
+  color: #e5e7eb;
+  margin-bottom: 16px;
+  animation: float 3s ease-in-out infinite;
+}
+
+.no-events-text {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #6b7280;
+  margin: 0 0 8px 0;
+}
+
+.no-events-subtext {
+  font-size: 0.875rem;
+  color: #9ca3af;
+  margin: 0;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .updates-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+  }
+
+  .title-icon {
+    font-size: 2.25rem;
+  }
 }
 
 @media (max-width: 768px) {
-    .updates-element {
-        grid-template-columns: 1fr;
-        min-height: auto;
-    }
+  .updates-section {
+    padding: 40px 16px;
+  }
 
-    .updates-element .updates-element-first-container {
-        padding: 5%;
-        gap: 2rem;
-    }
+  .updates-header {
+    margin-bottom: 32px;
+  }
 
-    .updates-element .updates-element-first-container h1 {
-        font-size: 2rem;
-    }
+  .section-title {
+    font-size: 2rem;
+    flex-direction: column;
+    gap: 12px;
+  }
 
-    .updates-element .explore-link {
-        font-size: 1.2rem;
-    }
+  .title-icon {
+    font-size: 2rem;
+  }
 
-    .updates-element .updates-element-second-container {
-        border-left: none;
-        border-top: 1px solid #ddd;
-        padding: 5%;
-        min-height: 50vh;
-    }
+  .section-subtitle {
+    font-size: 1rem;
+  }
 
-    .updates-element .updates-element-second-container h2 {
-        font-size: 2rem;
-    }
+  .card-header {
+    padding: 20px 24px;
+  }
+
+  .card-title {
+    font-size: 1.5rem;
+  }
+
+  .calendar-wrapper {
+    padding: 24px 16px;
+    min-height: 350px;
+  }
+
+  .events-list-container {
+    padding: 20px 24px;
+  }
+
+  .events-list {
+    max-height: 400px;
+  }
+
+  .event-card {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .event-date-badge {
+    flex-direction: row;
+    width: 100%;
+    padding: 12px;
+    gap: 8px;
+  }
+
+  .date-day {
+    font-size: 1.5rem;
+  }
+
+  .date-month {
+    font-size: 0.875rem;
+    margin-top: 0;
+  }
+
+  .event-status {
+    position: relative;
+    top: auto;
+    right: auto;
+    align-self: flex-start;
+    margin-top: 8px;
+  }
+
+  .category-filter {
+    padding: 12px 24px;
+  }
+
+  .filter-btn {
+    font-size: 0.75rem;
+    padding: 6px 16px;
+  }
+
+  .updates-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: stretch;
+}
+
+.calendar-container,
+.events-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 }

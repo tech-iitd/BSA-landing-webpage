@@ -1,66 +1,65 @@
 import React, { useContext } from 'react';
 import './Sports.css';
-import SportsElement from '../../components/SportsElement/SportsElement';
 import SportsBox from '../../components/SportsBox/SportsBox';
 import { dataContext } from '../../data/Data';
-import PhotoGallery from '../../components/PhoteGallery/PhotoGallery';
 import { Link } from 'react-router-dom';
+
 const Sports = () => {
   const { sports } = useContext(dataContext);
+
+  const sportsList = [
+    { key: 'cricket', path: '/sports/cricket' },
+    { key: 'football', path: '/sports/football' },
+    { key: 'basketball', path: '/sports/basketball' },
+    { key: 'volleyball', path: '/sports/volleyball' },
+    { key: 'lawnTennis', path: '/sports/lawnTennis' },
+    { key: 'badminton', path: '/sports/badminton' },
+    { key: 'tableTennis', path: '/sports/tableTennis' },
+    { key: 'chess', path: '/sports/chess' },
+    { key: 'athletics', path: '/sports/athletics' },
+    { key: 'hockey', path: '/sports/hockey' },
+    { key: 'squash', path: '/sports/squash' },
+    { key: 'aquatics', path: '/sports/aquatics' },
+    { key: 'weightlifting', path: '/sports/weightlifting' },
+  ];
+
   return (
     <div className='sports-main-container'>
-
-    <div className='sports-page'>
-      <div className='sports-page-top'>
-        <h1>
-          SPORTS
-        </h1>
-      </div>
-      <div className='sports-all'>
-        <h1>Discover The Sport We Offer</h1>
-        <div>
-          <Link to={'/sports/cricket'}>
-            <SportsBox img={sports.cricket.img} name={sports.cricket.name}/>
-          </Link>
-          <Link to={'/sports/football'}>
-            <SportsBox img={sports.football.img} name={sports.football.name}/>
-          </Link>
-          <Link to={'/sports/basketball'}>
-            <SportsBox img={sports.basketball.img} name={sports.basketball.name}/>
-          </Link>
-          <Link to={'/sports/volleyball'}>
-            <SportsBox img={sports.volleyball.img} name={sports.volleyball.name}/>
-          </Link>
-          <Link to={'/sports/lawnTennis'}>
-            <SportsBox img={sports.lawnTennis.img} name={sports.lawnTennis.name}/>
-          </Link>
-          <Link to={'/sports/badminton'}>
-            <SportsBox img={sports.badminton.img} name={sports.badminton.name}/>
-          </Link>
-          <Link to={'/sports/tableTennis'}> 
-            <SportsBox img={sports.tableTennis.img} name={sports.tableTennis.name}/>
-          </Link>
-          <Link to={'/sports/chess'}>
-            <SportsBox img={sports.chess.img} name={sports.chess.name}/>
-          </Link>
-          <Link to={'/sports/athletics'}>
-            <SportsBox img={sports.athletics.img} name={sports.athletics.name}/>
-          </Link>
-          <Link to={'/sports/hockey'}>
-            <SportsBox img={sports.hockey.img} name={sports.hockey.name}/>
-          </Link>
-          <Link to={'/sports/squash'}>
-            <SportsBox img={sports.squash.img} name={sports.squash.name}/>
-          </Link>
-          <Link to={'/sports/aquatics'}>
-            <SportsBox img={sports.aquatics.img} name={sports.aquatics.name}/>
-          </Link>
-          <Link to={'/sports/weightlifting'}>
-            <SportsBox img={sports.weightlifting.img} name={sports.weightlifting.name}/>
-          </Link>
+      {/* Hero Section */}
+      <div className='sports-hero'>
+        <div className='sports-hero-pattern'></div>
+        <div className='sports-hero-content'>
+          <h1>SPORTS</h1>
         </div>
       </div>
-    </div>
+
+      {/* Content Section */}
+      <div className='sports-content-wrapper'>
+        <div className='sports-header'>
+          <h2>Discover The Sports We Offer</h2>
+          <div className='sports-header-line'></div>
+          <p className='sports-subtitle'>
+            Explore our diverse range of sports and find your passion. From team sports to individual excellence, 
+            we have something for everyone.
+          </p>
+        </div>
+
+        <div className='sports-grid'>
+          {sportsList.map((sport, index) => (
+            <Link 
+              to={sport.path} 
+              key={sport.key}
+              className='sports-grid-link'
+              style={{ animationDelay: `${index * 0.05}s` }}
+            >
+              <SportsBox 
+                img={sports[sport.key].img} 
+                name={sports[sport.key].name}
+              />
+            </Link>
+          ))}
+        </div>
+      </div>
     </div>
   );
 }
