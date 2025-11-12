@@ -1,14 +1,36 @@
-import React, { useContext, useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './UpdatesElement.css';
 import UpdatesCalendar from '../UpdatesCalendar/UpdatesCalendar';
-import { dataContext } from '../../data/Data';
+import { db } from '../../firebaseConfig';
+import { collection, getDocs } from 'firebase/firestore';
 import { FaCalendarAlt, FaMapMarkerAlt } from 'react-icons/fa';
 
 const UpdatesElement = () => {
-  const { events } = useContext(dataContext);
+  const [events, setEvents] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [selectedDateEvents, setSelectedDateEvents] = useState([]);
   const [selectedDate, setSelectedDate] = useState(null);
+  const [loading, setLoading] = useState(true);
+
+  // Fetch events from Firestore
+  useEffect(() => {
+    const fetchEvents = async () => {
+      try {
+        const querySnapshot = await getDocs(collection(db, 'events'));
+        const eventsData = querySnapshot.docs.map(doc => ({
+          id: doc.id,
+          ...doc.data(),
+        }));
+        setEvents(eventsData);
+      } catch (error) {
+        console.error('Error fetching events:', error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchEvents();
+  }, []);
 
   const categories = ['all', ...new Set(events.map(e => e.category).filter(Boolean))];
 
@@ -23,15 +45,21 @@ const UpdatesElement = () => {
     setSelectedDate(date);
   };
 
+  if (loading) {
+    return (
+      <div className="loading-container">
+        <p>Loading events...</p>
+      </div>
+    );
+  }
+
   return (
     <div className='updates-section'>
       <div className='updates-container'>
         <div className='updates-header'>
           <div className='header-content'>
             <h1 className='section-title'>
-              <span className='title-icon'>
-                <FaCalendarAlt />
-              </span>
+              <span className='title-icon'><FaCalendarAlt /></span>
               EVENTS & CALENDAR
             </h1>
             <p className='section-subtitle'>Stay updated with our latest events and activities</p>
@@ -47,7 +75,7 @@ const UpdatesElement = () => {
                 <div className='header-decoration'></div>
               </div>
               <div className='calendar-wrapper'>
-                <UpdatesCalendar onDateSelect={handleDateSelect} />
+                <UpdatesCalendar events={events} onDateSelect={handleDateSelect} />
               </div>
             </div>
           </div>
@@ -69,7 +97,7 @@ const UpdatesElement = () => {
                       className={`filter-btn ${selectedCategory === category ? 'active' : ''}`}
                       onClick={() => {
                         setSelectedCategory(category);
-                        setSelectedDateEvents([]); // reset when changing category
+                        setSelectedDateEvents([]);
                       }}
                     >
                       {category.charAt(0).toUpperCase() + category.slice(1)}
@@ -84,22 +112,13 @@ const UpdatesElement = () => {
                   {selectedDateEvents.length > 0 ? (
                     <>
                       <h3 className='event-date-title'>
-                        Events on{' '}
-                        {selectedDate?.toLocaleDateString('en', {
-                          month: 'long',
-                          day: 'numeric',
-                          year: 'numeric'
-                        })}
+                        Events on {selectedDate?.toLocaleDateString('en', { month: 'long', day: 'numeric', year: 'numeric' })}
                       </h3>
-                      {selectedDateEvents.map((event, index) => (
-                        <div key={index} className='event-card'>
+                      {selectedDateEvents.map((event) => (
+                        <div key={event.id} className='event-card'>
                           <div className='event-date-badge'>
-                            <span className='date-day'>
-                              {new Date(event.date).getDate()}
-                            </span>
-                            <span className='date-month'>
-                              {new Date(event.date).toLocaleString('en', { month: 'short' })}
-                            </span>
+                            <span className='date-day'>{new Date(event.date).getDate()}</span>
+                            <span className='date-month'>{new Date(event.date).toLocaleString('en', { month: 'short' })}</span>
                           </div>
                           <div className='event-details'>
                             <h4 className='event-title'>{event.title}</h4>
@@ -115,16 +134,12 @@ const UpdatesElement = () => {
                         </div>
                       ))}
                     </>
-                  ) : sortedEvents && sortedEvents.length > 0 ? (
-                    sortedEvents.map((event, index) => (
-                      <div key={index} className='event-card'>
+                  ) : sortedEvents.length > 0 ? (
+                    sortedEvents.map((event) => (
+                      <div key={event.id} className='event-card'>
                         <div className='event-date-badge'>
-                          <span className='date-day'>
-                            {new Date(event.date).getDate()}
-                          </span>
-                          <span className='date-month'>
-                            {new Date(event.date).toLocaleString('en', { month: 'short' })}
-                          </span>
+                          <span className='date-day'>{new Date(event.date).getDate()}</span>
+                          <span className='date-month'>{new Date(event.date).toLocaleString('en', { month: 'short' })}</span>
                         </div>
                         <div className='event-details'>
                           <h4 className='event-title'>{event.title}</h4>
@@ -141,11 +156,8 @@ const UpdatesElement = () => {
                     ))
                   ) : (
                     <div className='no-events'>
-                      <div className='no-events-icon'>
-                        <FaCalendarAlt />
-                      </div>
-                      <p className='no-events-text'>No events available</p>
-                      <p className='no-events-subtext'>Check back later for upcoming events</p>
+                      <FaCalendarAlt />
+                      <p>No events available</p>
                     </div>
                   )}
                 </div>

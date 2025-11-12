@@ -1,21 +1,18 @@
-import React, { useState, useContext } from 'react';
+import React, { useState } from 'react';
 import 'react-calendar/dist/Calendar.css';
 import './UpdatesCalendar.css';
 import Calendar from 'react-calendar';
-import { dataContext } from '../../data/Data';
 
-const UpdatesCalendar = ({ onDateSelect }) => {
-  const { events } = useContext(dataContext);
+const UpdatesCalendar = ({ events = [], onDateSelect }) => {
   const [currentDate, setCurrentDate] = useState(new Date());
 
   const getEventsForDate = (date) => {
     const formattedDate = date.toLocaleDateString('en-CA');
-    return events.filter((event) => event.date === formattedDate);
+    return events.filter(event => event.date === formattedDate);
   };
 
   const handleDateClick = (date) => {
     const dayEvents = getEventsForDate(date);
-    // Send selected date events to parent
     onDateSelect(dayEvents, date);
   };
 

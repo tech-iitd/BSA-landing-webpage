@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import './Header.css';
 import bsa_logo from '../../assets/bsa_logo.svg';
 import bsa_text_logo from '../../assets/bsa_text_logo.svg';
@@ -8,6 +8,7 @@ import add_profile_icon from '../../assets/add_profile_icon.svg';
 
 const Header = ({ isAuth }) => {
   const location = useLocation();
+  const navigate = useNavigate();
   const [activeSection, setActiveSection] = useState("");
   const [isMobile, setIsMobile] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
@@ -18,6 +19,39 @@ const Header = ({ isAuth }) => {
 
   const closeMenu = () => {
     setIsOpen(false);
+  };
+
+  // Function to handle navigation and scroll
+  const handleNavClick = (e, sectionId) => {
+    e.preventDefault();
+    closeMenu();
+
+    // If not on home page, navigate to home first
+    if (location.pathname !== "/") {
+      navigate("/");
+      // Wait for navigation to complete, then scroll
+      setTimeout(() => {
+        scrollToSection(sectionId);
+      }, 100);
+    } else {
+      // Already on home page, just scroll
+      scrollToSection(sectionId);
+    }
+  };
+
+  // Function to scroll to section
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      const headerOffset = 80; // Height of fixed header
+      const elementPosition = section.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+      });
+    }
   };
 
   useEffect(() => {
@@ -89,13 +123,13 @@ const Header = ({ isAuth }) => {
                   <Link to={"/"} onClick={closeMenu}>Home</Link>
                 </li>
                 <li>
-                  <Link to={"/sports"} onClick={closeMenu}>Sports</Link>
+                  <a href="#sports" onClick={(e) => handleNavClick(e, 'sports')}>Sports</a>
                 </li>
                 <li>
-                  <Link to={"/updates"} onClick={closeMenu}>Events</Link>
+                  <a href="#updates" onClick={(e) => handleNavClick(e, 'updates')}>Events</a>
                 </li>
                 <li>
-                  <Link to={"/connect"} onClick={closeMenu}>Connect</Link>
+                  <a href="#connect" onClick={(e) => handleNavClick(e, 'connect')}>Connect</a>
                 </li>
                 {/* {isAuth && (
                   <Link to="/profile" className="profile-icon" onClick={closeMenu}>
@@ -108,8 +142,8 @@ const Header = ({ isAuth }) => {
                   </Link>
                 )} */}
                 <li className='mobile-sports-hub'>
-                <Link target='blank' to={"https://sportshub.iitd.ac.in"}>
-                  SportsHub
+                  <Link target='_blank' to={"https://sportshub.iitd.ac.in"}>
+                    SportsHub
                   </Link>
                 </li>
               </ul>
@@ -123,19 +157,19 @@ const Header = ({ isAuth }) => {
               </Link>
             </li>
             <li>
-              <Link to="/sports" className={activeSection === "sports" ? "active" : ""}>
+              <a href="#sports" onClick={(e) => handleNavClick(e, 'sports')} className={activeSection === "sports" ? "active" : ""}>
                 Sports
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to="/updates" className={activeSection === "updates" ? "active" : ""}>
+              <a href="#updates" onClick={(e) => handleNavClick(e, 'updates')} className={activeSection === "updates" ? "active" : ""}>
                 Events
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to="/connect" className={activeSection === "connect" ? "active" : ""}>
+              <a href="#connect" onClick={(e) => handleNavClick(e, 'connect')} className={activeSection === "connect" ? "active" : ""}>
                 Connect
-              </Link>
+              </a>
             </li>
             {/* {isAuth && (
               <Link to="/profile">
@@ -150,9 +184,9 @@ const Header = ({ isAuth }) => {
               )}
             </li> */}
             <li className='sports-hub'>
-                <Link target='blank' to={"https://sportshub.iitd.ac.in"}>
-                  SportsHub
-                  </Link>
+              <Link target='_blank' to={"https://sportshub.iitd.ac.in"}>
+                SportsHub
+              </Link>
             </li>
           </ul>
         )}

@@ -52,6 +52,7 @@
     color: Red;
     padding: 5px 13px;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .header .header-second-container ul li a.active{
@@ -144,6 +145,7 @@
     color: #333;
     font-size: 18px;
     transition: color 0.3s ease;
+    cursor: pointer;
   }
 
     .menu .profile-icon, .menu .login-button{
@@ -186,4 +188,3 @@
         padding: 5px 10px;
     }
 }
-
