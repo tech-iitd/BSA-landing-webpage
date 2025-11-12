@@ -54,7 +54,14 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 32px;
-  align-items: start;
+  align-items: stretch;
+}
+
+.calendar-container,
+.events-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 /* Card Styles */
@@ -70,7 +77,6 @@
   height: 100%;
   min-height: 100%;
 }
-
 
 .calendar-card:hover,
 .events-card:hover {
@@ -202,7 +208,7 @@
   border-left: 4px solid #F03027;
   transition: all 0.3s ease;
   position: relative;
-  overflow: visible; /* important fix */
+  overflow: visible;
 }
 
 .event-card::before {
@@ -385,6 +391,18 @@
   .title-icon {
     font-size: 2.25rem;
   }
+
+  /* Reset height constraints for mobile stacking */
+  .calendar-card,
+  .events-card {
+    min-height: auto;
+    height: auto;
+  }
+
+  .calendar-container,
+  .events-container {
+    height: auto;
+  }
 }
 
 @media (max-width: 768px) {
@@ -469,18 +487,79 @@
     padding: 6px 16px;
   }
 
+  /* Mobile-specific grid fix */
   .updates-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 32px;
-  align-items: stretch;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  /* Ensure cards don't overlap */
+  .calendar-card,
+  .events-card {
+    min-height: auto;
+    height: auto;
+    margin-bottom: 0;
+  }
+
+  .calendar-container,
+  .events-container {
+    height: auto;
+    min-height: auto;
+  }
+
+  /* Give each card breathing room */
+  .calendar-card {
+    margin-bottom: 0;
+  }
+
+  .events-card {
+    margin-top: 0;
+  }
 }
 
-.calendar-container,
-.events-container {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
+@media (max-width: 480px) {
+  .updates-section {
+    padding: 30px 12px;
+  }
 
+  .section-title {
+    font-size: 1.75rem;
+  }
+
+  .title-icon {
+    font-size: 1.75rem;
+  }
+
+  .section-subtitle {
+    font-size: 0.875rem;
+  }
+
+  .card-header {
+    padding: 16px 20px;
+  }
+
+  .card-title {
+    font-size: 1.25rem;
+  }
+
+  .calendar-wrapper {
+    padding: 20px 12px;
+    min-height: 300px;
+  }
+
+  .events-list-container {
+    padding: 16px 20px;
+  }
+
+  .event-card {
+    padding: 16px;
+  }
+
+  .event-title {
+    font-size: 1rem;
+  }
+
+  .event-description {
+    font-size: 0.8rem;
+  }
 }
