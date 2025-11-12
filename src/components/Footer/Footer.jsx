@@ -19,7 +19,7 @@ const Footer = () => {
       {/* Middle Section */}
       <div className="footer-links-container">
         <div className="footer-column">
-          <h3>Navigation</h3>
+          <h3>Useful Links</h3>
           <ul>
             <li>
               <a
@@ -28,15 +28,6 @@ const Footer = () => {
                 rel="noopener noreferrer"
               >
                 About the Institute
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://home.iitd.ac.in/administration.php"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Administration
               </a>
             </li>
             <li>
@@ -50,56 +41,20 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="https://home.iitd.ac.in/uploads/PROSPECTUS2020-2021.pdf"
+                href="https://bsw.iitd.ac.in/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Prospectus
+                Board for Student Welfare
               </a>
             </li>
-          </ul>
-        </div>
-
-        <div className="footer-column">
-          <h3>Useful Links</h3>
-          <ul>
-            <li>
-              <a
-                href="https://ecampus.iitd.ac.in/PGADM/login"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                PhD/PG
-              </a>
-            </li>
-            <li>
-              <a
-                href="http://gate.iitd.ac.in/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                GATE/JAM
-              </a>
-            </li>
-            <li>
-              <a href="#">Foreign Nationals</a>
-            </li>
-            <li>
+              <li>
               <a
                 href="https://caic.iitd.ac.in/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Co-curricular and Academic Interaction Council
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://bsw.iitd.ac.in/stic.php"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Student Teacher Interaction Council
               </a>
             </li>
           </ul>

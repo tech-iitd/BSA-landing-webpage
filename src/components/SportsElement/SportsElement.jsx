@@ -27,9 +27,9 @@ const SportsElement = () => {
     <section className="sports-element">
       <div className="sports-element-container">
         <div className="sports-element-header">
-          <h2 className="sports-element-title">OUR SPORTS</h2>
+          <h2 className="sports-element-title">SPORTS</h2>
           <p className="sports-element-subtitle">
-            Discover excellence across 13+ sports. Click any sport to explore teams, achievements, and opportunities.
+            Discover excellence across 13 sports. Click any sport to explore further.
           </p>
         </div>
 

@@ -13,6 +13,11 @@ const Home = () => {
       <section id='sports' className='section'>
         <SportsElement/>  
       </section>
+
+       {/* <section id='gallery' className='section'>
+        <PhotoGallery/>  
+      </section> */}
+
       <section id='updates' className='section'>
         <UpdatesElement/>   
       </section>

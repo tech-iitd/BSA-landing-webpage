@@ -5,6 +5,7 @@ import bsa_logo from '../../assets/bsa_logo.svg';
 import bsa_text_logo from '../../assets/bsa_text_logo.svg';
 import profile_icon from '../../assets/profile_icon.svg';
 import add_profile_icon from '../../assets/add_profile_icon.svg';
+import { RiHome6Fill, RiHomeFill, RiHomeGearLine, RiHomeOfficeLine } from 'react-icons/ri';
 
 const Header = ({ isAuth }) => {
   const location = useLocation();
@@ -121,6 +122,7 @@ const Header = ({ isAuth }) => {
               <ul>
                 <li>
                   <Link to={"/"} onClick={closeMenu}>Home</Link>
+                  
                 </li>
                 <li>
                   <a href="#sports" onClick={(e) => handleNavClick(e, 'sports')}>Sports</a>
@@ -141,21 +143,21 @@ const Header = ({ isAuth }) => {
                     <img src={add_profile_icon} alt="Login" />
                   </Link>
                 )} */}
-                <li className='mobile-sports-hub'>
-                  <Link target='_blank' to={"https://sportshub.iitd.ac.in"}>
-                    SportsHub
-                  </Link>
-                </li>
+                       <li className='sports-hub'>
+  <Link to="/sportshub" className={activeSection === "sports-hub" ? "active" : ""}>
+    SportsHub
+  </Link>
+</li>
               </ul>
             </nav>
           </div>
         ) : (
           <ul>
-            <li>
-              <Link to="/" className={activeSection === "home" ? "active" : ""}>
-                Home
-              </Link>
-            </li>
+            <li className='mobile-home'>
+  <Link to="/" className={activeSection === "" ? "active" : ""}>
+    <RiHomeOfficeLine className="icon" />
+  </Link>
+</li>
             <li>
               <a href="#sports" onClick={(e) => handleNavClick(e, 'sports')} className={activeSection === "sports" ? "active" : ""}>
                 Sports
@@ -184,10 +186,12 @@ const Header = ({ isAuth }) => {
               )}
             </li> */}
             <li className='sports-hub'>
-              <Link target='_blank' to={"https://sportshub.iitd.ac.in"}>
-                SportsHub
-              </Link>
-            </li>
+  <Link to="/sportshub" className={activeSection === "sports-hub" ? "active" : ""}>
+    SportsHub
+  </Link>
+</li>
+
+
           </ul>
         )}
       </div>

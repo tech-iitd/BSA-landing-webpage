@@ -72,10 +72,12 @@
 
 .hero-text p {
   margin: 0;
-  color: #0d0d0d;
+  color: #838383;
   line-height: 1.5;
   font-size: 1rem;
+  letter-spacing: 1px;
   max-width: 420px;
+  text-align: justify;
 }
 
 .hero-cta {

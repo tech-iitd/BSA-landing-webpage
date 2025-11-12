@@ -13,6 +13,7 @@
   gap: 40px;
   flex-wrap: wrap;
   margin-bottom: 40px;
+  flex-wrap: nowrap;
 }
 
 .footer-logo {
@@ -22,12 +23,11 @@
 }
 
 .footer-description {
-  max-width: 750px;
+  flex: 1;
   font-size: 1.05rem;
   line-height: 1.6;
   color: #222;
 }
-
 
 .footer-divider {
   width: 100vw;                /* full viewport width */

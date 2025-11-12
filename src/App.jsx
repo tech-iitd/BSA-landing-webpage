@@ -16,6 +16,7 @@ import Contact from './pages/Contact/Contact';
 import SportPage from './components/SportPage/SportPage';
 import Cookies from 'js-cookie';
 import Loading from './pages/Loding/Loding';
+import SportsHub from './pages/SportsHub/SportsHub';
 
 const App = () => {
   const [isAuth, setIsAuth] = useState(false);
@@ -176,6 +177,21 @@ const App = () => {
                     transition={pageTransition}
                   >
                     <SportPage />
+                  </motion.div>
+                }
+              />
+
+               <Route
+                path="/sportshub"
+                element={
+                  <motion.div
+                    initial="initial"
+                    animate="animate"
+                    exit="exit"
+                    variants={pageVariants}
+                    transition={pageTransition}
+                  >
+                    <SportsHub />
                   </motion.div>
                 }
               />

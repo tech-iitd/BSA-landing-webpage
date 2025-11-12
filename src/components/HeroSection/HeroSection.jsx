@@ -13,7 +13,7 @@ const HeroSection = () => {
       >
         <img src={header_image} alt="Header" className="hero-header-img" loading="eager" />
         <div className="hero-overlay">
-          <h2 className="hero-title">SPORTS AT IIT DELHI</h2>
+          <h2 className="hero-title">SPORTS @ IIT DELHI</h2>
           <div className="hero-text">
             <p>
               At IIT Delhi, the Board for Sports Activities (BSA) fosters excellence with top-notch facilities and a thriving culture.
