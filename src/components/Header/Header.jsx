@@ -125,6 +125,10 @@ const Header = ({ isAuth }) => {
                   
                 </li>
                 <li>
+                  <a href="#about" onClick={(e) => handleNavClick(e, 'about')}>About</a>
+                </li>
+
+                  <li>
                   <a href="#sports" onClick={(e) => handleNavClick(e, 'sports')}>Sports</a>
                 </li>
                 <li>
@@ -152,12 +156,19 @@ const Header = ({ isAuth }) => {
             </nav>
           </div>
         ) : (
+
+
           <ul>
-            <li className='mobile-home'>
-  <Link to="/" className={activeSection === "" ? "active" : ""}>
-    <RiHomeOfficeLine className="icon" />
-  </Link>
-</li>
+            <li>
+              <a href="#about" onClick={(e) => handleNavClick(e, 'about')} className={activeSection === "sports" ? "active" : ""}>
+                <RiHomeOfficeLine className="icon" />
+              </a>
+            </li>
+<li>
+              <a href="#about" onClick={(e) => handleNavClick(e, 'about')} className={activeSection === "about" ? "active" : ""}>
+                About
+              </a>
+            </li>
             <li>
               <a href="#sports" onClick={(e) => handleNavClick(e, 'sports')} className={activeSection === "sports" ? "active" : ""}>
                 Sports

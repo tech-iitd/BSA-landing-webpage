@@ -8,7 +8,7 @@ import PhotoGallery from '../../components/PhoteGallery/PhotoGallery';
 const Home = () => {
   return (
     <div>
-      <section>
+      <section id='about' className='section'>
         <HeroSection/>
       </section>
 
