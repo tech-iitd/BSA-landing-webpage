@@ -33,7 +33,6 @@ const Sports = () => {
         </div>
       </div>
 
-      {/* Content Section */}
       <div className='sports-content-wrapper'>
         <div className='sports-header'>
           <h2>Discover The Sports We Offer</h2>
@@ -46,16 +45,24 @@ const Sports = () => {
 
         <div className='sports-grid'>
           {sportsList.map((sport, index) => (
-            <Link 
-              to={sport.path} 
+            <Link
+              to={sport.path}
               key={sport.key}
               className='sports-grid-link'
               style={{ animationDelay: `${index * 0.05}s` }}
             >
-              <SportsBox 
-                img={sports[sport.key].img} 
-                name={sports[sport.key].name}
-              />
+              <div className="sport-card-inner">
+                <div className="sport-card-image">
+                  <img
+                    src={sports[sport.key].img}
+                    alt={sports[sport.key].name}
+                    loading="lazy"
+                  />
+                </div>
+                <div className="sport-card-overlay">
+                  <span className="sport-card-name">{sports[sport.key].name}</span>
+                </div>
+              </div>
             </Link>
           ))}
         </div>

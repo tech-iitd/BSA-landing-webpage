@@ -1,7 +1,7 @@
 import React from 'react';
 import './Updates.css';
 import UpdatesElement from '../../components/UpdatesElement/UpdatesElement';
-import PhotoGallery from '../../components/PhoteGallery/PhotoGallery';
+import PhotoGallery from '../../components/Chronicles/Chronicles';
 import RecentHighlights from '../../components/RecentHighlights/RecentHighlights';
 import CarouselHighlights from '../../components/CarouselHighlights/CarouselHighlights';
 import PhotoFrame from '../../components/PhotoFrame/PhotoFrame';

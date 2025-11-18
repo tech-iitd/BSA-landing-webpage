@@ -17,6 +17,7 @@ import SportPage from './components/SportPage/SportPage';
 import Cookies from 'js-cookie';
 import Loading from './pages/Loding/Loding';
 import SportsHub from './pages/SportsHub/SportsHub';
+import Chronicles from './components/Chronicles/Chronicles';
 
 const App = () => {
   const [isAuth, setIsAuth] = useState(false);
@@ -180,6 +181,21 @@ const App = () => {
                   </motion.div>
                 }
               />
+             <Route
+                path="/chronicles/:chronicles"
+                element={
+                  <motion.div
+                    initial="initial"
+                    animate="animate"
+                    exit="exit"
+                    variants={pageVariants}
+                    transition={pageTransition}
+                  >
+                    <Chronicles />
+                  </motion.div>
+                }
+              />
+              
 
                <Route
                 path="/sportshub"

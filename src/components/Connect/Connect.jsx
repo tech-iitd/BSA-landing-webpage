@@ -52,7 +52,7 @@ const ConnectSection = () => {
                   <div className="info-content">
                     <h3 className="info-title">Phone No.</h3>
                     <a href="tel:+911126591501" className="info-link">
-                      +91 11 2659-1501
+                      +91 11 2659-1533
                     </a>
                   </div>
                 </div>

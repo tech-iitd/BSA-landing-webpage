@@ -1,196 +1,192 @@
+/* Header Styles */
 .header {
-    background-color: rgb(255, 255, 255);
-    color: white;
-    top: 0;
-    left: 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-content: space-between;
-    width: 100vw; 
-    height: 80px;
-    position: fixed;
-    padding: 0 6%;
-    z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  z-index: 1000;
+  transition: all 0.3s ease;
 }
 
-.header-first-container a {
-  display: flex;
-  align-items: center; 
-  gap: 10px;          
-  text-decoration: none;
+.header.scrolled {
+  height: 70px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
-
-.header-first-container img:first-child {
-  width: 80px;
-}
-
-.header-first-container img:last-child {
-  width: 80px;
-  margin-top: 3px;
-}
-
 
 .header::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background: linear-gradient(90deg, #FDD81F, #F03027);
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #FDD81F, #F03027);
 }
 
-.header .header-second-container ul {
-    display: flex;
-    list-style: none;
-    align-items: center;
-    justify-content: space-between;
+.header-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  height: 100%;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.header .header-second-container ul li a{
-    color: Red;
-    padding: 5px 13px;
-    text-decoration: none;
-    cursor: pointer;
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  transition: transform 0.2s ease;
 }
 
-.header .header-second-container ul li a.active{
-    padding: 5px 10px;
-    border-radius: 10px;
-    border-left: 3px solid  #FDD81F;
-    border-right: 3px solid #F03027;
+.logo-container:hover {
+  transform: translateY(-2px);
 }
 
-
-/* Container Styling */
-.hamburger-menu {
-    position: relative;
-  }
-  
-  .hamburger {
-    background: none;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    padding: 10px;
-    z-index: 2; 
-  }
-  
-  .hamburger .line {
-    width: 25px;
-    height: 3px;
-    background-color: #000000;
-    transition: all 0.3s ease;
-    z-index: 999;
-  }
-  
-  .hamburger.open .line:nth-child(1) {
-    transform: rotate(45deg) translate(6px, 5px);
-  }
-  
-  .hamburger.open .line:nth-child(2) {
-    opacity: 0;
-  }
-  
-  .hamburger.open .line:nth-child(3) {
-    transform: rotate(-45deg) translate(6px, -5px);
-  }
-  
-  .menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: #0000005a;
-    backdrop-filter: blur(5px);
-    width: 70%;
-    height: 100vh;
-    transform: translateX(-110%);
-    transition: transform 0.3s ease;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-    z-index: 1;
-  }
-
-  .menu::after {
-    content: '';
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 3px;
-    height: 100%;
-    background: linear-gradient(-180deg, #FDD81F, #F03027);
-  }
-  
-  .menu.open {
-    transform: translateX(0);
-  }
-  
-  .menu ul {
-    list-style: none;
-    padding-top: 40%;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
+.logo-badge-img {
+  width: 80px;
+  height: auto;
 }
-  
-  .menu ul li{
-    width: 100%;
-    margin-left: 40%;
-    padding: 10px 0;
-  }
-  .menu ul li a {
-    text-decoration: none;
-    color: #333;
-    font-size: 18px;
-    transition: color 0.3s ease;
-    cursor: pointer;
-  }
 
-    .menu .profile-icon, .menu .login-button{
-        margin-top: 70%;
-        margin-right: 30%;
-        padding: 10px 20px;
-        color: white;
-    }
-  
-  .menu ul li a:hover {
-    color: #FDD81F;
-  }
-
-  .sports-hub{
-    background-color: #F03027;
-    padding: 5px;
-    border-radius: 5px;
-  }
-  
-  .sports-hub a {
-    color: white !important;
-  }
-  
-  .mobile-sports-hub a {
-    color: white !important;
-  }
-
-  
-  
-  @media (max-width: 768px) {
-   
-    .header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-
-    .header .header-second-container ul li a{
-        padding: 5px 10px;
-    }
-    
-    @media (max-width: 768px) {
-  .sports-hub {
-    background-color: transparent; /* Remove the red background color */
-  }
+/* --- NEW TEXT LOGO (replaces SVG) --- */
+.text-logo {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
 }
+
+.text-line1 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1d3557;
+}
+
+.text-line2 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #1d3557;
+  border-top: 2px solid #1d3557;
+  padding-top: 3px;
+  margin-top: 2px;
+  width: max-content;
+}
+
+/* Desktop Navigation */
+.desktop-nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.nav-list li a {
+  padding: 10px 20px;
+  color: #333;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.nav-list li a:hover {
+  color: #F03027;
+  background-color: rgba(253, 216, 31, 0.1);
+}
+
+.nav-list li a.active {
+  color: #F03027;
+  background-color: rgba(253, 216, 31, 0.15);
+}
+
+.sports-hub-btn {
+  background: linear-gradient(135deg, #F03027, #c91f18) !important;
+  color: white !important;
+  padding: 10px 24px !important;
+  border-radius: 25px !important;
+  font-weight: 700 !important;
+}
+
+/* Hamburger */
+.hamburger {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Mobile Menu */
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.menu-overlay.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 75%;
+  max-width: 300px;
+  height: 100vh;
+  background: white;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.mobile-menu.open {
+  transform: translateX(0);
+}
+
+.mobile-nav-list {
+  list-style: none;
+  padding: 100px 0 40px;
+}
+
+.mobile-nav-list li a {
+  padding: 18px 30px;
+  color: #333;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Responsive: Tablet */
+@media (max-width: 768px) {
+  .text-line1 { font-size: 18px; }
+  .text-line2 { font-size: 14px; }
+  .logo-badge-img { width: 70px; }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .text-line1 { font-size: 16px; }
+  .text-line2 { font-size: 12px; }
+  .logo-badge-img { width: 60px; }
+}
+
+/* Small Mobile */
+@media (max-width: 360px) {
+  .text-line1 { font-size: 15px; }
+  .text-line2 { font-size: 11px; }
+  .logo-badge-img { width: 55px; }
 }

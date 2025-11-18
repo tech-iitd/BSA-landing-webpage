@@ -3,7 +3,7 @@ import SportsElement from '../../components/SportsElement/SportsElement';
 import UpdatesElement from '../../components/UpdatesElement/UpdatesElement';
 import Connect from '../../components/Connect/Connect';
 import HeroSection from '../../components/HeroSection/HeroSection';
-import PhotoGallery from '../../components/PhoteGallery/PhotoGallery';
+import Chronicles from '../../components/Chronicles/Chronicles';
 
 const Home = () => {
   return (
@@ -16,9 +16,9 @@ const Home = () => {
         <SportsElement/>  
       </section>
 
-       {/* <section id='gallery' className='section'>
-        <PhotoGallery/>  
-      </section> */}
+       <section id='chronicles' className='section'>
+        <Chronicles/>  
+      </section>
 
       <section id='updates' className='section'>
         <UpdatesElement/>   
