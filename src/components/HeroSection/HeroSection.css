@@ -10,6 +10,71 @@
   overflow: hidden;
 }
 
+.hero-overlay {
+  position: absolute;
+  top: 8%;
+  right: 6%;
+  width: 40%;
+  max-width: 560px;
+  color: #111;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: flex-end;
+  text-align: right;
+  padding: 20px 24px;
+  background: transparent;
+}
+
+/* Logo container - horizontal layout */
+.hero-logo-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 12px 20px;
+  border-radius: 12px;
+  backdrop-filter: blur(8px);
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.3));
+  transition: transform 300ms ease, filter 300ms ease;
+}
+
+.hero-logo-container:hover {
+  transform: scale(1.02);
+  filter: drop-shadow(0 6px 16px rgba(0, 0, 0, 0.4));
+}
+
+.hero-iit-logo {
+  width: 70px;
+  height: auto;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.text-logo {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+  text-align: left;
+  gap: 6px;
+  width: 100%;
+}
+
+.text-line1 {
+  font-size: 18px;
+  font-weight: 700;
+    padding-top: 6px;
+  border-bottom: 2px solid #1d3557;
+  color: #1d3557;
+}
+
+.text-line2 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #1d3557;
+  text-align: center;
+}
+
 .hero-header-image {
   position: relative;
   width: 100%;
@@ -44,22 +109,6 @@
   .hero-header-image::after {
     height: 30%;
   }
-}
-
-.hero-overlay {
-  position: absolute;
-  top: 8%;
-  right: 6%;
-  width: 40%;
-  max-width: 560px;
-  color: #111;
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-  align-items: flex-end;
-  text-align: right;
-  padding: 20px 24px;
-  background: transparent;
 }
 
 .hero-title {
@@ -140,6 +189,23 @@
     width: auto;
     align-items: center;
     text-align: center;
+  }
+
+  .hero-logo-container {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .text-logo {
+    text-align: center;
+  }
+
+  .text-line1 {
+    font-size: 16px;
+  }
+
+  .text-line2 {
+    font-size: 16px;
   }
 
   .hero-text p {

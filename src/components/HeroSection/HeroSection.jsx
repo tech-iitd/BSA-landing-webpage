@@ -2,6 +2,7 @@ import React from 'react';
 import './HeroSection.css';
 import header_image from '../../assets/header_image.png';
 import get_set_go from '../../assets/get_set_go.svg';
+import iit_delhi_logo from '../../assets/iit_delhi-logo.png';
 import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
@@ -13,6 +14,13 @@ const HeroSection = () => {
       >
         <img src={header_image} alt="Header" className="hero-header-img" loading="eager" />
         <div className="hero-overlay">
+          <div className="hero-logo-container">
+            <img src={iit_delhi_logo} alt="IIT Delhi Logo" className="hero-iit-logo" />
+            <div className="text-logo">
+              <div className="text-line1">Indian Institute of Technology Delhi</div>
+              <div className="text-line2">भारतीय प्रौद्योगिकी संस्थान दिल्ली</div>
+            </div>
+          </div>
           <h2 className="hero-title">SPORTS @ IIT DELHI</h2>
           <div className="hero-text">
             <p>

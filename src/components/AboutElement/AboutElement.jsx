@@ -2,6 +2,7 @@ import React from 'react';
 import './AboutElement.css';
 import about_person from '../../assets/about_person.svg';
 import about_ractangle from '../../assets/about_ractangle.svg';
+import iit_delhi_logo from '../../assets/iit_delhi-logo.png';
 import { Link } from 'react-router-dom';
 const AboutElement = () => {
   return (

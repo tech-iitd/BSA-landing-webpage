@@ -54,20 +54,19 @@
   height: auto;
 }
 
-/* --- NEW TEXT LOGO (replaces SVG) --- */
 .text-logo {
   display: flex;
   flex-direction: column;
   line-height: 1.1;
 }
 
-.text-line1 {
-  font-size: 22px;
+.text-header-line1 {
+  font-size: 16px;
   font-weight: 700;
   color: #1d3557;
 }
 
-.text-line2 {
+.text-header-line2 {
   font-size: 16px;
   font-weight: 500;
   color: #1d3557;

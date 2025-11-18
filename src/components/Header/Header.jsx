@@ -107,11 +107,9 @@ const Header = ({ isAuth }) => {
         <div className="header-container">
           <Link to="/" className="logo-container" onClick={closeMenu}>
             <img src={bsa_logo} alt="BSA Logo" className="logo-badge-img" />
-
-            {/* NEW TEXT LOGO */}
             <div className="text-logo">
-              <div className="text-line1">Board For Sports Activities</div>
-              <div className="text-line2">Indian Institute of Technology Delhi</div>
+              <div className="text-header-line1">Board For Sports Activities</div>
+              <div className="text-header-line2">Indian Institute of Technology Delhi</div>
             </div>
           </Link>
 
